@@ -14,10 +14,12 @@
        + The first step involves actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.  
     2. Detection of Threats and Anomalies
        + The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
-    3.  Investigation: Prioritization and Analysis of Threats
-       +  
-    +  Response and Remediation
-    +  Recovery and Learning
+    3. Investigation: Prioritization and Analysis of Threats
+       + Once threats and anomalies have been detected, the third step is to prioritize and analyze them. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. Prioritization involves assessing the potential impact of the threat on the organization’s operations and data. Analysis involves understanding the nature of the threat, its origin, its current reach and scope, andits potential trajectory. This step is crucial for devising an effective response strategy.
+    4. Response and Remediation
+       + The fourth step is to respond through mitigation or neutralization. The response could involve various multiple actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network. Remediation involves repairing any damage caused by the threat and restoring systems to their normal state. This could involve tasks like rotating passwords, patching vulnerabilities, recovering lost data, or reinstalling compromised software and systems.
+    5. Recovery and Learning
+       + Recovery involves restoring business operations to normal and addressing any residual effects of the threat. Learning, on the other hand, involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
   
 - CERT (Computer Emergency Response Team) / CSIRT (Cyber Security Incident Response Team) <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
