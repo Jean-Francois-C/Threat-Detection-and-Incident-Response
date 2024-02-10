@@ -67,9 +67,13 @@
 
 - Threat Actors
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
-  + The term “cybercriminal” ofen refers to thieves behind a ransomware or a crypto mining malware attack.
-  + The term “threat actor” includes cybercriminals, but it is much broader.
-  + Idealogues such as hacktivists (hacker activists) and terrorists, insiders and even internet trolls are all considered threat actors.
+  + The term “threat actor” includes:
+    + cybercriminals
+    + idealogues such as hacktivists (hacker activists) and terrorists
+    + nation-state threat actors
+    + malevolent insiders
+    + internet trolls
+  + The term “cybercriminal” ofen refers to thieves behind a ransomware or a crypto mining malware attack. 
   + Nation-state threat actors work at a national level; they generally target intelligence in the nuclear, financial or technology sectors. This type of threat usually refers to government intelligence agencies or military, meaning they are highly trained, extremely stealthy and protected by their nation’s legal system. 
 
 - Motivations for Threat Actors
