@@ -52,9 +52,9 @@
     2. Conduct regular security assessments (i.e, vulnerability assessments, penetration testing, red team exercices)
     3. Define and implement a comprehensive incident response plan
     4. Determine a clear escalation path
-    5. Automate threat response
-    6. Implement continuous monitoring
-    7. Train employees and promote security awareness
+    5. Automate threat detection & implement continuous monitoring
+    6. Automate threat response
+    7. Educate and train employees on cybersecurity to reduce human error and promote security awareness
   
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
@@ -63,8 +63,21 @@
       + ransomware,
       + crypto mining malware,
       + distributed-denial-of-service (DDoS) attacks.
-    + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time.
-  + The goals of threat actors range from hacktivism to cyber espionage and financial gain.
+    + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
+
+- Threat Actors
+  + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
+  + The term “cybercriminal” ofen refers to thieves behind a ransomware or a crypto mining malware attack.
+  + The term “threat actor” includes cybercriminals, but it is much broader.
+  + Idealogues such as hacktivists (hacker activists) and terrorists, insiders and even internet trolls are all considered threat actors.
+  + Nation-state threat actors work at a national level; they generally target intelligence in the nuclear, financial or technology sectors. This type of threat usually refers to government intelligence agencies or military, meaning they are highly trained, extremely stealthy and protected by their nation’s legal system. 
+
+- Motivations for Threat Actors
+  + Motivations range from hacktivism to cyber espionage and financial gain.
+  + A threat actor or advanced persistent threat usually seeks monetary gain. They do this by retrieving data that they can sell to a third party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
+  + Insider threats may be following the lead of other cybercriminals by selling information to competitors. They may also be more personally motivated; if they have a grudge against their company or boss, they could attempt to compromise the network in retaliation. Finally, insider threats who plan to start a competing business may steal data to give themselves an edge.
+  + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. Regardless of their specific goal, nation-state threat actors receive state support and protection for their crimes.
+  + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs, usually rooted in a social or political issue. Terrorists, on the other hand, aim to spread mayhem and fear to accomplish their goals.
 
 - Threat Intelligencee
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
