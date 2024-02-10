@@ -24,6 +24,14 @@
     5. Recovery and Learning
        + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
        + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
+  + TDR process
+    1. Proactive threat hunting
+    2. Conduct regular security assessments (i.e, vulnerability assessments, penetration testing, red team exercices)
+    3. Define and implement a comprehensive incident response plan
+    4. Determine a clear escalation path
+    5. Automate threat response
+    6. Implement continuous monitoring
+    7. Train employees and promote security awareness
   
 - CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
