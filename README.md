@@ -27,7 +27,8 @@
        + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
        + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
       
-  + Tools and Technologies used in Threat Detection, Investigation, and Response
+  + Tools and Technologies used in Threat Detection, Investigation, and Response <br>
+    + Traditional threat detection uses technology like security information and event management (SIEM), endpoint detection and response (EDR) and network traffic analysis. SIEM collects data to generate security alerts, but lacks the ability to respond to threats. Network traffic analysis and endpoint detection and response are greatly effective in identifying localized threats, but cannot detect evasive threats and require complex integration. An intrusion detection system can monitor a network for policy violations and malicious activity. Advanced threat detection and response uses threat intelligence to monitor the entire system for attacks that bypass traditional threat detection.
     + Security Information and Event Management (SIEM)
       + SIEM solutions area key tool in the arsenal of any cybersecurity professional. They collect and aggregate log data generated across the IT environment, can identify deviations from the norm, and help security teams take appropriate action to mitigate the threat. SIEM solutions are usually capable of providing near-real-time analysis of security alerts, making them a vital component in the threat detection process.
       + SIEM systems can also correlate related events, helping security teams to understand the full scope of an attack. Additionally, SIEM tools can automate responses to certain types of threats, freeing up security personnel to focus on more complex issues. 
