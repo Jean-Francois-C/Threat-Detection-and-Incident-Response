@@ -105,11 +105,11 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
     10. Regular TDIR Training
         - Conduct training sessions for staff on the latest threats and response procedures to ensure everyone is prepared.
     11. Threat Intelligence Integration
-       - Leverage threat intelligence feeds to stay updated on the latest threat vectors and indicators of compromise.
+        - Leverage threat intelligence feeds to stay updated on the latest threat vectors and indicators of compromise.
     12. Forensic Capabilities
-       - Maintain capabilities to conduct digital forensics, helping to understand the scope and impact of an incident and to prevent future occurrences.
+        - Maintain capabilities to conduct digital forensics, helping to understand the scope and impact of an incident and to prevent future occurrences.
     13. Network Segmentation
-       - Use network segmentation to limit the spread of threats and contain incidents.
+        - Use network segmentation to limit the spread of threats and contain incidents.
 
   + Some best practices for building an effective Cyber Incident Response Plan:
     + Define and assign clear Roles and Responsibilities
@@ -126,10 +126,10 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
       + Reducing as much as possible false positive and having the most precise alerts possible help the security team to focus on the heavy lifting of investigation.
     + Define Reporting Requirements
       + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
-      + Detected the incident
-      + Investigated the incident
-      + Contained and eradicated the attacker
-      + Recovered systems
+        + Detected the incident
+        + Investigated the incident
+        + Contained and eradicated the attacker
+        + Recovered systems
         
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
