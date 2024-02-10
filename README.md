@@ -5,7 +5,7 @@
 #### 1. GLOSSARY & ACRONYMS
 
 - DFIR - Digital Forensics & Incident Response <br>
-  + ...it stands for
+  + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
   
 - TDR - Threat Detection & Response <br>
   + TDR refers to a collection of cybersecurity processes and solutions aiming at identifying, investigating, and responding to security threats.
