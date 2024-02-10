@@ -27,7 +27,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
  
-- Types of Cyber Threats
+- Cyber Threats
   + The world of cybersecurity is constantly evolving, with new threats emerging every day. Understanding the different types of threats that exist is crucial for security teams to effectively protect their organizations.
   + Cyber threats can be separated into several categories:
     + Common cyber threats including: data leakage, ransomware, crypto mining malware, distributed-denial-of-service (DDoS) attacks, etc.
@@ -85,9 +85,24 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
         
 + IoC - Indicator of Compromise
-
+  + Indicator of compromise (IoC) in computer forensics is an artifact observed on a network or in an operating system that, with high confidence, indicates a computer intrusion.
+  + Typical IoCs are virus signatures and IP addresses, MD5 hashes of malware files, or URLs or domain names of botnet command and control servers.
+  + After IoCs have been identified via a process of incident response and computer forensics, they can be used for early detection of future attack attempts using intrusion detection systems and antivirus software.
+  + IOC-based detection methods are classified as static.
+    
 + IoA - Indicator of Attacks
-+ 
+  + Indicators of Attack (IOAs) demonstrate the intentions behind a cyberattack and the techniques used by the threat actor to accomplish their objectives.
+  + An IOA is any digital or physical evidence that a cyberattack is likely to occur.
+  + The following 10 examples of IOAs are based on common cybercriminal behavior:
+    + Public servers communicating with internal hosts. This could be indicative of data exfiltration and remote communications from criminal servers.
+    + Connections via non-standard ports rather than port 80 or port 443.
+    + Internal hosts communicating with countries outside of business range.
+    + Inter-host communications within short time periods. This could be indicative of cybercriminal lateral movement or insider threat activity.
+    + Multiple Honeytoken alerts from a single host (especially outside of business hours).
+    + Excessive SMTP traffic. Could be evidence of a compromised system being used to launch DDoS attacks or a data leakage.
+    + Malware reinfection within a few minutes of removal. This could be indicative of an Advanced Persistent Threat.
+    + Multiple user logins from different regions or one source towards multiple systems. This could be indicative of stolen user credentials and lateral movement.
+
 
 --------
 #### III. ISO/IEC 27035 — Information security incident management (2016+)
