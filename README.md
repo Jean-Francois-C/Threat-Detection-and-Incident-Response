@@ -1,4 +1,4 @@
-## Threat / Incident Detection and Response
+## Threat Detection and Incident Response (TDIR)
 > Technical notes, methodologies, list of tools and scripts regarding the 'Threat Detection &amp; Incident Response' topic
 
 #### Context
@@ -10,7 +10,7 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
 - DFIR - Digital Forensics & Incident Response <br>
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
   
-- TDR - Threat Detection & Response <br>
+- TDR / TDIR - Threat Detection & (Incident) Response <br>
   + TDR refers to a collection of cybersecurity processes and solutions aiming at identifying, investigating, and responding to security threats.
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
