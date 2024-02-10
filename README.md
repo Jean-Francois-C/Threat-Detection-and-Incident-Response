@@ -29,12 +29,25 @@ ANSSI (French)
 ➤ Anticiper et gérer une crise Cyber
   https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber
 
-➤ Piloter la remédiation d’un incident cyber
-  https://cyber.gouv.fr/piloter-la-remediation-dun-incident-cyber
-
 ➤ Organiser un exercice de gestion de crise cyber (Guide - v1.0)
   https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber
   https://cyber.gouv.fr/sites/default/files/2020/10/anssi-guide-organiser-un-exercice-de-gestion-de-crise-cyber-v1.0.pdf
+
+➤ Piloter la remédiation d’un incident cyber
+  https://cyber.gouv.fr/piloter-la-remediation-dun-incident-cyber
+
+  1. Volet stratégique
+     Le guide « Les clés de décision » détaille les enjeux clés de la remédiation et pointe les choix essentiels d’une posture de remédiation efficace
+     https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf
+
+  2. Volet opérationnel
+     Le volet opérationnel est destiné à accompagner le pilotage opérationnel des opérations de remédiation suite à un incident de sécurité informatique.
+     Il s’adresse aux RSSI, DSI et aux équipes de pilotage de remédiation.
+     https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf
+
+  3. Volet technique
+     Le volet technique s’adresse aux équipes d’exploitation et aux intervenants techniques d’opérations de remédiation.
+     https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf
 ```
 
 --------
