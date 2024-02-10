@@ -57,7 +57,11 @@
   
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
-    + Common cyber threats including ransomware, distributed-denial-of-service (DDoS) attacks and data leakage.
+    + Common cyber threats including:
+      + data leakage,
+      + ransomware,
+      + crypto mining malware,
+      + distributed-denial-of-service (DDoS) attacks.
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time.
   + The goals of threat actors range from hacktivism to cyber espionage and financial gain.
 
