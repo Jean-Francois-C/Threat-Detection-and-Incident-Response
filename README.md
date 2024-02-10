@@ -28,17 +28,15 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
     + Zero-day threats are new threats that nobody has seen before. They result from the arms race between IT organizations and cyber attackers. Because they are brand new, zero-day threats are unpredictable and difficult to prepare for.
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
     + APTs are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems.
-  + Reminder: The three categories of threats are natural threats, human-induced threats, and technological threats. Natural threats include environmental factors such as floods, hurricanes, earthquakes, and fires. Human-induced threats include activities such as cybercrime or negligence in the workplace. Technological threats involve risks posed by technology itself such as hacking or data breaches caused by malicious software. The impact of these threats can vary significantly and range from minor disruption to serious financial losses.
 
 - Threat Actors
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
   + The term “threat actor” includes:
-    + cybercriminals
+    + cybercriminals (which ofen refers to thieves behind a ransomware or a crypto mining malware attack)
     + idealogues such as hacktivists (hacker activists) and terrorists
     + nation-state sponsored hackers
     + malevolent insiders
     + even internet trolls
-  + The term “cybercriminal” ofen refers to thieves behind a ransomware or a crypto mining malware attack. 
   + Nation-state threat actors work at a national level; they generally target intelligence in the nuclear, financial or technology sectors. This type of threat usually refers to government intelligence agencies or military, meaning they are highly trained, extremely stealthy and protected by their nation’s legal system. 
 
 - Motivations for Threat Actors
@@ -52,18 +50,20 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
   + Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets.
   + The six phases of threat intelligence are:
-    + Collection
-      + The collection is the process of gathering actionable intelligence from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
-    + Processing
-      + Processing is the step that cleans and normalizes the data collected for further analysis.
-    + Analysis
-      + The analysis involves examining collected data to uncover indicators of compromise that can be used to detect cyber threats.
-    + Sharing
-      + Sharing involves exchanging intelligence with other organizations and security experts.
-    + Storage
-      + Storage is the process of securely storing collected data for future use.
-    + Application
-      + The final phase, application, involves utilizing the collected data to assess risks, detect threats and protect against them.
+```
+1. Collection
+   ➤ The collection is the process of gathering actionable intelligence from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
+2. Processing
+   ➤ Processing is the step that cleans and normalizes the data collected for further analysis.
+3. Analysis
+   ➤ The analysis involves examining collected data to uncover indicators of compromise that can be used to detect cyber threats.
+4. Sharing
+   ➤ Sharing involves exchanging intelligence with other organizations and security experts.
+5. Storage
+   ➤ Storage is the process of securely storing collected data for future use.
+6. Application
+   ➤ The final phase, application, involves utilizing the collected data to assess risks, detect threats and protect against them.
+```
 
 - CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
