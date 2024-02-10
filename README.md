@@ -12,17 +12,24 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
   
 - TDR / TDIR - Threat Detection & (Incident) Response <br>
   + TDR refers to a collection of cybersecurity processes and solutions aiming at identifying, investigating, and responding to security threats.
+  + Threat Detection & Incident Response (TDIR) refers to the processes, tools, and strategies used to identify, monitor, and analyze cybersecurity threats in real-time, and to respond to security incidents when they occur. While Threat Detection focuses on identifying malicious activities or vulnerabilities within a system, Incident Response is concerned with managing and mitigating the impact of a security breach or attack once detected.
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
   + TDR process
     1. Attack Surface Monitoring and Proactive Threat Hunting
-       + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.  
+       + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
+       + By proactively detecting threats, we can:
+         + Reduce Risks: Identify vulnerabilities and threats early, reducing the chances of a successful breach.
+         + Minimize Downtime: Faster response times can lead to quicker recovery and reduced business disruption.
+         + Protect Assets: Safeguard critical data and intellectual property from theft or damage.
+         + Stay Ahead of Threats: Continuously update threat intelligence to anticipate and prepare for emerging threats.
+         + Save Costs: Preventing or swiftly addressing incidents can reduce the financial impact of data breaches.
     2. Detection of Threats and Anomalies
-       + The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
-    3. Threat/Incident Analysis and Prioritization (Investigation phase)
+       + The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
+    3. Threat Analysis and Prioritization (Incident investigation phase)
        + The third step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
+       + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory.
        + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
-       + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory. 
     4. Response and Remediation
        + The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
        + Remediation involves repairing any damage caused by the threat and restoring systems to their normal state. This could involve tasks like rotating passwords, patching vulnerabilities, recovering lost data, or reinstalling compromised software and systems.
