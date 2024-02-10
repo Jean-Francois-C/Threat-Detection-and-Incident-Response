@@ -18,6 +18,13 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
   + TDR process
     1. Attack Surface Monitoring and Proactive Threat Hunting
        + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
+       + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
+       + Threat hunting is a process that security analysts use for proactively searching through systems and networks to find malicious activity that indicates a potential ongoing attack where adversaries evaded detection. Threat hunters use cyber threat intelligence, like Indicators of Compromise (IoCs), for a proactive response to security.
+       + Four threat-hunting methodologies exist:
+         + Structured hunting: Combining attacker tactics, techniques, and procedures (TTPs) with Indicators of Attack (IoA) often aligned to a known framework, like MITRE ATT&CK
+         + Unstructured hunting: Using a trigger event, like an IoC, to search logs for pre-detection and post-detection patterns
+         + Intel-based hunting: Initiating reactive hunting with inputs from IoCs, like hash values, domain names and networks, host artifacts, and IP addresses
+         + Hybrid hunting: Designing customized searches based on situational awareness that use structured, unstructured, and intel-based methodologies
        + By proactively detecting threats, we can:
          + Reduce Risks: Identify vulnerabilities and threats early, reducing the chances of a successful breach.
          + Minimize Downtime: Faster response times can lead to quicker recovery and reduced business disruption.
@@ -59,9 +66,9 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
         
   + Some best practices for effective TDIR include:
     1. Proactive threat hunting
+       - Actively look for potential threats that could jeopardize your organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damage.
     2. Conduct regular security assessemnts
-       - Regularly assess your security posture through vulnerability assessments, security audits and penetration tests.
-       - Regular vulnerability assessments can help organizations identify weaknesses in their security posture before a threat actor can exploit them. These assessments should be comprehensive, covering all aspects of the organization’s systems, applications, and networks.
+       - Regular vulnerability assessments can help organizations identify security weaknesses (e.g., missing critical patches, default credentials) before a threat actor can exploit them. These assessments should be comprehensive, covering all aspects of the organization’s systems, applications, and networks.
        - Regular network and application penetration testing can help to uncover vulnerabilities that might not be visible during a vulnerability assessment. Penetration tests simulate real-world attacks, testing the organization’s defenses and providing insights into how well they can withstand an actual attack. 
     3. Conduct regular TDIR testing
        - Regularly test your detection and response capabilities through purple and red teaming exercises.
