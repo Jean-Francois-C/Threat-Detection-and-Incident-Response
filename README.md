@@ -17,26 +17,6 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
  
-  + Some best practices for building an effective Cyber Incident Response Plan:
-    + Define and assign clear Roles and Responsibilities
-      + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
-      + IT Team: assessing severity, investigating incident, containing attack, recovering impacted systems, tracking and documenting activities
-      + Human Resources: communicating with employees whose data has been impacted
-      + Marketing or Communications: communicating across social media and responding to media requests
-      + Senior Leadership: monitoring ongoing business impact and reviewing post-incident reports
-      + Customer Support: handling incoming support tickets and updating customers during the incident
-    + Centralize the Incident Response Process
-      + With a centralized log management solution, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
-    + Identify Attack Scenarios and detection use cases
-    + Create High-Fidelity risk-based Alerts
-      + Security operations centers (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. Threat detection tools must generate high-quality alerts with low false-positive rates to ensure that security teams are able to focus on real threats to the enterprise
-    + Define Reporting Requirements
-      + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
-        + Detected the incident
-        + Investigated the incident
-        + Contained and eradicated the attacker
-        + Recovered systems
-        
 - Types of Cyber Threats
   + The world of cybersecurity is constantly evolving, with new threats emerging every day. Understanding the different types of threats that exist is crucial for security teams to effectively protect their organizations.
   + Cyber threats can be separated into several categories:
@@ -149,9 +129,9 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
     + Marketing or Communications: communicating across social media and responding to media requests
     + Senior Leadership: monitoring ongoing business impact and reviewing post-incident reports
     + Customer Support: handling incoming support tickets and updating customers during the incident
-+ Define and Centralize the Incident Response Process
-  + With a centralized log management solution, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
-+ Identify Attack Scenarios and detection use cases
++ Centralize the Incident Response Process
+  + By using SIEM and SOAR solutions, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
++ Identify relevant Attack Scenarios and define and implement SOC detection use cases 
 + Create High-Fidelity risk-based Alerts
   + Security operations centers (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. Threat detection tools must generate high-quality alerts with low false-positive rates to ensure that security teams are able to focus on real threats to the enterprise
 + Define Reporting Requirements
