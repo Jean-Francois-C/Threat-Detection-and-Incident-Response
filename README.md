@@ -19,7 +19,7 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
        + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.  
     2. Detection of Threats and Anomalies
        + The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
-    3. Threats Analysis and Prioritization (Investigation phase)
+    3. Threat/Incident Analysis and Prioritization (Investigation phase)
        + The third step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
        + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
        + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory. 
