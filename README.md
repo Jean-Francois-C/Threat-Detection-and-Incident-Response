@@ -83,6 +83,15 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
        - An incident response plan is a set of instructions that help organizations respond to a security incident swiftly and effectively. This plan should outline the roles and responsibilities of all team members, detail the procedures for ingestion and troubleshooting, then responding to different types of incidents.
        - It should provide guidelines for communicating with stakeholders during and after an incident, including lessons learned and process improvement along with potential tooling enhancement.
        - Having a comprehensive incident response plan in place can significantly reduce the time it takes to respond to a security incident, minimizing the damage and disruption it can cause. It can also help to ensure that all team members know what to do in the event of an attack, boosting the organization’s overall security posture.
+       - A cyber incident response plan outlines the processes that the organization’s cybersecurity incident response team (CSIRT) follows once it detects an attack or data breach. Although the National Institute of Standards and Technology (NIST) and SANS Institute organize their suggestions differently, both agree that the response process should include policies and procedures for:
+         - Preparation: training security analysts and defining how to test processes
+         - Identification: collecting security information from across the environment and building alerts that identify abnormal activity
+         - Investigation: tracing the malicious activity to identify compromised assets and identify the malicious actor
+         - Containment: creating short- and long-term strategies that prevent further damage
+         - Remediation: identifying the incident’s root cause,, removing malware, hardening or patching systems
+         - Recovery: restoring affected systems to their previous state and reintegrating them into the business environment
+         - Lessons Learned: analyzing the incident response process to identify areas of improvement
+       - A clearly communicated incident response plan is critical to an organization’s cyber resilience. By defining discrete steps across all response activities, the plan enables security teams to reduce business disruption and mitigate operational impact arising from security incidents.
     5. Determine a clear escalation path
        - Establishing a clear escalation path is crucial for efficient threat response. When a potential threat is detected, the relevant information should be quickly escalated to the right personnel or team for further analysis and remediation.
        - The escalation path may vary depending on the severity of the threat, its potential impact, and the skills required to handle it. Some types of threat, if they are high-level in terms of potential impact for media or external awareness, should have an executive sponsor or contact for informing at speed.
