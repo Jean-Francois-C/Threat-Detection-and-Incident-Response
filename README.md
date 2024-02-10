@@ -6,7 +6,10 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
 In addition, the cybersecurity threat landscape is rapidly evolving, and organizations’ attack surfaces are expanding due to widespread adoption of cloud computing, mobile devices, and remote working. 
 
 --------
-#### I. GLOSSARY & ACRONYMS
+#### I. USEFUL RESOURCES
+
+--------
+#### II. GLOSSARY & ACRONYMS
 
 - DFIR - Digital Forensics & Incident Response <br>
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
@@ -38,9 +41,9 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 
 - Motivations for Threat Actors
   + Motivations range from hacktivism to cyber espionage and financial gain.
-  + Cybercriminals usually seeks monetary gain. They do this by retrieving data that they can sell to a third party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
+  + Cybercriminals usually seeks monetary gain. They do this by retrieving/stealing data that they can sell to a third party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
   + Insider threats may be following the lead of other cybercriminals by selling information to competitors. They may also be more personally motivated; if they have a grudge against their company or boss, they could attempt to compromise the network in retaliation. Finally, insider threats who plan to start a competing business may steal data to give themselves an edge.
-  + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. Regardless of their specific goal, nation-state threat actors receive state support and protection for their crimes.
+  + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
   + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs, usually rooted in a social or political issue. Terrorists, on the other hand, aim to spread mayhem and fear to accomplish their goals.
 
 - Threat Intelligencee
@@ -48,18 +51,12 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   + Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets.
   + The six phases of threat intelligence are:
 ```
-1. Collection
-   ➤ The collection is the process of gathering actionable intelligence from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
-2. Processing
-   ➤ Processing is the step that cleans and normalizes the data collected for further analysis.
-3. Analysis
-   ➤ The analysis involves examining collected data to uncover indicators of compromise that can be used to detect cyber threats.
-4. Sharing
-   ➤ Sharing involves exchanging intelligence with other organizations and security experts.
-5. Storage
-   ➤ Storage is the process of securely storing collected data for future use.
-6. Application
-   ➤ The final phase, application, involves utilizing the collected data to assess risks, detect threats and protect against them.
+1. Collection   ➤ The collection is the process of gathering actionable intelligence from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
+2. Processing   ➤ Processing is the step that cleans and normalizes the data collected for further analysis.
+3. Analysis     ➤ The analysis involves examining collected data to uncover indicators of compromise that can be used to detect cyber threats.
+4. Sharing      ➤ Sharing involves exchanging intelligence with other organizations and security experts.
+5. Storage      ➤ Storage is the process of securely storing collected data for future use.
+6. Application  ➤ The final phase, application, involves utilizing the collected data to assess risks, detect threats and protect against them.
 ```
 
 - CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
@@ -95,25 +92,39 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
       + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
       + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
      
-- SOAR solutions - Security Orchestration, Automation & Response solutions <br>
-  + It is a software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
+- SOAR - Security Orchestration, Automation & Response solution <br>
+  + Software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
   + SOAR's orchestration and automation capabilities allow it to serve as a central console for security incident response. Security analysts can use SOARs to investigate and resolve incidents without moving between multiple tools.
-  + By integrating security tools and automating tasks, SOAR platforms can streamline common security workflows like case management, vulnerability management, and incident response.
-  + SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization. SOARs can also trigger the automated actions of integrated security tools.
+  + By integrating security tools and automating tasks, SOAR platforms can streamline common security workflows like case management, vulnerability management, and incident response. SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization. SOARs can also trigger the automated actions of integrated security tools.
   
-- SIEM - Security Information & Event Management <br>
++ SIEM - Security Information & Event Management
   + SIEM is the core component of any typical Security Operations Center (SOC).
-  + SIEM product collects information (raw logs and security alerts) from applications, systems and internal security tools (e.g. IPS/IDS, EDR, AV, WAF, Firewall, Proxy) aggregate it in a central log, and detect anomalies. They provide real-time analysis of logs and security alerts.
+  + SIEM product collects information (raw logs and security alerts) from applications, systems and internal security tools (e.g. IPS/IDS, EDR, AV, WAF, Firewall, Proxy) aggregate it in a central log, and detect anomalies. They provide real-time analysis of logs and security alerts making them a vital component in the threat detection process.
 
-- EDR solution - Endpoint Detection & Response solution <br>
-  + EDR refers to a category of tools used to detect and investigate threats on endpoints.
-  + EDR tools typically provide detection, investigation, threat hunting, and response capabilities.
-    
-- XDR solution - Extended Detection & Response solution <br>
-  + XDR solutions collect and analyze security data from endpoints, networks, and the cloud. 
++ EDR - Endpoint Detection and Response
+  + EDR tools provide real-time monitoring and collection of endpoint data, allowing security teams to detect, investigate, and prevent potential threats. They are capable of identifying, analyzing and blocking suspicious activities on endpoints such as laptops, workstations, servers and mobile devices. They also provide threat hunting and response capabilities.
+
++ XDR - Extended Detection and Response
+  + XDR integrate multiple security products into a cohesive security incident detection and response platform.
+
++ IDS/IPS - Intrusion Detection and Prevention Systems
+  + Intrusion detection and prevention systems are critical components of a robust threat detection and response strategy. They monitor network traffic for suspicious activities and policy violations. Intrusion detection systems (IDS) analyze network traffic to detect potential threats and alert security teams, while intrusion prevention systems (IPS) go a step further by sending a signal to firewalls/proxies to automatically block or mitigate detected threats.
+
++ NGFW - Next Generation Firewall
+  + NGFWs are sophisticated versions of traditional firewalls, equipped with advanced features like deep packet inspection, intrusion prevention systems, some anti virus hash matching, and the ability to incorporate external threat intelligence. 
+
++ WAF - Web Application Firewalls
+  + Web Application Firewalls (WAFs) protect web applications by monitoring and filtering HTTP traffic between a web application and the Internet. They help detect and prevent web-based attacks such as cross-site scripting (XSS), SQL injection, and other threats such as those listed in the OWASP Top 10. 
+
++ Cloud Detection and Response Tools
+  + Cloud detection and response (CDR) tools extend threat detection and response capabilities to cloud environments. They monitor and analyze access and other activities across various cloud services and infrastructure to detect potential security threats. They help in detecting misconfigurations, unauthorized access, and other threats specific to the cloud environment, and can often be part of the authentication and authorization for cloud services.  
+
++ TIPs - Threat Intelligence Platforms
+  + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
+        
 
 --------
-### II. Threat Detection & Incident Response (TDIR)
+### III. Threat Detection & Incident Response (TDIR)
 
 #### PROCESS / METHODOLOGY
 
@@ -189,15 +200,6 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 + The goal of the fifth step is to contain and mitigate the damages that have already been caused.
 + The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
 + A cyber incident response plan outlines the processes that the organization’s cybersecurity incident response team (CSIRT) follows once it detects an attack or data breach. 
-```
-➤ Preparation: training security analysts and defining how to test processes
-➤ Identification: collecting security information from across the environment and building alerts that identify abnormal activity
-➤ Investigation: tracing the malicious activity to identify compromised assets and identify the malicious actor
-➤ Containment: creating short-term and long-term strategies that prevent further damage
-➤ Remediation: identifying the incident’s root cause, removing malware, hardening or patching systems
-➤ Recovery: restoring affected systems to their previous state and reintegrating them into the business environment
-➤ Lessons Learned: analyzing the incident response process to identify areas of improvement
-```
 
 #### Step 5. Remediation
 + Remediation involves identifying the incident’s root cause and repairing any damage caused by the threat.
@@ -213,32 +215,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 #### TOOLS and TECHNOLOGIES IN TDIR
 
 + Traditional threat detection uses technology like security information and event management (SIEM), endpoint detection and response (EDR) and network traffic analysis. SIEM collects data to generate security alerts, but lacks the ability to respond to threats. Network traffic analysis and endpoint detection and response are greatly effective in identifying localized threats, but cannot detect evasive threats and require complex integration. An intrusion detection system can monitor a network for policy violations and malicious activity. Advanced threat detection and response uses threat intelligence to monitor the entire system for attacks that bypass traditional threat detection.
-    
-+ Security Information and Event Management (SIEM)
-+ SIEM solutions area key tool in the arsenal of any cybersecurity professional. They collect and aggregate log data generated across the IT environment, can identify deviations from the norm, and help security teams take appropriate action to mitigate the threat. SIEM solutions are usually capable of providing near-real-time analysis of security alerts, making them a vital component in the threat detection process.
-  + SIEM systems can also correlate related events, helping security teams to understand the full scope of an attack. Additionally, SIEM tools can automate responses to certain types of threats, freeing up security personnel to focus on more complex issues.
- 
-+ Endpoint Detection and Response (EDR)
-  + EDR tools provide real-time monitoring and collection of endpoint data, allowing security teams to detect, investigate, and prevent potential threats. They are capable of identifying, analyzing and blocking suspicious activities on endpoints such as laptops, workstations, servers and mobile devices. 
-
-+ Extended Detection and Response (XDR)
-  + XDR integrate multiple security products into a cohesive security incident detection and response platform.
-
-+ Intrusion Detection and Prevention Systems (IDS/IPS)
-  + Intrusion detection and prevention systems are critical components of a robust threat detection and response strategy. They monitor network traffic for suspicious activities and policy violations. Intrusion detection systems (IDS) analyze network traffic to detect potential threats and alert security teams, while intrusion prevention systems (IPS) go a step further by sending a signal to firewalls/proxies to automatically block or mitigate detected threats.
-
-+ Next Generation Firewall (NGFW)
-  + NGFWs are sophisticated versions of traditional firewalls, equipped with advanced features like deep packet inspection, intrusion prevention systems, some anti virus hash matching, and the ability to incorporate external threat intelligence. 
-
-+ Web Application Firewalls (WAF)
-  + Web Application Firewalls (WAFs) protect web applications by monitoring and filtering HTTP traffic between a web application and the Internet. They help detect and prevent web-based attacks such as cross-site scripting (XSS), SQL injection, and other threats such as those listed in the OWASP Top 10. 
-
-+ Cloud Detection and Response Tools
-  + Cloud detection and response (CDR) tools extend threat detection and response capabilities to cloud environments. They monitor and analyze access and other activities across various cloud services and infrastructure to detect potential security threats. They help in detecting misconfigurations, unauthorized access, and other threats specific to the cloud environment, and can often be part of the authentication and authorization for cloud services.  
-
-+ Threat Intelligence Platforms (TIPs)
-  + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
-        
+            
 #### Some best practices for effective TDIR:
 
 + Proactive threat hunting
@@ -280,7 +257,36 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   - Use network segmentation to limit the spread of threats and contain incidents.
 
 --------
-#### 2. USEFUL RESOURCES
+#### IV. SOC - Security Operation Center 
+
+  + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
+  + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
+  + A SOC is related to the people, processes and technologies that provide situational awareness through the detection, containment, and remediation of IT threats in order to manage and enhance an organization's security posture.
+  + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
+  + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
+  + In large organizations, SOCs rely on numerous tools to track and respond to cyberthreats.
+  + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
+  + With multi-vector attacks, it is no surprise that SOC is becoming an increasingly important part of organizations’ efforts to keep ahead of the latest cybersecurity threats.
+  + SOC activities and responsibilities include:
+    + Network monitoring to provide complete visibility into digital activity and better detect anomalies
+    + Prevention techniques to deter and deflect a range of known and unknown risks
+    + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
+    + Decisive incident response and remediation using a blend of automated technologies and human intervention
+    + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
+    + Risk and compliance capabilities to ensure industry and government regulations are followed
+  + SOC Job Roles
+    + When a cyberattack occurs, the SOC acts as the digital front line, responding to the security incident with force while also minimizing the impact on business operations.
+    + Common SOC roles include:
+      + SOC Manager: Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
+      + Security Analyst Tier 1 – Triage: Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
+      + Security Analyst Tier 2 – Incident Responder: Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
+      + Security Analyst Tier 3 – Threat Hunter: Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
+      + Security Architect: Designs the security system and its processes, and integrates various technological and human components
+      + Compliance Auditor: Oversees the organization’s adherence to internal and external rules and regulations
+    + SOC Challenges
+      + Shortage of cybersecurity skills: Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
+      + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
+      + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
 
 --------
 #### 3. USEFUL TOOLS & SCRIPTS
