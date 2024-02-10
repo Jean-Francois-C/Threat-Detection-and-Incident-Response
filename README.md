@@ -85,23 +85,20 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
         
 + IoC - Indicator of Compromise
-  + Indicator of compromise (IoC) in computer forensics is an artifact observed on a network or in an operating system that, with high confidence, indicates a computer intrusion.
+  + Indicator of compromise (IoC) in computer forensics is an artifact observed on a network or in an operating system that, with high confidence, indicates a computer intrusion. IOC-based detection methods are classified as static.
   + Typical IoCs are virus signatures and IP addresses, MD5 hashes of malware files, or URLs or domain names of botnet command and control servers.
   + After IoCs have been identified via a process of incident response and computer forensics, they can be used for early detection of future attack attempts using intrusion detection systems and antivirus software.
-  + IOC-based detection methods are classified as static.
     
 + IoA - Indicator of Attacks
   + Indicators of Attack (IOAs) demonstrate the intentions behind a cyberattack and the techniques used by the threat actor to accomplish their objectives.
   + An IOA is any digital or physical evidence that a cyberattack is likely to occur.
-  + The following 10 examples of IOAs are based on common cybercriminal behavior:
+  + The following examples of IOAs are based on common cybercriminal behavior:
     + Public servers communicating with internal hosts. This could be indicative of data exfiltration and remote communications from criminal servers.
     + Connections via non-standard ports rather than port 80 or port 443.
     + Internal hosts communicating with countries outside of business range.
-    + Inter-host communications within short time periods. This could be indicative of cybercriminal lateral movement or insider threat activity.
-    + Multiple Honeytoken alerts from a single host (especially outside of business hours).
     + Excessive SMTP traffic. Could be evidence of a compromised system being used to launch DDoS attacks or a data leakage.
     + Malware reinfection within a few minutes of removal. This could be indicative of an Advanced Persistent Threat.
-    + Multiple user logins from different regions or one source towards multiple systems. This could be indicative of stolen user credentials and lateral movement.
+    + Multiple user logins from different regions or one source towards numerous systems in a short period of time. This could be indicative of stolen user credentials and lateral movement.
 
 
 --------
