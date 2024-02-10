@@ -9,6 +9,8 @@
   
 - TDR - Threat Detection & Response <br>
   + TDR refers to a collection of cybersecurity processes and solutions aiming at identifying, investigating, and responding to security threats.
+  + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
+  + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
   + TDR process
     1. Proactive Threat Hunting
        + The first step involves actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.  
