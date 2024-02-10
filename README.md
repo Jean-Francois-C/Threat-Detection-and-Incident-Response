@@ -16,32 +16,21 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 --------
 #### I. USEFUL RESOURCES
 
-+ NIST Publications (US)
-  + Digital Forensics and Incident Response (DFIR) framework dedicated to Operational Technology
-    - https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf
-  + Computer Security Incident Handling Guide
-    - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf
++ NIST Publications (US) - [Digital Forensics and Incident Response (DFIR) framework dedicated to Operational Technology](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf)
++ NIST Publications (US) - [Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)
 
-+ ISO/IEC 27035 (2020-2023+) - Information Security Incident Management
-  + https://www.iso27001security.com/html/27035.html
-    
-+ ANSSI (French)
-  + Anticiper et gérer une crise Cyber
-    - https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber
-  + Organiser un exercice de gestion de crise cyber (Guide - v1.0) 
-    - https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber
-    - https://cyber.gouv.fr/sites/default/files/2020/10/anssi-guide-organiser-un-exercice-de-gestion-de-crise-cyber-v1.0.pdf
-  + Piloter la remédiation d’un incident cyber
-    1. Volet stratégique
-       Le guide « Les clés de décision » détaille les enjeux clés de la remédiation et pointe les choix essentiels d’une posture de remédiation efficace
-       - https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf
-    2. Volet opérationnel
-       Le volet opérationnel est destiné à accompagner le pilotage opérationnel des opérations de remédiation suite à un incident de sécurité informatique.
-       Il s’adresse aux RSSI, DSI et aux équipes de pilotage de remédiation.
-       - https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf
-    3. Volet technique
-       Le volet technique s’adresse aux équipes d’exploitation et aux intervenants techniques d’opérations de remédiation.
-       - https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf
++ ISO/IEC 27035 (2020-2023+) - [Information Security Incident Management](https://www.iso27001security.com/html/27035.html)
+
++ ANSSI (French)  - [Anticiper et gérer une crise Cyber](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
++ ANSSI (French)  - [Organiser un exercice de gestion de crise cyber (Guide - v1.0)](https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber)
++ ANSSI (French)  - Piloter la remédiation d’un incident cyber
+    + [Volet stratégique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf)
+      - Le guide « Les clés de décision » détaille les enjeux clés de la remédiation et pointe les choix essentiels d’une posture de remédiation efficace
+    + [Volet opérationnel](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf)
+      - Le volet opérationnel est destiné à accompagner le pilotage opérationnel des opérations de remédiation suite à un incident de sécurité informatique.
+        Il s’adresse aux RSSI, DSI et aux équipes de pilotage de remédiation.
+    + [Volet technique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf)
+      - Le volet technique s’adresse aux équipes d’exploitation et aux intervenants techniques d’opérations de remédiation.
 
 --------
 #### II. GLOSSARY & ACRONYMS
