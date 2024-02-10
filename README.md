@@ -2,7 +2,7 @@
 > Technical notes, methodologies, list of tools and scripts regarding the 'Threat Detection &amp; Incident Response' topic
 
 #### Context
-Nowadays in our interconnected world, companies are more exposed than ever to a vast array of cyber threats. From crypto-miner malware to ransomware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
+Nowadays companies are more exposed than ever to a vast array of cyber threats. From crypto-miner malware to ransomware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
 In addition, the cybersecurity threat landscape is rapidly evolving, and organizations’ attack surfaces are expanding due to widespread adoption of cloud computing, mobile devices, and remote working. 
 
 #### Table of Contents
