@@ -91,14 +91,14 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
     
 + IoA - Indicator of Attacks
   + Indicators of Attack (IOAs) demonstrate the intentions behind a cyberattack and the techniques used by the threat actor to accomplish their objectives.
-  + An IOA is any digital or physical evidence that a cyberattack is likely to occur.
+  + An IOA is any digital or physical evidence that a cyberattack is likely to occur or is occuring.
   + The following examples of IOAs are based on common cybercriminal behavior:
     + Public servers communicating with internal hosts. This could be indicative of data exfiltration and remote communications from criminal servers.
     + Connections via non-standard ports rather than port 80 or port 443.
-    + Internal hosts communicating with countries outside of business range.
     + Excessive SMTP traffic. Could be evidence of a compromised system being used to launch DDoS attacks or a data leakage.
     + Malware reinfection within a few minutes of removal. This could be indicative of an Advanced Persistent Threat.
     + Multiple user logins from different regions or one source towards numerous systems in a short period of time. This could be indicative of stolen user credentials and lateral movement.
+    + Cleaning up logs after mutiple IT operations to leave no trace.
 
 
 --------
