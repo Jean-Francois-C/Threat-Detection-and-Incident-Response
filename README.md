@@ -55,7 +55,13 @@
     6. Implement continuous monitoring
     7. Train employees and promote security awareness
   
-- CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
+- Examples of Cyber Threats
+  + Cyber threats can be separated into 2 categories:
+    + Common cyber threats include ransomware, malware, distributed-denial-of-service (DDoS) attacks and phishing.
+    + Advanced persistent threats (APT) are attack campaigns where attackers establish a presence on a network to gain access over the long term.
+  + The goals of threat actors range from hacktivism to cyber espionage and financial gain.
+
+-  CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
   
 - SOC - Security Operation Center <br>
