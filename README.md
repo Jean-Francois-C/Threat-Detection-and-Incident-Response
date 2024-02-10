@@ -15,6 +15,14 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 
 --------
 #### I. USEFUL RESOURCES
+
+| SOURCE | DESCRIPTION | URL |
+| :------: | :------: | :----: |
+|  NIST  | <br> Digital Forensics & Incident Response (DFIR) framework dedicated to Operational Technology| </br> [https://docs.microsoft.com/en-us/sysinternals/](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf) |
+|  NIST  | <br> Computer Security Incident Handling Guide | </br> [https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) |
+|  ANSSI  | Anticiper et gérer une crise Cyber | [https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber) | 
+|  ANSSI  | Organiser un exercice de gestion de crise cyber (Guide - v1.0) | </br> [https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber](https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber)  </br>  [https://cyber.gouv.fr/sites/default/files/2020/10/anssi-guide-organiser-un-exercice-de-gestion-de-crise-cyber-v1.0.pdf](https://cyber.gouv.fr/sites/default/files/2020/10/anssi-guide-organiser-un-exercice-de-gestion-de-crise-cyber-v1.0.pdf) |
+|  ANSSI  | Piloter la remédiation d’un incident cyber (volet stratégique, volet opérationnel, volet technique)  | </br> [https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber](https://cyber.gouv.fr/piloter-la-remediation-dun-incident-cyber) </br>[https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf)  </br>[https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf)  </br>[https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf) |
 ```
 NIST Publications (US)
 ----------------------
