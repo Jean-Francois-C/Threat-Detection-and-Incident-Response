@@ -16,7 +16,7 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
   + TDR process
-    1. Attack Surface Monitoring and Proactive Threat Hunting
+    1. Proactive Threat Hunting and Attack Surface Monitoring
        + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
        + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
        + Threat hunting is a process that security analysts use for proactively searching through systems and networks to find malicious activity that indicates a potential ongoing attack where adversaries evaded detection. Threat hunters use cyber threat intelligence, like Indicators of Compromise (IoCs), for a proactive response to security.
@@ -31,6 +31,12 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
          + Protect Assets: Safeguard critical data and intellectual property from theft or damage.
          + Stay Ahead of Threats: Continuously update threat intelligence to anticipate and prepare for emerging threats.
          + Save Costs: Preventing or swiftly addressing incidents can reduce the financial impact of data breaches.
+       + Reduce and monitor the Attack Surface
+         + When you engage in threat hunting, you engage in the same reconnaissance that an attacker would use. When you do this, you can visibility into:
+           + Hosts visible from an endpoint
+           + Critical assets accessible on the network
+           + Lateral movement across networks and systems
+         + As your threat hunting identifies these attack vectors, you can implement controls that limit an attacker’s ability to exploit them.
     2. Detection of Threats and Anomalies
        + The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
     3. Threat Analysis and Prioritization (Incident investigation phase)
