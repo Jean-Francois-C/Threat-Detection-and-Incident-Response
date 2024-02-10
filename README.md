@@ -24,6 +24,26 @@
     5. Recovery and Learning
        + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
        + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
+      
+  + Tools and Technologies used in Threat Detection, Investigation, and Response
+    + Security Information and Event Management (SIEM)
+      + SIEM solutions area key tool in the arsenal of any cybersecurity professional. They collect and aggregate log data generated across the IT environment, can identify deviations from the norm, and help security teams take appropriate action to mitigate the threat. SIEM solutions are usually capable of providing near-real-time analysis of security alerts, making them a vital component in the threat detection process.
+      + SIEM systems can also correlate related events, helping security teams to understand the full scope of an attack. Additionally, SIEM tools can automate responses to certain types of threats, freeing up security personnel to focus on more complex issues. 
+    + Endpoint Detection and Response (EDR)
+      + EDR tools provide real-time monitoring and collection of endpoint data, allowing security teams to detect, investigate, and prevent potential threats. They are capable of identifying, analyzing and blocking suspicious activities on endpoints such as laptops, workstations, servers and mobile devices. 
+    + Extended Detection and Response (XDR)
+      + XDR integrate multiple security products into a cohesive security incident detection and response platform.
+    + Intrusion Detection and Prevention Systems (IDS/IPS)
+      + Intrusion detection and prevention systems are critical components of a robust threat detection and response strategy. They monitor network traffic for suspicious activities and policy violations. Intrusion detection systems (IDS) analyze network traffic to detect potential threats and alert security teams, while intrusion prevention systems (IPS) go a step further by sending a signal to firewalls/proxies to automatically block or mitigate detected threats.
+    + Next Generation Firewall (NGFW)
+      + NGFWs are sophisticated versions of traditional firewalls, equipped with advanced features like deep packet inspection, intrusion prevention systems, some anti virus hash matching, and the ability to incorporate external threat intelligence. 
+    + Web Application Firewalls (WAF)
+      + Web Application Firewalls (WAFs) protect web applications by monitoring and filtering HTTP traffic between a web application and the Internet. They help detect and prevent web-based attacks such as cross-site scripting (XSS), SQL injection, and other threats such as those listed in the OWASP Top 10. 
+    + Cloud Detection and Response Tools
+      + Cloud detection and response (CDR) tools extend threat detection and response capabilities to cloud environments. They monitor and analyze access and other activities across various cloud services and infrastructure to detect potential security threats. They help in detecting misconfigurations, unauthorized access, and other threats specific to the cloud environment, and can often be part of the authentication and authorization for cloud services.  
+    + Threat Intelligence Platforms (TIPs)
+      + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
+        
   + Best Practices for effective TDIR
     1. Proactive threat hunting
     2. Conduct regular security assessments (i.e, vulnerability assessments, penetration testing, red team exercices)
