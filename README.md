@@ -65,7 +65,7 @@
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time.
   + The goals of threat actors range from hacktivism to cyber espionage and financial gain.
 
--  CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
+- CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
   
 - SOC - Security Operation Center <br>
