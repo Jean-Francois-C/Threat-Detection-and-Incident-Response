@@ -17,9 +17,6 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
  
-
-
-
   + Some best practices for building an effective Cyber Incident Response Plan:
     + Define and assign clear Roles and Responsibilities
       + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
@@ -141,56 +138,82 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 --------
 ### II. Threat Detection & Incident Response (TDIR)
 
-#### TDIR PROCESS / METHODOLOGY
+#### PROCESS / METHODOLOGY
 
-#### Step 1. Proactive Threat Hunting and Attack Surface Monitoring
+#### Step 1. Preparation 
+
++ Training security analysts and defining how to test processes
+
+#### Step 2. Proactive Threat Hunting (and Attack Surface Monitoring)
 
 + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
 + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
 + Threat hunting is a process that security analysts use for proactively searching through systems and networks to find malicious activity that indicates a potential ongoing attack where adversaries evaded detection. Threat hunters use cyber threat intelligence, like Indicators of Compromise (IoCs), for a proactive response to security.
 
-+ Four threat-hunting methodologies exist:
-  - Structured hunting
-    + Combining attacker tactics, techniques, and procedures (TTPs) with Indicators of Attack (IoA) often aligned to a known framework, like MITRE ATT&CK
-  - Unstructured hunting:
-    + Using a trigger event, like an IoC, to search logs for pre-detection and post-detection patterns
-  - Intel-based hunting:
-    + Initiating reactive hunting with inputs from IoCs, like hash values, domain names and networks, host artifacts, and IP addresses
-  - Hybrid hunting:
-    + Designing customized searches based on situational awareness that use structured, unstructured, and intel-based methodologies
++ Four threat-hunting methodologies exist
+```
+1. Structured hunting
+   ➤ Combining attacker tactics, techniques, and procedures (TTPs) with Indicators of Attack (IoA) often aligned to a known framework, like MITRE ATT&CK
+2. Unstructured hunting
+   ➤ Using a trigger event, like an IoC, to search logs for pre-detection and post-detection patterns
+3. Intel-based hunting
+   ➤ Initiating reactive hunting with inputs from IoCs, like hash values, domain names and networks, host artifacts, and IP addresses
+4. Hybrid hunting
+   ➤ Designing customized searches based on situational awareness that use structured, unstructured, and intel-based methodologies
+```
 
-+ By proactively detecting threats, we can:
-  + Reduce Risks: Identify vulnerabilities and threats early, reducing the chances of a successful breach.
-  + Minimize Downtime: Faster response times can lead to quicker recovery and reduced business disruption.
-  + Protect Assets: Safeguard critical data and intellectual property from theft or damage.
-  + Stay Ahead of Threats: Continuously update threat intelligence to anticipate and prepare for emerging threats.
-  + Save Costs: Preventing or swiftly addressing incidents can reduce the financial impact of data breaches.
++ Benefits of proactively detecting threats
+```
+1. Reduce Risks          - Identify vulnerabilities and threats early, reducing the chances of a successful breach.
+2. Minimize Downtime     - Faster response times can lead to quicker recovery and reduced business disruption.
+3. Protect Assets        - Safeguard critical data and intellectual property from theft or damage.
+4. Stay Ahead of Threats - Continuously update threat intelligence to anticipate and prepare for emerging threats.
+5. Save Costs            - Preventing or swiftly addressing incidents can reduce the financial impact of data breaches.
+```
 
-+ Reduce and monitor the Attack Surface
-  + When you engage in threat hunting, you engage in the same reconnaissance that an attacker would use. When you do this, you can visibility into:
++ Reduce the Attack Surface
+  + When you engage in threat hunting, you perform in the same reconnaissance than an attacker would do. When you do this, you can obtain visibility into:
+    + Internet-facing attack surface and system exposure
     + Hosts visible from an endpoint
-    + Critical assets accessible on the network
+    + Critical assets accessible on the internal network
     + Lateral movement across networks and systems
-    + As your threat hunting identifies these attack vectors, you can implement controls that limit an attacker’s ability to exploit them.
+  + As your threat hunting identifies these attack vectors, you can implement controls that limit an attacker’s ability to exploit them.
 
-#### Step 2. Detection of Threats and Anomalies
+#### Step 3. Incident Detection & Identification
 
-+ The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
++ The third step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation.
++ The main objectives are to:
+  + detect threat actors' tactics, techniques, and procedures at the earliest stages of execution
+  + trace the malicious activities to identify compromised assets and identify the malicious actor
 
-#### Step 3. Threat Analysis and Prioritization (Incident investigation phase)
+#### Step 4. Incident Investigation (Threat Analysis and Prioritization)
 
-+ The third step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
++ The fourth step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
 + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory.
 + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
   
-#### Step 4. Response and Remediation
-+ The goal of incident response is to contain and mitigate the damage that has already been caused. The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
-+ Remediation involves repairing any damage caused by the threat. This could involve tasks like rotating passwords, patching vulnerabilities, recovering lost data, or reinstalling compromised software and systems.
+#### Step 5. Incident Response (Containment)
++ The goal of the fifth step is to contain and mitigate the damages that have already been caused.
++ The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
++ A cyber incident response plan outlines the processes that the organization’s cybersecurity incident response team (CSIRT) follows once it detects an attack or data breach. 
+```
+➤ Preparation: training security analysts and defining how to test processes
+➤ Identification: collecting security information from across the environment and building alerts that identify abnormal activity
+➤ Investigation: tracing the malicious activity to identify compromised assets and identify the malicious actor
+➤ Containment: creating short-term and long-term strategies that prevent further damage
+➤ Remediation: identifying the incident’s root cause, removing malware, hardening or patching systems
+➤ Recovery: restoring affected systems to their previous state and reintegrating them into the business environment
+➤ Lessons Learned: analyzing the incident response process to identify areas of improvement
+```
+
+#### Step 5. Remediation
++ Remediation involves identifying the incident’s root cause and repairing any damage caused by the threat.
++ This could involve tasks like rotating passwords, patching vulnerabilities, hardening systems, recovering lost data, or reinstalling compromised software and systems.
   
-#### Step 5. Recovery
+#### Step 6. Recovery
 + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
 
-#### Step 6. Learning
+#### Step 7. Lessons Learned
 + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
 
 
@@ -238,14 +261,6 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 + Define and implement a comprehensive incident response plan
   - An incident response plan is a set of instructions that help organizations respond to a security incident swiftly and effectively. This plan should outline the roles and responsibilities of all team members, detail the procedures for ingestion and troubleshooting, then responding to different types of incidents. It should provide guidelines for communicating with stakeholders during and after an incident, including lessons learned and process improvement along with potential tooling enhancement.
   - Having a comprehensive incident response plan in place can significantly reduce the time it takes to respond to a security incident, minimizing the damage and disruption it can cause. It can also help to ensure that all team members know what to do in the event of an attack, boosting the organization’s overall security posture.
-  - A cyber incident response plan outlines the processes that the organization’s cybersecurity incident response team (CSIRT) follows once it detects an attack or data breach. Although the National Institute of Standards and Technology (NIST) and SANS Institute organize their suggestions differently, both agree that the response process should include policies and procedures for:
-    - Preparation: training security analysts and defining how to test processes
-    - Identification: collecting security information from across the environment and building alerts that identify abnormal activity
-    - Investigation: tracing the malicious activity to identify compromised assets and identify the malicious actor
-    - Containment: creating short-term and long-term strategies that prevent further damage
-    - Remediation: identifying the incident’s root cause,, removing malware, hardening or patching systems
-    - Recovery: restoring affected systems to their previous state and reintegrating them into the business environment
-    - Lessons Learned: analyzing the incident response process to identify areas of improvement
   - A clearly communicated incident response plan is critical to an organization’s cyber resilience. By defining discrete steps across all response activities, the plan enables security teams to reduce business disruption and mitigate operational impact arising from security incidents.
 
 + Determine a clear escalation path
