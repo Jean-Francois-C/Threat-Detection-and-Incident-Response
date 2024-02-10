@@ -146,9 +146,9 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 
 #### Step 2. Proactive Threat Hunting (and Attack Surface Monitoring)
 
-+ The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
++ The second step involves monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
 + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
-+ Threat hunting is a process that security analysts use for proactively searching through systems and networks to find malicious activity that indicates a potential ongoing attack where adversaries evaded detection. Threat hunters use cyber threat intelligence, like Indicators of Compromise (IoCs), for a proactive response to security.
++ When proactively searching threats through systems and networks, security analysts can use cyber threat intelligence, like Indicators of Compromise (IoCs), to find malicious activity.
 
 + Four threat-hunting methodologies exist
 ```
