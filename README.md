@@ -123,7 +123,7 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
       + With a centralized log management solution, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
     + Identify Attack Scenarios and detection use cases
     + Create High-Fidelity risk-based Alerts
-      + Reducing as much as possible false positive and having the most precise alerts possible help the security team to focus on the heavy lifting of investigation.
+      + Security operations centers (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. Threat detection tools must generate high-quality alerts with low false-positive rates to ensure that security teams are able to focus on real threats to the enterprise
     + Define Reporting Requirements
       + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
         + Detected the incident
@@ -166,6 +166,7 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
   
 - SOC - Security Operation Center <br>
+  + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
   + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
   + A SOC is related to the people, processes and technologies that provide situational awareness through the detection, containment, and remediation of IT threats in order to manage and enhance an organization's security posture.
   + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
@@ -188,6 +189,10 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
       + Security Analyst Tier 3 – Threat Hunter: Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
       + Security Architect: Designs the security system and its processes, and integrates various technological and human components
       + Compliance Auditor: Oversees the organization’s adherence to internal and external rules and regulations
+    + SOC Challenges
+      + Shortage of cybersecurity skills: Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
+      + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
+      + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
 
 - SOAR solutions - Security Orchestration, Automation & Response solutions <br>
   + It is a software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
