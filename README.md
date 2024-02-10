@@ -22,9 +22,8 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + Computer Security Incident Handling Guide
     - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf
 
-+ ISO/IEC 27035 : 2020-2023+
-  + Information Security Incident Management
-    - https://www.iso27001security.com/html/27035.html
++ ISO/IEC 27035 (2020-2023+) - Information Security Incident Management
+  + https://www.iso27001security.com/html/27035.html
     
 + ANSSI (French)
   + Anticiper et gérer une crise Cyber
