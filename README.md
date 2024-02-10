@@ -284,5 +284,133 @@ typically by improving the preventive controls or other risk treatments.
       + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
       + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
 
+
 --------
-#### 3. USEFUL TOOLS & SCRIPTS
+#### V. MITRE ATTACK Framework	
+
++ MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 
+  It documents common tactics, techniques, and procedures (TTPs) that advanced persistent threats use against Windows enterprise networks.
+  
++ The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector,
+  in government, and in the cybersecurity product and service community.
+
++ Tactics, Techniques, and Procedures (TTPs) 
+```
+➤ TACTICS represent the “why” of an ATT&CK technique or sub-technique. 
+  It is the adversary’s tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access.
+  
+➤ TECHNIQUES represent “how” an adversary achieves a tactical goal by performing an action. 
+  For example, an adversary may dump credentials to achieve credential access.
+  
+➤ PROCEDURES are the specific implementation the adversary uses for techniques or sub-techniques. 
+  For example, a procedure could be an adversary using PowerShell to inject into lsass.exe to dump credentials by scraping LSASS memory on a victim.
+  Procedures are categorized in ATT&CK as the observed in the wild use of techniques in the "Procedure Examples" section of technique pages.
+```
+
+There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/enterprise/)
+
+ID	Name			Description
+----------------------------------------------------------------------------------------------------------------------
+TA0043	Reconnaissance		The adversary is trying to gather information they can use to plan future operations.
+TA0042	Resource Development	The adversary is trying to establish resources they can use to support operations.
+TA0001	Initial Access		The adversary is trying to get into your network.
+TA0002	Execution		The adversary is trying to run malicious code.
+TA0003	Persistence		The adversary is trying to maintain their foothold.
+TA0004	Privilege Escalation	The adversary is trying to gain higher-level permissions.
+TA0005	Defense Evasion		The adversary is trying to avoid being detected.
+TA0006	Credential Access	The adversary is trying to steal account names and passwords.
+TA0007	Discovery		The adversary is trying to figure out your environment.
+TA0008	Lateral Movement	The adversary is trying to move through your environment.
+TA0009	Collection		The adversary is trying to gather data of interest to their goal.
+TA0011	Command and Control	The adversary is trying to communicate with compromised systems to control them.
+TA0010	Exfiltration		The adversary is trying to steal data.
+TA0040	Impact			The adversary is trying to manipulate, interrupt, or destroy your systems and data.
+
+
+--------
+#### V. The CYBER ATTACK KILL CHAIN MODEL & DEFENSE	
+
++ Definition and Goals
+  + The “Kill Chain” is a traditional warfare term most often used by the US Air Force in defining the command and control process for targeting 
+and destroying enemy forces in order to make it most difficult for the enemy to continue in battle. 
+  + Of late, Kill Chain has been applied by both the US Military and leading cyber threat defense teams at Mitre and Lockheed Martin to define 
+a new defensive strategy for guarding against advanced persistent threats (APT) and other targeted cyber attacks.
+  + In cyber attack, the “Kill Chain Defense” exploits the fact that a successful attack must complete all stages from planning and malware introduction 
+to expansion and one or more command and control phases, until the target is identified, manipulated and ex-filtrated.  
+
++ Objective
+ + The goal of a kill chain defense is to break one or more stages in the attack chain to stop the progress of the attack and force the opponent to start over. 
+ + It is important to remember three things in this method:
+   - the bad guy must make the entire chain work to succeed; 
+   - you need only kill one link to stop them;
+   - having detection and kill capability at each point in the enemy’s attack chain gives you the highest probability of success in this defense.	
+ + The goal is to use the “kill chain” to help you develop capabilities that allow you to identify attacks earlier in the kill chain, rather than waiting for late-stage attacks to become apparent. In other words, develop capabilities that help you identify intrusions while they are still in phases 1, 2, or 3 – and the lower the number, the better.
+
++ The 7 "Kill Chain" phases
+  + The intrusion kill chain breaks intrusions down into distinct phases, which are defined quite well in the Lockheed Martin paper:
+```
+➤ Phase 1 - Reconnaissance 
+  + The reconnaissance phase of a cyberattack is focused on learning as much as possible about the target.  
+    This can include the use of open-source intelligence (websites, social media, etc.) and active investigation of the target environment.  
+  + Research, identification and selection of targets, often represented as crawling Internet websites such as conference proceedings and mailing lists
+    for email addresses, social relationships, or information on specific technologies. 
+    
+➤ Phase 2 - Weaponization
+  + The goal of the reconnaissance phase is to discover a potential attack vector, and weaponization is intended to develop a method of exploiting a 
+    discovered weakness. This may include development of custom malware, crafting a phishing email, etc.
+  + Coupling a remote access trojan with an exploit into a deliverable payload, typically by means of an automated tool (weaponizer). 
+    Increasingly, client application data files such as Adobe Portable Document Format (PDF) or Microsoft Office documents serve as the weaponized deliverable. 
+
+➤ Phase 3 - Delivery
+  + Transmission of the weapon to the targeted environment. 
+    The three most prevalent delivery vectors for weaponized payloads by APT actors, as observed by the Lockheed Martin Computer Incident Response Team (LM-CIRT)
+    for the years 2004-2010, are email attachments (phishing), websites, and USB removable media. 
+  + The delivery stage involves setting up the target for exploitation. This could be as simple as clicking send on a phishing email or may involve 
+    a complicated process of getting the right person at the right place at the right time.  
+    
+➤ Phase 4 - Exploitation
+  + The exploitation phase is when the attacker takes advantage of the discovered weakness to gain access to the target environment.  
+    This may involve exploiting a vulnerability in a webserver, a user enabling macros on a malicious document, etc.
+  + After the weapon is delivered to victim host, exploitation triggers intruders’ code. Most often, exploitation targets an application or operating system
+    vulnerability, but it could also more simply exploit the users themselves or leverage an operating system feature that auto-executes code.
+
+➤ Phase 5 - Installation 
+  + Installation of a remote access trojan or backdoor on the victim system allows the adversary to maintain persistence inside the environment.
+  + One of the goals of a cyberattack is to gain a foothold on the target network. Once the identified vulnerability has been exploited, 
+    an attacker should be able to install and execute malware on the target system.
+  
+➤ Phase 6 - Command and Control (C2)
+  + Typically, compromised hosts must beacon outbound to an Internet controller server to establish a C2 channel. 
+    APT malware especially requires manual interaction rather than conduct activity automatically. 
+    Once the C2 channel establishes, intruders have “hands on the keyboard” access inside the target environment.
+  + A great deal of malware is designed to be interactive, receiving instructions from its creator and/or sending data to them.  
+    Establishing a channel for these communications is the next stage in the process.  
+  
+➤ Phase 7 - Actions on Objectives
+  + Only now, after progressing through the first six phases, can intruders take actions to achieve their original objectives. 
+    Typically, this objective is data exfiltration which involves collecting, encrypting and extracting information from the victim environment; 
+    violations of data integrity or availability are potential objectives as well. 
+    Alternatively, the intruders may only desire access to the initial victim box for use as a hop point to compromise additional systems and move laterally inside the network.
+```
+
++ What are the differences between the Cyber Kill Chain Model and the MITRE ATT&CK Framework?
+```
+The MITRE ATT&CK Framework and the Cyber Kill Chain are both designed to describe how an adversary could carry out a cyberattack.  
+However, the two tools differ in several ways:
+
+➤ Depth: 
+  + The Cyber Kill Chain is designed to outline the stages of the cyberattack lifecycle.  
+  + MITRE ATT&CK’s Tactics loosely map to these stages, but MITRE ATT&CK goes deeper to describe the methods by which an attacker could meet the goals of a particular stage.
+
+➤ Coverage: 
+  + The Cyber Kill Chain maps the complete lifecycle of a cyberattack.  
+  + MITRE ATT&CK breaks this into multiple matrices (i.e. PRE-ATT&CK and Enterprise).
+  
+➤ Stages: 
+  + The Cyber Kill Chain outlines seven stages of a cyberattack.
+  + MITRE ATT&CK’s Enterprise matrix alone includes fourteen Tactics that fit into the last five stages of the Cyber Kill Chain.
+  
+➤  Ordering: 
+  + The Cyber Kill Chain has a defined order, where adversaries are expected to move linearly from one phase to another.  
+  + The MITRE ATT&CK Framework is deliberately unordered to acknowledge that an adversary may move through Tactics out of order, skip some Tactics, and revisit some Tactics multiple times throughout the course of an attack.
+```
