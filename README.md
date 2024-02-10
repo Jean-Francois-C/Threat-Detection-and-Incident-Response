@@ -1,6 +1,9 @@
 ## Threat / Incident Detection and Response
 > Technical notes, methodologies, list of tools and scripts regarding the 'Threat Detection &amp; Incident Response' topic
 
+#### Context
+Nowadays in our interconnected world, businesses are more exposed than ever to a vast array of cyber threats. From crypto-miner malware to ransomware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
+
 --------
 #### 1. GLOSSARY & ACRONYMS
 
