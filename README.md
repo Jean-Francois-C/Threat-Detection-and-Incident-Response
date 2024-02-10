@@ -49,50 +49,17 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 - Threat Intelligencee
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
   + Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets.
-  + The six phases of threat intelligence are:
-```
-1. Collection   ➤ The collection is the process of gathering actionable intelligence from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
-2. Processing   ➤ Processing is the step that cleans and normalizes the data collected for further analysis.
-3. Analysis     ➤ The analysis involves examining collected data to uncover indicators of compromise that can be used to detect cyber threats.
-4. Sharing      ➤ Sharing involves exchanging intelligence with other organizations and security experts.
-5. Storage      ➤ Storage is the process of securely storing collected data for future use.
-6. Application  ➤ The final phase, application, involves utilizing the collected data to assess risks, detect threats and protect against them.
-```
+  + Gathering actionable intelligence can eb done from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
 
 - CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
   
-- SOC - Security Operation Center <br>
-  + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
-  + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
-  + A SOC is related to the people, processes and technologies that provide situational awareness through the detection, containment, and remediation of IT threats in order to manage and enhance an organization's security posture.
-  + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
-  + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
-  + In large organizations, SOCs rely on numerous tools to track and respond to cyberthreats.
-  + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
++ SOC - Security Operation Center
+  + A security operations center is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts and IT engineers who use a variety of tools and techniques to detect, analyze, and respond to security threats. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
+  + The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
   + With multi-vector attacks, it is no surprise that SOC is becoming an increasingly important part of organizations’ efforts to keep ahead of the latest cybersecurity threats.
-  + SOC activities and responsibilities include:
-    + Network monitoring to provide complete visibility into digital activity and better detect anomalies
-    + Prevention techniques to deter and deflect a range of known and unknown risks
-    + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
-    + Decisive incident response and remediation using a blend of automated technologies and human intervention
-    + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
-    + Risk and compliance capabilities to ensure industry and government regulations are followed
-  + SOC Job Roles
-    + When a cyberattack occurs, the SOC acts as the digital front line, responding to the security incident with force while also minimizing the impact on business operations.
-    + Common SOC roles include:
-      + SOC Manager: Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
-      + Security Analyst Tier 1 – Triage: Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
-      + Security Analyst Tier 2 – Incident Responder: Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
-      + Security Analyst Tier 3 – Threat Hunter: Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
-      + Security Architect: Designs the security system and its processes, and integrates various technological and human components
-      + Compliance Auditor: Oversees the organization’s adherence to internal and external rules and regulations
-    + SOC Challenges
-      + Shortage of cybersecurity skills: Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
-      + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
-      + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
      
-- SOAR - Security Orchestration, Automation & Response solution <br>
++ SOAR - Security Orchestration, Automation & Response solution
   + Software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
   + SOAR's orchestration and automation capabilities allow it to serve as a central console for security incident response. Security analysts can use SOARs to investigate and resolve incidents without moving between multiple tools.
   + By integrating security tools and automating tasks, SOAR platforms can streamline common security workflows like case management, vulnerability management, and incident response. SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization. SOARs can also trigger the automated actions of integrated security tools.
