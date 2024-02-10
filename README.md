@@ -1,8 +1,8 @@
 ## Threat / Incident Detection and Response
 > Technical notes, methodologies, list of tools and scripts regarding the 'Threat Detection &amp; Incident Response' topic
 
-
-#### Glossary & Acronyms
+--------
+#### 1. GLOSSARY & ACRONYMS
 
 - DFIR - Digital Forensics & Incident Response <br>
   + ...it stands for
@@ -50,3 +50,9 @@
     
 - XDR solution - Extended Detection & Response solution <br>
   + XDR solutions collect and analyze security data from endpoints, networks, and the cloud. 
+
+--------
+#### 2. USEFUL RESOURCES
+
+--------
+#### 3. USEFUL TOOLS & SCRIPTS
