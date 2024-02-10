@@ -112,11 +112,12 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
        - Use network segmentation to limit the spread of threats and contain incidents.
 
   + Some best practices for building an effective Cyber Incident Response Plan:
-    + Assign Roles and Responsibilities
+    + Define and assign clear Roles and Responsibilities
     + Centralize the Incident Response Process
-    + Identify Attack Scenarios
+      + With a centralized log management solution, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
+    + Identify Attack Scenarios and detection use cases
     + Create High-Fidelity risk-based Alerts
-      + Having the most precise alerts possible (i.e., reducing as much as possible false positive) help the security team to focus on the heavy lifting of investigation.
+      + Reducing as much as possible false positive and having the most precise alerts possible help the security team to focus on the heavy lifting of investigation.
     + Define Reporting Requirements
       + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
       + Detected the incident
