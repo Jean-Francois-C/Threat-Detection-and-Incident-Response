@@ -57,8 +57,8 @@
   
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
-    + Common cyber threats include ransomware, malware, distributed-denial-of-service (DDoS) attacks and phishing.
-    + Advanced persistent threats (APT) are attack campaigns where attackers establish a presence on a network to gain access over the long term.
+    + Common cyber threats including ransomware, distributed-denial-of-service (DDoS) attacks and data leakage.
+    + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time.
   + The goals of threat actors range from hacktivism to cyber espionage and financial gain.
 
 -  CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
