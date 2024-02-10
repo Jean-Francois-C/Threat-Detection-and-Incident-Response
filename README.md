@@ -174,6 +174,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
   + In large organizations, SOCs rely on numerous tools to track and respond to cyberthreats.
   + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
+  + With multi-vector attacks, it is no surprise that SOC is becoming an increasingly important part of organizations’ efforts to keep ahead of the latest cybersecurity threats.
   + SOC activities and responsibilities include:
     + Network monitoring to provide complete visibility into digital activity and better detect anomalies
     + Prevention techniques to deter and deflect a range of known and unknown risks
@@ -194,7 +195,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
       + Shortage of cybersecurity skills: Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
       + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
       + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
-
+     
 - SOAR solutions - Security Orchestration, Automation & Response solutions <br>
   + It is a software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
   + SOAR's orchestration and automation capabilities allow it to serve as a central console for security incident response. Security analysts can use SOARs to investigate and resolve incidents without moving between multiple tools.
