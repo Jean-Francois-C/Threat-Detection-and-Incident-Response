@@ -41,7 +41,8 @@
   + SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization. SOARs can also trigger the automated actions of integrated security tools.
   
 - SIEM - Security Information & Event Management <br>
-  + SIEM collects information from internal security tools, aggregate it in a central log, and flag anomalies. SIEMs are mainly used to record and manage large volumes of security event data.
+  + SIEM is the core component of any typical Security Operations Center (SOC).
+  + SIEM product collects information (raw logs and security alerts) from applications, systems and internal security tools (e.g. IPS/IDS, EDR, AV, WAF, Firewall, Proxy) aggregate it in a central log, and detect anomalies. They provide real-time analysis of logs and security alerts.
 
 - EDR solution - Endpoint Detection & Response solution <br>
   + EDR refers to a category of tools used to detect and investigate threats on endpoints.
