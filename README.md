@@ -134,12 +134,13 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
         
 - Types of Cyber Threats
   + The world of cybersecurity is constantly evolving, with new threats emerging every day. Understanding the different types of threats that exist is crucial for security teams to effectively protect their organizations.
-  + Cyber threats can be separated into 2 categories:
+  + Cyber threats can be separated into several categories:
     + Common cyber threats including:
       + data leakage
       + ransomware
       + crypto mining malware
       + distributed-denial-of-service (DDoS) attacks
+    + Zero-day threats are new threats that nobody has seen before. They result from the arms race between IT organizations and cyber attackers. Because they are brand new, zero-day threats are unpredictable and difficult to prepare for.
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
     + APTs are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems.
   + Reminder: The three categories of threats are natural threats, human-induced threats, and technological threats. Natural threats include environmental factors such as floods, hurricanes, earthquakes, and fires. Human-induced threats include activities such as cybercrime or negligence in the workplace. Technological threats involve risks posed by technology itself such as hacking or data breaches caused by malicious software. The impact of these threats can vary significantly and range from minor disruption to serious financial losses.
