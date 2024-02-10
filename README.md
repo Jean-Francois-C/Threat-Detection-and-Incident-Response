@@ -5,6 +5,15 @@
 Nowadays in our interconnected world, companies are more exposed than ever to a vast array of cyber threats. From crypto-miner malware to ransomware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
 In addition, the cybersecurity threat landscape is rapidly evolving, and organizations’ attack surfaces are expanding due to widespread adoption of cloud computing, mobile devices, and remote working. 
 
+#### Table of Contents
++ I. USEFUL RESOURCES
++ II. GLOSSARY & ACRONYMS
++ III. ISO/IEC 27035 — Information security incident management (2016+)
++ IV. Threat Detection & Incident Response Methodology (TDIR)
++ V. Security Operation Center (SOC)
++ VI. MITRE ATTACK Framework	
++ VII. The CYBER ATTACK KILL CHAIN MODEL & DEFENSE
+
 --------
 #### I. USEFUL RESOURCES
 
@@ -105,18 +114,15 @@ gather forensic evidence (where applicable) and in due course ‘learn the lesso
 typically by improving the preventive controls or other risk treatments.
 
 #### The standard lays out a process with 5 key stages:
-+ Step 1 - Plan and Prepare for handling incidents
-	         (e.g. prepare an incident management policy, form an Incident Response Team and establish a competent team to deal with incidents)
++ Step 1 - Plan and prepare for handling incidents (e.g. prepare an incident management policy, form an Incident Response Team and establish a competent team to deal with incidents)
 	   
 + Step 2 - Identify and detect potential security incidents through monitoring and report all incidents
 
-+ Step 3 - Assess incidents and make decisions about how they are to be addressed 
-           (e.g. patch things up and get back to business quickly, or collect forensic evidences even if it delays resolving the issues)
++ Step 3 - Assess incidents and make decisions about how they are to be addressed (e.g. patch things up and get back to business quickly, or collect forensic evidences even if it delays resolving the issues)
 
 + Step 4 - Respond to the incident: contain, eradicate, recover from and forensically analyze the incident, where appropriate;
 
-+ Step 5 - Learn and document key takeaways from every incident
-           (more than simply identifying the things that might have been done better, this stage involves actually making changes that improve the processes)
++ Step 5 - Learn and document key takeaways from every incident (more than simply identifying the things that might have been done better, this stage involves actually making changes that improve the processes)
 
 --------
 ### IV. Threat Detection & Incident Response (TDIR)
@@ -170,15 +176,7 @@ typically by improving the preventive controls or other risk treatments.
 5. Save Costs            - Preventing or swiftly addressing incidents can reduce the financial impact of data breaches.
 ```
 
-+ Reduce the Attack Surface
-  + When you engage in threat hunting, you perform in the same reconnaissance than an attacker would do. When you do this, you can obtain visibility into:
-    + Internet-facing attack surface and system exposure
-    + Hosts visible from an endpoint
-    + Critical assets accessible on the internal network
-    + Lateral movement across networks and systems
-  + As your threat hunting identifies these attack vectors, you can implement controls that limit an attacker’s ability to exploit them.
-
-#### Step 3. Incident Detection & Identification
+#### Step 3. Incident Detection
 
 + The third step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation.
 + The main objectives are to:
@@ -286,7 +284,7 @@ typically by improving the preventive controls or other risk treatments.
 
 
 --------
-#### V. MITRE ATTACK Framework	
+#### VI. MITRE ATTACK Framework	
 
 + MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 
   It documents common tactics, techniques, and procedures (TTPs) that advanced persistent threats use against Windows enterprise networks.
@@ -328,7 +326,7 @@ TA0040	Impact			The adversary is trying to manipulate, interrupt, or destroy you
 
 
 --------
-#### V. The CYBER ATTACK KILL CHAIN MODEL & DEFENSE	
+#### VII. The CYBER ATTACK KILL CHAIN MODEL & DEFENSE	
 
 + Definition and Goals
   + The “Kill Chain” is a traditional warfare term most often used by the US Air Force in defining the command and control process for targeting 
