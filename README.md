@@ -45,8 +45,8 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
        + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory.
        + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
     4. Response and Remediation
-       + The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
-       + Remediation involves repairing any damage caused by the threat and restoring systems to their normal state. This could involve tasks like rotating passwords, patching vulnerabilities, recovering lost data, or reinstalling compromised software and systems.
+       + The goal of incident response is to contain and mitigate the damage that has already been caused. The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
+       + Remediation involves repairing any damage caused by the threat. This could involve tasks like rotating passwords, patching vulnerabilities, recovering lost data, or reinstalling compromised software and systems.
     5. Recovery and Learning
        + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
        + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
@@ -132,7 +132,8 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
         + Contained and eradicated the attacker
         + Recovered systems
         
-- Examples of Cyber Threats
+- Types of Cyber Threats
+  + The world of cybersecurity is constantly evolving, with new threats emerging every day. Understanding the different types of threats that exist is crucial for security teams to effectively protect their organizations.
   + Cyber threats can be separated into 2 categories:
     + Common cyber threats including:
       + data leakage
@@ -140,6 +141,8 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
       + crypto mining malware
       + distributed-denial-of-service (DDoS) attacks
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
+    + Advanced persistent threat (APT) a sophisticated cyber attack that includes long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information or target vulnerable systems. APTs work best when the attacker remains undetected.
+  + Reminder: The three categories of threats are natural threats, human-induced threats, and technological threats. Natural threats include environmental factors such as floods, hurricanes, earthquakes, and fires. Human-induced threats include activities such as cybercrime or negligence in the workplace. Technological threats involve risks posed by technology itself such as hacking or data breaches caused by malicious software. The impact of these threats can vary significantly and range from minor disruption to serious financial losses.
 
 - Threat Actors
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
@@ -161,7 +164,20 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 
 - Threat Intelligencee
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
-  + Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets. 
+  + Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets.
+  + The six phases of threat intelligence are:
+    + Collection
+      + The collection is the process of gathering actionable intelligence from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
+    + Processing
+      + Processing is the step that cleans and normalizes the data collected for further analysis.
+    + Analysis
+      + The analysis involves examining collected data to uncover indicators of compromise that can be used to detect cyber threats.
+    + Sharing
+      + Sharing involves exchanging intelligence with other organizations and security experts.
+    + Storage
+      + Storage is the process of securely storing collected data for future use.
+    + Application
+      + The final phase, application, involves utilizing the collected data to assess risks, detect threats and protect against them.
 
 - CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
