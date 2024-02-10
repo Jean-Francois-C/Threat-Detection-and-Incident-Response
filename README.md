@@ -59,10 +59,10 @@
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
     + Common cyber threats including:
-      + data leakage,
-      + ransomware,
-      + crypto mining malware,
-      + distributed-denial-of-service (DDoS) attacks.
+      + data leakage
+      + ransomware
+      + crypto mining malware
+      + distributed-denial-of-service (DDoS) attacks
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
 
 - Threat Actors
@@ -70,7 +70,7 @@
   + The term “threat actor” includes:
     + cybercriminals
     + idealogues such as hacktivists (hacker activists) and terrorists
-    + nation-state threat actors
+    + nation-state sponsored hackers
     + malevolent insiders
     + internet trolls
   + The term “cybercriminal” ofen refers to thieves behind a ransomware or a crypto mining malware attack. 
