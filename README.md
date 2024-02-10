@@ -15,6 +15,27 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 
 --------
 #### I. USEFUL RESOURCES
+```
+NIST Publications (US)
+----------------------
+➤ Digital Forensics and Incident Response (DFIR) framework dedicated to Operational Technology
+  https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf
+
+➤ Computer Security Incident Handling Guide
+  https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf
+
+ANSSI (French)
+--------------
+➤ Anticiper et gérer une crise Cyber
+  https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber
+
+➤ Piloter la remédiation d’un incident cyber
+  https://cyber.gouv.fr/piloter-la-remediation-dun-incident-cyber
+
+➤ Organiser un exercice de gestion de crise cyber (Guide - v1.0)
+  https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber
+  https://cyber.gouv.fr/sites/default/files/2020/10/anssi-guide-organiser-un-exercice-de-gestion-de-crise-cyber-v1.0.pdf
+```
 
 --------
 #### II. GLOSSARY & ACRONYMS
