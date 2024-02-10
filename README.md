@@ -142,20 +142,37 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 
 #### Step 1. Preparation 
 
++ Define and assign clear Roles and Responsibilities
+  + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
+    + IT Team: assessing severity, investigating incident, containing attack, recovering impacted systems, tracking and documenting activities
+    + Human Resources: communicating with employees whose data has been impacted
+    + Marketing or Communications: communicating across social media and responding to media requests
+    + Senior Leadership: monitoring ongoing business impact and reviewing post-incident reports
+    + Customer Support: handling incoming support tickets and updating customers during the incident
++ Define and Centralize the Incident Response Process
+  + With a centralized log management solution, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
++ Identify Attack Scenarios and detection use cases
++ Create High-Fidelity risk-based Alerts
+  + Security operations centers (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. Threat detection tools must generate high-quality alerts with low false-positive rates to ensure that security teams are able to focus on real threats to the enterprise
++ Define Reporting Requirements
+  + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
+    + Detected the incident
+    + Investigated the incident
+    + Contained and eradicated the attacker
+    + Recovered systems
 + Training security analysts and defining how to test processes
 
 #### Step 2. Proactive Threat Hunting (and Attack Surface Monitoring)
 
 + The second step involves monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
 + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
-+ When proactively searching threats through systems and networks, security analysts can use cyber threat intelligence, like Indicators of Compromise (IoCs), to find malicious activity.
 
 + Four threat-hunting methodologies exist
 ```
 1. Structured hunting
    ➤ Combining attacker tactics, techniques, and procedures (TTPs) with Indicators of Attack (IoA) often aligned to a known framework, like MITRE ATT&CK
 2. Unstructured hunting
-   ➤ Using a trigger event, like an IoC, to search logs for pre-detection and post-detection patterns
+   ➤ Using a trigger event, like an Indicator of Compromise (IoC), to search logs for pre-detection and post-detection patterns
 3. Intel-based hunting
    ➤ Initiating reactive hunting with inputs from IoCs, like hash values, domain names and networks, host artifacts, and IP addresses
 4. Hybrid hunting
