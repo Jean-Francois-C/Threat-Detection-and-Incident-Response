@@ -57,14 +57,41 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
     + Threat Intelligence Platforms (TIPs)
       + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
         
-  + Best Practices for effective TDIR
+  + Some best practices for effective TDIR include:
     1. Proactive threat hunting
-    2. Conduct regular security assessments (i.e, vulnerability assessments, penetration testing, red team exercices)
-    3. Define and implement a comprehensive incident response plan
-    4. Determine a clear escalation path
-    5. Automate threat detection & implement continuous monitoring
-    6. Automate threat response
-    7. Educate and train employees on cybersecurity to reduce human error and promote security awareness
+    2. Conduct regular security assessemnts
+       - Regularly assess your security posture through vulnerability assessments, security audits and penetration tests.
+       - Regular vulnerability assessments can help organizations identify weaknesses in their security posture before a threat actor can exploit them. These assessments should be comprehensive, covering all aspects of the organization’s systems, applications, and networks.
+       - Regular network and application penetration testing can help to uncover vulnerabilities that might not be visible during a vulnerability assessment. Penetration tests simulate real-world attacks, testing the organization’s defenses and providing insights into how well they can withstand an actual attack. 
+    3. Conduct regular TDIR testing
+       - Regularly test your detection and response capabilities through purple and red teaming exercises.
+    4. Define and implement a comprehensive incident response plan
+       - Develop a detailed and regularly updated plan that outlines roles, responsibilities, and procedures in the event of a security incident.
+       - An incident response plan is a set of instructions that help organizations respond to a security incident swiftly and effectively. This plan should outline the roles and responsibilities of all team members, detail the procedures for ingestion and troubleshooting, then responding to different types of incidents.
+       - It should provide guidelines for communicating with stakeholders during and after an incident, including lessons learned and process improvement along with potential tooling enhancement.
+       - Having a comprehensive incident response plan in place can significantly reduce the time it takes to respond to a security incident, minimizing the damage and disruption it can cause. It can also help to ensure that all team members know what to do in the event of an attack, boosting the organization’s overall security posture.
+    5. Determine a clear escalation path
+       - Establishing a clear escalation path is crucial for efficient threat response. When a potential threat is detected, the relevant information should be quickly escalated to the right personnel or team for further analysis and remediation.
+       - The escalation path may vary depending on the severity of the threat, its potential impact, and the skills required to handle it.
+       - Some types of threat, if they are high-level in terms of potential impact for media or external awareness, should have an executive sponsor or contact for informing at speed.
+       - A clear and well-documented escalation and communication path can speed up the response process and ensure threats are handled by the appropriate expertise.
+    7. Implement continuous monitoring
+        - Implement tools and solutions that provide real-time monitoring of networks, systems, and applications.
+        - Continuous monitoring is crucial for effective threat detection and response. Organizations should monitor their systems and networks 24/7, using tools like SIEM and EDR to detect suspicious activities as soon as they occur.
+    8. Automate threat detection
+    9. Automate threat response
+       - Automating threat response can help organizations quickly and effectively neutralize threats. This can involve using automated scripts to block malicious IP addresses, isolate affected systems, or execute other predefined response actions. Automation can also extend to the remediation process, such as automatically patching known vulnerabilities.
+       - Advanced tools such as next-generation SIEM, and XDR systems can integrate with other security systems like security orchestration, automation, and response (SOAR) to automatically react to threats and anomalies they identify. 
+    11. Educate employees on cybersecurity to reduce human error and promote security awareness
+    12. Regular TDIR Training
+        - Conduct training sessions for staff on the latest threats and response procedures to ensure everyone is prepared
+    13. Threat Intelligence Integration
+       - Leverage threat intelligence feeds to stay updated on the latest threat vectors and indicators of compromise
+    12. Forensic Capabilities
+       - Maintain capabilities to conduct digital forensics, helping to understand the scope and impact of an incident and to prevent future occurrences.
+    13. Network Segmentation
+       + Use network segmentation to limit the spread of threats and contain incidents.
+      
   
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
