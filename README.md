@@ -15,11 +15,11 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
   + TDR process
-    1. Proactive Threat Hunting & Attack Surface Monitoring
+    1. Attack Surface Monitoring and Proactive Threat Hunting
        + The first step involves reducing and monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.  
     2. Detection of Threats and Anomalies
        + The second step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods. The objective is to detect threat actors' tactics, techniques, and procedures at the earliest stages of execution.
-    3. Investigation: Threats Analysis and Prioritization
+    3. Threats Analysis and Prioritization (Investigation phase)
        + The third step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
        + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
        + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory. 
