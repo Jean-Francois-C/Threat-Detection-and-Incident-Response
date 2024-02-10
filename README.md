@@ -39,8 +39,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
     + even internet trolls
   + Nation-state threat actors work at a national level; they generally target intelligence in the nuclear, financial or technology sectors. This type of threat usually refers to government intelligence agencies or military, meaning they are highly trained, extremely stealthy and protected by their nation’s legal system. 
 
-- Motivations for Threat Actors
-  + Motivations range from hacktivism to cyber espionage and financial gain.
+- Motivations for Threat Actors range from hacktivism to cyber espionage and financial gain.
   + Cybercriminals usually seeks monetary gain. They do this by retrieving/stealing data that they can sell to a third party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
   + Insider threats may be following the lead of other cybercriminals by selling information to competitors. They may also be more personally motivated; if they have a grudge against their company or boss, they could attempt to compromise the network in retaliation. Finally, insider threats who plan to start a competing business may steal data to give themselves an edge.
   + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
@@ -89,6 +88,10 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 + TIPs - Threat Intelligence Platforms
   + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
         
++ IoC - Indicator of Compromise
+
++ IoA - Indicator of Attacks
++ 
 
 --------
 ### III. Threat Detection & Incident Response (TDIR)
