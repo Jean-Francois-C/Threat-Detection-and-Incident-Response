@@ -94,7 +94,32 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 + 
 
 --------
-### III. Threat Detection & Incident Response (TDIR)
+#### III. ISO/IEC 27035 — Information security incident management (2016+)
+
+   ➤ https://www.iso27001security.com/html/27035.html
+
+The standard covers the processes for managing information security events, incidents and vulnerabilities.
+
+Managing incidents effectively involves detective and corrective controls designed to recognize and respond to events and incidents, minimize adverse impacts,
+gather forensic evidence (where applicable) and in due course ‘learn the lessons’ in terms of prompting improvements to the ISMS,
+typically by improving the preventive controls or other risk treatments.
+
+#### The standard lays out a process with 5 key stages:
++ Step 1 - Plan and Prepare for handling incidents
+	         (e.g. prepare an incident management policy, form an Incident Response Team and establish a competent team to deal with incidents)
+	   
++ Step 2 - Identify and detect potential security incidents through monitoring and report all incidents
+
++ Step 3 - Assess incidents and make decisions about how they are to be addressed 
+           (e.g. patch things up and get back to business quickly, or collect forensic evidences even if it delays resolving the issues)
+
++ Step 4 - Respond to the incident: contain, eradicate, recover from and forensically analyze the incident, where appropriate;
+
++ Step 5 - Learn and document key takeaways from every incident
+           (more than simply identifying the things that might have been done better, this stage involves actually making changes that improve the processes)
+
+--------
+### IV. Threat Detection & Incident Response (TDIR)
 
 #### PROCESS / METHODOLOGY
 
@@ -226,8 +251,9 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
 + Network Segmentation
   - Use network segmentation to limit the spread of threats and contain incidents.
 
+
 --------
-#### IV. SOC - Security Operation Center 
+#### V. SOC - Security Operation Center 
 
   + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
   + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
