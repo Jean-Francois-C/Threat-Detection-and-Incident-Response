@@ -141,7 +141,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
       + crypto mining malware
       + distributed-denial-of-service (DDoS) attacks
     + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
-    + Advanced persistent threat (APT) a sophisticated cyber attack that includes long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information or target vulnerable systems. APTs work best when the attacker remains undetected.
+    + APTs are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems.
   + Reminder: The three categories of threats are natural threats, human-induced threats, and technological threats. Natural threats include environmental factors such as floods, hurricanes, earthquakes, and fires. Human-induced threats include activities such as cybercrime or negligence in the workplace. Technological threats involve risks posed by technology itself such as hacking or data breaches caused by malicious software. The impact of these threats can vary significantly and range from minor disruption to serious financial losses.
 
 - Threat Actors
