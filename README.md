@@ -166,10 +166,28 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
   
 - SOC - Security Operation Center <br>
+  + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
   + A SOC is related to the people, processes and technologies that provide situational awareness through the detection, containment, and remediation of IT threats in order to manage and enhance an organization's security posture.
   + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
   + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
   + In large organizations, SOCs rely on numerous tools to track and respond to cyberthreats.
+  + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
+  + SOC activities and responsibilities include:
+    + Network monitoring to provide complete visibility into digital activity and better detect anomalies
+    + Prevention techniques to deter and deflect a range of known and unknown risks
+    + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
+    + Decisive incident response and remediation using a blend of automated technologies and human intervention
+    + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
+    + Risk and compliance capabilities to ensure industry and government regulations are followed
+  + SOC Job Roles
+    + When a cyberattack occurs, the SOC acts as the digital front line, responding to the security incident with force while also minimizing the impact on business operations.
+    + Common SOC roles include:
+      + SOC Manager: Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
+      + Security Analyst Tier 1 – Triage: Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
+      + Security Analyst Tier 2 – Incident Responder: Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
+      + Security Analyst Tier 3 – Threat Hunter: Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
+      + Security Architect: Designs the security system and its processes, and integrates various technological and human components
+      + Compliance Auditor: Oversees the organization’s adherence to internal and external rules and regulations
 
 - SOAR solutions - Security Orchestration, Automation & Response solutions <br>
   + It is a software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
