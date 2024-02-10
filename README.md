@@ -70,7 +70,7 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
     + Threat Intelligence Platforms (TIPs)
       + They are a key technology in threat detection and response. They collect, aggregate, and analyze data from a variety of sources to provide actionable intelligence about current and potential threats. TIPs can help organizations to understand the threat landscape, identify trends, and prioritize their security efforts.
         
-  + Some best practices for effective TDIR include:
+  + Some best practices for effective TDIR:
     1. Proactive threat hunting
        - Actively look for potential threats that could jeopardize your organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damage.
     2. Conduct regular security assessemnts
@@ -109,8 +109,21 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
     12. Forensic Capabilities
        - Maintain capabilities to conduct digital forensics, helping to understand the scope and impact of an incident and to prevent future occurrences.
     13. Network Segmentation
-       + Use network segmentation to limit the spread of threats and contain incidents.
-      
+       - Use network segmentation to limit the spread of threats and contain incidents.
+
+  + Some best practices for building an effective Cyber Incident Response Plan:
+    + Assign Roles and Responsibilities
+    + Centralize the Incident Response Process
+    + Identify Attack Scenarios
+    + Create High-Fidelity risk-based Alerts
+      + Having the most precise alerts possible (i.e., reducing as much as possible false positive) help the security team to focus on the heavy lifting of investigation.
+    + Define Reporting Requirements
+      + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
+      + Detected the incident
+      + Investigated the incident
+      + Contained and eradicated the attacker
+      + Recovered systems
+        
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
     + Common cyber threats including:
