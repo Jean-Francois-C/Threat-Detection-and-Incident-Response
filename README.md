@@ -113,6 +113,12 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
 
   + Some best practices for building an effective Cyber Incident Response Plan:
     + Define and assign clear Roles and Responsibilities
+      + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
+      + IT Team: assessing severity, investigating incident, containing attack, recovering impacted systems, tracking and documenting activities
+      + Human Resources: communicating with employees whose data has been impacted
+      + Marketing or Communications: communicating across social media and responding to media requests
+      + Senior Leadership: monitoring ongoing business impact and reviewing post-incident reports
+      + Customer Support: handling incoming support tickets and updating customers during the incident
     + Centralize the Incident Response Process
       + With a centralized log management solution, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
     + Identify Attack Scenarios and detection use cases
