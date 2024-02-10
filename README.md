@@ -12,8 +12,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
   
 - TDR / TDIR - Threat Detection & (Incident) Response <br>
-  + TDR refers to a collection of cybersecurity processes and solutions aiming at identifying, investigating, and responding to security threats.
-  + Threat Detection & Incident Response (TDIR) refers to the processes, tools, and strategies used to identify, monitor, and analyze cybersecurity threats in real-time, and to respond to security incidents when they occur. While Threat Detection focuses on identifying malicious activities or vulnerabilities within a system, Incident Response is concerned with managing and mitigating the impact of a security breach or attack once detected.
+  + Threat Detection & Incident Response (TDIR) refers to the processes, tools, and strategies used to identify, monitor, and analyze cybersecurity threats in real-time, and to respond to security incidents when they occur. While Threat Detection focuses on identifying malicious activities or vulnerabilities within a system or a network, Incident Response is concerned with managing and mitigating the impact of a security breach or attack once detected.
   + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
  
@@ -25,9 +24,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
       + ransomware
       + crypto mining malware
       + distributed-denial-of-service (DDoS) attacks
-    + Zero-day threats are new threats that nobody has seen before. They result from the arms race between IT organizations and cyber attackers. Because they are brand new, zero-day threats are unpredictable and difficult to prepare for.
-    + Advanced persistent threats (APT) which are attack campaigns where attackers establish a presence on a network to gain access and remain undetected over a long period of time. They intentionally attack specific high-value targets. They take time to study their target and conduct a specialized attack that is more likely to succeed.
-    + APTs are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems.
+    + Advanced persistent threats (APT) which are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems. They intentionally attack specific high-value targets.
 
 - Threat Actors
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
@@ -131,8 +128,7 @@ In addition, the cybersecurity threat landscape is rapidly evolving, and organiz
     + Customer Support: handling incoming support tickets and updating customers during the incident
 + Centralize the Incident Response Process
   + By using SIEM and SOAR solutions, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
-+ Identify relevant Attack Scenarios and define and implement SOC detection use cases 
-+ Create High-Fidelity risk-based Alerts
++ Identify attack scenarios, define relevant detection use cases and create high-fidelity risk-based alerts
   + Security operations centers (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. Threat detection tools must generate high-quality alerts with low false-positive rates to ensure that security teams are able to focus on real threats to the enterprise
 + Define Reporting Requirements
   + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
