@@ -24,7 +24,7 @@
     5. Recovery and Learning
        + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
        + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
-  + TDR process
+  + Best Practices for effective TDIR
     1. Proactive threat hunting
     2. Conduct regular security assessments (i.e, vulnerability assessments, penetration testing, red team exercices)
     3. Define and implement a comprehensive incident response plan
