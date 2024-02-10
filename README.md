@@ -72,27 +72,25 @@ Nowadays in our interconnected world, companies are more exposed than ever to a 
        - Having a comprehensive incident response plan in place can significantly reduce the time it takes to respond to a security incident, minimizing the damage and disruption it can cause. It can also help to ensure that all team members know what to do in the event of an attack, boosting the organization’s overall security posture.
     5. Determine a clear escalation path
        - Establishing a clear escalation path is crucial for efficient threat response. When a potential threat is detected, the relevant information should be quickly escalated to the right personnel or team for further analysis and remediation.
-       - The escalation path may vary depending on the severity of the threat, its potential impact, and the skills required to handle it.
-       - Some types of threat, if they are high-level in terms of potential impact for media or external awareness, should have an executive sponsor or contact for informing at speed.
+       - The escalation path may vary depending on the severity of the threat, its potential impact, and the skills required to handle it. Some types of threat, if they are high-level in terms of potential impact for media or external awareness, should have an executive sponsor or contact for informing at speed.
        - A clear and well-documented escalation and communication path can speed up the response process and ensure threats are handled by the appropriate expertise.
-    7. Implement continuous monitoring
+    6. Implement continuous monitoring
         - Implement tools and solutions that provide real-time monitoring of networks, systems, and applications.
         - Continuous monitoring is crucial for effective threat detection and response. Organizations should monitor their systems and networks 24/7, using tools like SIEM and EDR to detect suspicious activities as soon as they occur.
-    8. Automate threat detection
-    9. Automate threat response
+    7. Automate threat detection
+    8. Automate threat response
        - Automating threat response can help organizations quickly and effectively neutralize threats. This can involve using automated scripts to block malicious IP addresses, isolate affected systems, or execute other predefined response actions. Automation can also extend to the remediation process, such as automatically patching known vulnerabilities.
        - Advanced tools such as next-generation SIEM, and XDR systems can integrate with other security systems like security orchestration, automation, and response (SOAR) to automatically react to threats and anomalies they identify. 
-    11. Educate employees on cybersecurity to reduce human error and promote security awareness
-    12. Regular TDIR Training
-        - Conduct training sessions for staff on the latest threats and response procedures to ensure everyone is prepared
-    13. Threat Intelligence Integration
-       - Leverage threat intelligence feeds to stay updated on the latest threat vectors and indicators of compromise
+    9. Educate employees on cybersecurity to reduce human error and promote security awareness
+    10. Regular TDIR Training
+        - Conduct training sessions for staff on the latest threats and response procedures to ensure everyone is prepared.
+    11. Threat Intelligence Integration
+       - Leverage threat intelligence feeds to stay updated on the latest threat vectors and indicators of compromise.
     12. Forensic Capabilities
        - Maintain capabilities to conduct digital forensics, helping to understand the scope and impact of an incident and to prevent future occurrences.
     13. Network Segmentation
        + Use network segmentation to limit the spread of threats and contain incidents.
       
-  
 - Examples of Cyber Threats
   + Cyber threats can be separated into 2 categories:
     + Common cyber threats including:
