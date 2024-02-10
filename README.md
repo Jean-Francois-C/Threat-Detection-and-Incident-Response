@@ -44,7 +44,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 - Threat Intelligencee
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
   + Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets.
-  + Gathering actionable intelligence can eb done from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
+  + Gathering actionable intelligence can be done from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools.
 
 - CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
   + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
