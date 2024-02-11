@@ -42,7 +42,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
  
 - Cyber Threats
   + The world of cybersecurity is constantly evolving, with new threats emerging every day. Understanding the different types of threats that exist is crucial for security teams to effectively protect their organizations.
-  + Cyber threats can be separated into several categories:
+  + Cyber threats can be separated into 2 main categories:
     + Common cyber threats including: data leakage, ransomware, crypto mining malware, distributed-denial-of-service (DDoS) attacks, etc.
     + Advanced persistent threats (APT) which are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems. They intentionally attack specific high-value targets.
 
