@@ -387,19 +387,22 @@ to expansion and one or more command and control phases, until the target is ide
 + The 7 "Kill Chain" phases
   + The intrusion kill chain breaks intrusions down into distinct phases, which are defined quite well in the Lockheed Martin paper:
 ```
-➤ Phase 1 - Reconnaissance 
+➤ Phase 1 - Reconnaissance
+  ------------------------
   + The reconnaissance phase of a cyberattack is focused on learning as much as possible about the target.  
     This can include the use of open-source intelligence (websites, social media, etc.) and active investigation of the target environment.  
   + Research, identification and selection of targets, often represented as crawling Internet websites such as conference proceedings and mailing lists
     for email addresses, social relationships, or information on specific technologies. 
     
 ➤ Phase 2 - Weaponization
+  -----------------------
   + The goal of the reconnaissance phase is to discover a potential attack vector, and weaponization is intended to develop a method of exploiting a 
     discovered weakness. This may include development of custom malware, crafting a phishing email, etc.
   + Coupling a remote access trojan with an exploit into a deliverable payload, typically by means of an automated tool (weaponizer). 
     Increasingly, client application data files such as Adobe Portable Document Format (PDF) or Microsoft Office documents serve as the weaponized deliverable. 
 
 ➤ Phase 3 - Delivery
+  ------------------
   + Transmission of the weapon to the targeted environment. 
     The three most prevalent delivery vectors for weaponized payloads by APT actors, as observed by the Lockheed Martin Computer Incident Response Team (LM-CIRT)
     for the years 2004-2010, are email attachments (phishing), websites, and USB removable media. 
@@ -407,17 +410,20 @@ to expansion and one or more command and control phases, until the target is ide
     a complicated process of getting the right person at the right place at the right time.  
     
 ➤ Phase 4 - Exploitation
+  ----------------------
   + The exploitation phase is when the attacker takes advantage of the discovered weakness to gain access to the target environment.  
     This may involve exploiting a vulnerability in a webserver, a user enabling macros on a malicious document, etc.
   + After the weapon is delivered to victim host, exploitation triggers intruders’ code. Most often, exploitation targets an application or operating system
     vulnerability, but it could also more simply exploit the users themselves or leverage an operating system feature that auto-executes code.
 
-➤ Phase 5 - Installation 
+➤ Phase 5 - Installation
+  ----------------------
   + Installation of a remote access trojan or backdoor on the victim system allows the adversary to maintain persistence inside the environment.
   + One of the goals of a cyberattack is to gain a foothold on the target network. Once the identified vulnerability has been exploited, 
     an attacker should be able to install and execute malware on the target system.
   
 ➤ Phase 6 - Command and Control (C2)
+  ----------------------------------
   + Typically, compromised hosts must beacon outbound to an Internet controller server to establish a C2 channel. 
     APT malware especially requires manual interaction rather than conduct activity automatically. 
     Once the C2 channel establishes, intruders have “hands on the keyboard” access inside the target environment.
@@ -425,6 +431,7 @@ to expansion and one or more command and control phases, until the target is ide
     Establishing a channel for these communications is the next stage in the process.  
   
 ➤ Phase 7 - Actions on Objectives
+  -------------------------------
   + Only now, after progressing through the first six phases, can intruders take actions to achieve their original objectives. 
     Typically, this objective is data exfiltration which involves collecting, encrypting and extracting information from the victim environment; 
     violations of data integrity or availability are potential objectives as well. 
@@ -432,29 +439,6 @@ to expansion and one or more command and control phases, until the target is ide
     and move laterally inside the network.
 ```
 
-+ What are the differences between the Cyber Kill Chain Model and the MITRE ATT&CK Framework?
-```
-The MITRE ATT&CK Framework and the Cyber Kill Chain are both designed to describe how an adversary could carry out a cyberattack.  
-However, the two tools differ in several ways:
-
-➤ Depth: 
-  + The Cyber Kill Chain is designed to outline the stages of the cyberattack lifecycle.  
-  + MITRE ATT&CK’s Tactics loosely map to these stages, but MITRE ATT&CK goes deeper to describe the methods by which an attacker could
-    meet the goals of a particular stage.
-
-➤ Coverage: 
-  + The Cyber Kill Chain maps the complete lifecycle of a cyberattack.  
-  + MITRE ATT&CK breaks this into multiple matrices (i.e. PRE-ATT&CK and Enterprise).
-  
-➤ Stages: 
-  + The Cyber Kill Chain outlines seven stages of a cyberattack.
-  + MITRE ATT&CK’s Enterprise matrix alone includes fourteen Tactics that fit into the last five stages of the Cyber Kill Chain.
-  
-➤  Ordering: 
-  + The Cyber Kill Chain has a defined order, where adversaries are expected to move linearly from one phase to another.  
-  + The MITRE ATT&CK Framework is deliberately unordered to acknowledge that an adversary may move through Tactics out of order, skip
-    some Tactics, and revisit some Tactics multiple times throughout the course of an attack.
-```
 --------
 #### VII. TDIR Tools
 
