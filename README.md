@@ -22,7 +22,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 + NIST Publication - [Guide for Cybersecurity Event Recovery](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-184.pdf)
 + ISO/IEC 27035 (2020-2023+) - [Information Security Incident Management](https://www.iso27001security.com/html/27035.html)
 + MITRE - [ATT&CK® Framework](https://attack.mitre.org) - Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
-+ MITRE - [Enterprise Attack Excel matrix](https://attack.mitre.org/docs/enterprise-attack-v14.1/enterprise-attack-v14.1.xlsx)
++ MITRE - [Enterprise Attack Excel matrix](https://attack.mitre.org/docs/enterprise-attack-v14.1/enterprise-attack-v14.1.xlsx) - This matrix covers the stages of a cyberattack lifecycle that occur after an exploit is initiated.
 + ANSSI (French)  - [Anticiper et gérer une crise Cyber](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
 + ANSSI (French)  - [Organiser un exercice de gestion de crise cyber (Guide - v1.0)](https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber)
 + ANSSI (French)  - Piloter la remédiation d’un incident cyber - [Volet stratégique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf) - [Volet opérationnel](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf) - [Volet technique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf)
@@ -139,7 +139,7 @@ typically by improving the preventive controls or other risk treatments.
 
 #### PROCESS / METHODOLOGY
 
-#### Step 1. Preparation 
+#### STEP 1. Preparation 
 
 + Define and assign clear Roles and Responsibilities
   + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
@@ -186,32 +186,32 @@ typically by improving the preventive controls or other risk treatments.
 5. Save Costs            - Preventing or swiftly addressing incidents can reduce the financial impact of data breaches.
 ```
 
-#### Step 3. Incident Detection
+#### STEP 3. Incident Detection
 
 + The third step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation.
 + The main objectives are to:
   + detect threat actors' tactics, techniques, and procedures at the earliest stages of execution
   + trace the malicious activities to identify compromised assets and identify the malicious actor
 
-#### Step 4. Incident Investigation (Threat Analysis and Prioritization)
+#### STEP 4. Incident Investigation (Threat Analysis and Prioritization)
 
 + The fourth step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
 + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory.
 + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
   
-#### Step 5. Incident Response (Containment)
+#### STEP 5. Incident Response (Containment)
 + The goal of the fifth step is to contain and mitigate the damages that have already been caused.
 + The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
 + A cyber incident response plan outlines the processes that the organization’s cybersecurity incident response team (CSIRT) follows once it detects an attack or data breach. 
 
-#### Step 5. Remediation
+#### STEP 5. Remediation
 + Remediation involves identifying the incident’s root cause and repairing any damage caused by the threat.
 + This could involve tasks like rotating passwords, patching vulnerabilities, hardening systems, recovering lost data, or reinstalling compromised software and systems.
   
-#### Step 6. Recovery
+#### STEP 6. Recovery
 + Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
 
-#### Step 7. Lessons Learned
+#### STEP 7. Lessons Learned
 + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
 
 
@@ -263,14 +263,26 @@ typically by improving the preventive controls or other risk treatments.
 --------
 #### V. SOC - Security Operation Center 
 
+#### DEFINITION
+
   + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
+
   + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
+  
   + A SOC is related to the people, processes and technologies that provide situational awareness through the detection, containment, and remediation of IT threats in order to manage and enhance an organization's security posture.
+  
   + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
+  
   + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
+  
   + In large organizations, SOCs rely on numerous tools to track and respond to cyberthreats.
+  
   + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
+  
   + With multi-vector attacks, it is no surprise that SOC is becoming an increasingly important part of organizations’ efforts to keep ahead of the latest cybersecurity threats.
+
+#### SOC Activities, Roles and Responsabilities
+
   + SOC activities and responsibilities include:
     + Network monitoring to provide complete visibility into digital activity and better detect anomalies
     + Prevention techniques to deter and deflect a range of known and unknown risks
@@ -278,19 +290,28 @@ typically by improving the preventive controls or other risk treatments.
     + Decisive incident response and remediation using a blend of automated technologies and human intervention
     + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
     + Risk and compliance capabilities to ensure industry and government regulations are followed
+      
   + SOC Job Roles
     + When a cyberattack occurs, the SOC acts as the digital front line, responding to the security incident with force while also minimizing the impact on business operations.
     + Common SOC roles include:
       + SOC Manager: Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
+      + Director of incident response (IR): Responsible for managing incidents as they occur, and communicating security requirements to the organization in the case of a significant data breach.
       + Security Analyst Tier 1 – Triage: Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
       + Security Analyst Tier 2 – Incident Responder: Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
       + Security Analyst Tier 3 – Threat Hunter: Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
       + Security Architect: Designs the security system and its processes, and integrates various technological and human components
+      + Security engineer/architect: Maintains and suggests monitoring and analysis tools. 
       + Compliance Auditor: Oversees the organization’s adherence to internal and external rules and regulations
+
     + SOC Challenges
       + Shortage of cybersecurity skills: Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
       + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
       + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
+
+#### Cyber Fusion Center (CFC)
++ Cyber Fusion Center (CFC) can be thought of as an advanced or next-generation SOC.
++ The CFC employs a proactive approach to identifying threats and defending against them in a unified and timely manner. It fosters collaboration among various teams within an organization to support cybersecurity. This improves threat intelligence gathering, shortens the time it takes to respond to and stop an attack and reduces overall damage to the organization. These teams can include Security Operations, CSIRT, Threat Intelligence team, IT Operations, Fraud/Legal, and so on.
+
 
 
 --------
