@@ -456,11 +456,16 @@ to expansion and one or more command and control phases, until the target is ide
   + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
   + GitHub - [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) - DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
- 
+
++ On-line Malware analysis platform & sandbox
+
+  + [Joe Sandbox (Community)](https://www.joesandbox.com) - Joe Sandbox detects and analyzes potential malicious files and URLs on Windows, Android, Mac OS, Linux, and iOS for suspicious activities; providing comprehensive and detailed analysis reports.
+  + GitHub - [Saferwall Malware Analysis Platform](https://github.com/saferwall/saferwall) - Collaborative Malware Analysis Platform at Scale. It allows you to analyze, triage and classify threats in just minutes.
+  + [ScanHolistic Malware Analysis Platform](https://app.threat.zone/scanHolistic) - Malware Analysis Platform (Interactive Sandbox | Static Analyzer | Emulation)
+    
 + Malware analysis & Digital Forensics
   + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
   + GitHub - [Mandiant CAPA](https://github.com/mandiant/capa) - Capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, shellcode file, or a sandbox report and it tells you what it thinks the program can do. 
-  + GitHub - [Saferwall](https://github.com/saferwall/saferwall) - Collaborative Malware Analysis Platform at Scale. It allows you to analyze, triage and classify threats in just minutes.
   + GitHub - [PE-BEAR](https://github.com/hasherezade/pe-bear) - Portable Executable (PE) reversing tool with a friendly GUI which deliver fast and flexible “first view” for malware analyst.
   + GitHub - [PE-SIEVE](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches)
   + GitHub - [System informer](https://github.com/winsiderss/systeminformer) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
@@ -469,3 +474,4 @@ to expansion and one or more command and control phases, until the target is ide
   + GitHub - [CyberChef Recipes](https://github.com/mattnotmax/cyberchef-recipes) - A list of cyber-chef recipes and curated links.
   + GitHub - [De4dot](https://github.com/de4dot/de4dot) - It is an open source .NET deobfuscator and unpacker that will try its best to restore a packed and obfuscated assembly to almost the original assembly.
   + GitHub - [Themida Unpacker for .NET](https://github.com/cg10036/Themida-Unpacker-for-.NET) - Tool developed to quickly and easily unpack packed .NET files.
+
