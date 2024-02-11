@@ -442,3 +442,22 @@ to expansion and one or more command and control phases, until the target is ide
 --------
 #### VII. TDIR Tools
 
+
++ SIEM / XDR
+  + GitHub - [Wazuh](https://github.com/wazuh/wazuh) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads.
+
++ EDR
+  + GitHub - [EDR Telemetry]([https://github.com/ComodoSecurity/openedr](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
+  + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) - Open EDR public repository.
+  + GitHub - [Sysmon EDR](https://github.com/ion-storm/sysmon-edr) - Sysmon EDR POC Build within Powershell to prove ability.
+  + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
+
++ Threat Hunting / Logs search
+  + GitHub - [chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
+ 
++ Malware analysis
+  + GitHub - [Saferwall](https://github.com/saferwall/saferwall) - Collaborative Malware Analysis Platform at Scale. It allows you to analyze, triage and classify threats in just minutes.
+  + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
+  + GitHub - [Mandiant CAPA](https://github.com/mandiant/capa) - Capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, shellcode file, or a sandbox report and it tells you what it thinks the program can do. 
+
+  + GitHub - [Systeminformer](https://github.com/winsiderss/systeminformer) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware. 
