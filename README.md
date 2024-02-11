@@ -457,13 +457,13 @@ to expansion and one or more command and control phases, until the target is ide
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
   + GitHub - [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) - DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
 
-+ On-line Malware analysis platform & sandbox
-
-  + [Joe Sandbox (Community)](https://www.joesandbox.com) - Joe Sandbox detects and analyzes potential malicious files and URLs on Windows, Android, Mac OS, Linux, and iOS for suspicious activities; providing comprehensive and detailed analysis reports.
-  + GitHub - [Saferwall Malware Analysis Platform](https://github.com/saferwall/saferwall) - Collaborative Malware Analysis Platform at Scale. It allows you to analyze, triage and classify threats in just minutes.
-  + [ScanHolistic Malware Analysis Platform](https://app.threat.zone/scanHolistic) - Malware Analysis Platform (Interactive Sandbox | Static Analyzer | Emulation)
++ On-line Malware analysis platform & sandbox (Free/Community) 
+  + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
+  + [Joe Sandbox (Community)](https://www.joesandbox.com) - Analyzes potential malicious files & URLs on Windows/MacOS/Linux/Android/iOS providing comprehensive and detailed analysis reports.
+  + GitHub - [Saferwall Malware Analysis Platform](https://github.com/saferwall/saferwall) - Allow you to analyze, triage and classify threats in just minutes.
+  + [ScanHolistic Malware Analysis Platform](https://app.threat.zone/scanHolistic) - Interactive Sandbox, Static Analyzer, Emulation.
     
-+ Malware analysis & Digital Forensics
++ Malware analysis (Open-Source command-line tools)
   + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
   + GitHub - [Mandiant CAPA](https://github.com/mandiant/capa) - Capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, shellcode file, or a sandbox report and it tells you what it thinks the program can do. 
   + GitHub - [PE-BEAR](https://github.com/hasherezade/pe-bear) - Portable Executable (PE) reversing tool with a friendly GUI which deliver fast and flexible “first view” for malware analyst.
