@@ -51,7 +51,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + Motivations for Threat Actors range from hacktivism to cyber espionage and financial gain:
     + Cybercriminals usually seeks monetary gain by retrieving/stealing data that they can sell to a 3rd party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
     + Insider threats may be selling information to competitors or comitting frauds. If they have a grudge against their company, they could attempt to compromise the network in retaliation. 
-    + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
+    + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counter-intelligence but may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
     + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs while terrorists aim to spread mayhem and fear to accomplish their goals.
 
 - Threat Intelligencee
