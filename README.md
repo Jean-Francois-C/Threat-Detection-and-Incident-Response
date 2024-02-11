@@ -79,7 +79,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + XDR integrate multiple security products into a cohesive security incident detection and response platform.
 
 + IDS/IPS - Intrusion Detection and Prevention Systems
-  + Intrusion detection and prevention systems are critical components of a robust threat detection and response strategy. They monitor network traffic for suspicious activities and policy violations. Intrusion detection systems (IDS) analyze network traffic to detect potential threats and alert security teams, while intrusion prevention systems (IPS) go a step further by sending a signal to firewalls/proxies to automatically block or mitigate detected threats.
+  + Intrusion detection and prevention systems are critical components of a robust threat detection and response strategy. They monitor network traffic for suspicious activities and policy violations. Intrusion detection systems (IDS) analyze network traffic to detect potential threats and alert security teams, while intrusion prevention systems (IPS) can go a step further by automatically blocking or mitigating detected threats.
 
 + NGFW - Next Generation Firewall
   + NGFWs are sophisticated versions of traditional firewalls, equipped with advanced features like deep packet inspection, intrusion prevention systems, some anti virus hash matching, and the ability to incorporate external threat intelligence. 
