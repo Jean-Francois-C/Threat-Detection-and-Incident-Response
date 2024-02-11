@@ -1,5 +1,5 @@
 ## Threat Detection and Incident Response (TDIR)
-> Technical notes, methodologies, list of tools and scripts regarding the 'Threat Detection &amp; Incident Response' topic
+> Technical notes, methodologies, list of tools and scripts related to the 'Threat Detection &amp; Incident Response' topic
 
 #### Context
 Nowadays companies are more exposed than ever to a vast array of cyber threats. From ransomware to crypto-mining malware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
