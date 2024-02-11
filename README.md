@@ -1,14 +1,10 @@
 ## Threat Detection and Incident Response (TDIR)
 > Collection of notes, useful resources, list of tools and scripts related to Threat Detection & Incident Response.
 
-#### Context
-Nowadays companies are more exposed than ever to a vast array of cyber threats. From ransomware to crypto-mining malware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
-
-#### Table of Contents
+### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
-+ I. Useful resources (ENISA, NIST, ANSSI, etc.)
-+ II. TDIR Tools (Free/Community/Open-Source) 
-+ III. MITRE ATTACK Framework 
+- [II. TDIR Tools (Free/Community/Open-Source)](#II-TDIR-Tools-(Free/Community/Open-Source))
+- [III. MITRE ATTACK Framework ](#III-MITRE-ATTACK-Framework)
 + IV. The Cyber Attack Kill Chain Modem & Defense
 + V. Threat Detection & Incident Response (TDIR) Methodology
 + VI. Security Operation Center (SOC)
@@ -208,6 +204,8 @@ to expansion and one or more command and control phases, until the target is ide
 ### V. Threat Detection & Incident Response (TDIR)
 
 #### PROCESS / METHODOLOGY
+
+> Nowadays companies are more exposed than ever to a vast array of cyber threats. From ransomware to crypto-mining malware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
 
 #### STEP 1. Preparation 
 + Define and assign clear Roles and Responsibilities
