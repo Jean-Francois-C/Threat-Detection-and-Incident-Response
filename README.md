@@ -36,7 +36,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 + Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
 + AWS - [AWS Incident Response Playbook Samples](https://github.com/aws-samples/aws-incident-response-playbooks)
 + AWS - [AWS Customer Playbook Framework](https://github.com/aws-samples/aws-customer-playbook-framework) - This repository provides sample templates for security playbooks against various scenarios when using Amazon Web Services.
-
++ [Digital Forensics Discord Server](https://discord.com/servers/digital-forensics-427876741990711298) - This is a server for DFIR Professionals by DFIR Professionals. Community of 12,900+ working professionals from Law Enforcement, Private Sector, Students and Forensic Vendors. 
 
 
 
@@ -442,10 +442,11 @@ to expansion and one or more command and control phases, until the target is ide
 --------
 #### VII. Threat Detection & Incident Response Tools (Free/Community/Open-Source) 
 
-+ Threat Hunting / Logs search (Free/Community/Open-Source) 
++ Threat Hunting / Logs search / Incident Response (Free/Community/Open-Source) 
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
   + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
   + GitHub - [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) - DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
+  + GitHub - [GRR Rapid Response](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response (https://grr-doc.readthedocs.io/en/latest/).
 
 + On-line Malware Analysis Platform & Sandbox (Free/Community) 
   + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
@@ -482,7 +483,7 @@ to expansion and one or more command and control phases, until the target is ide
     + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
 
 + Adversary Emulation
-  + GitHub - [APTSimulator](https://github.com/NextronSystems/APTSimulator) - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.
   + GitHub - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) - Atomic Red Team™ is a library of tests mapped to the MITRE ATT&CK® framework. Security teams can use Atomic Red Team to quickly, portably, and reproducibly test their environments.
-  + GitHub - [Atomic Red Team (PowerShell)](https://github.com/redcanaryco/invoke-atomicredteam) - Invoke-AtomicRedTeam is a PowerShell module to execute tests as defined in the atomics folder of Red Canary's Atomic Red Team project. 
-  + GitHub - [AutoTTP]( - Automated Tactics Techniques & Procedures. Re-running complex sequences manually for regression tests, product evaluations, generate data for researchers.
+  + GitHub - [Atomic Red Team (PowerShell)](https://github.com/redcanaryco/invoke-atomicredteam) - Invoke-AtomicRedTeam is a PowerShell module to execute tests as defined in the atomics folder of Red Canary's Atomic Red Team project.
+  + GitHub - [MITRE Caldera™](https://github.com/mitre/caldera) - A cyber security platform designed to easily automate adversary emulation, assist manual red-teams, and automate incident response (built on the MITRE ATT&CK™ framework).
+  + GitHub - [APTSimulator](https://github.com/NextronSystems/APTSimulator) - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.
