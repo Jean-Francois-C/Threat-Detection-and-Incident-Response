@@ -4,12 +4,12 @@
 ### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
 - [II. TDIR Tools (Free/Community/Open-Source)](#II-TDIR-Tools-(Free/Community/Open-Source))
-- [III. MITRE ATTACK Framework ](#III-MITRE-ATTACK-Framework)
-+ IV. The Cyber Attack Kill Chain Modem & Defense
-+ V. Threat Detection & Incident Response (TDIR) Methodology
-+ VI. Security Operation Center (SOC)
-+ VII. ISO/IEC 27035 — Information security incident management  
-+ VIII. Glossary of TDIR and DFIR terms and definitions
+- [III. MITRE ATTACK Framework](#III-MITRE-ATTACK-Framework)
+- [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model---Defense)
+- [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection---Incident-Response-(TDIR))
+- [VI. Security Operation Center (SOC)](#VI-Security-Operation-Center-(SOC))
+- [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISO/IEC-27035---Information-security-incident-management)
+- [VIII. Glossary of TDIR and DFIR terms and definitions](#VIII-Glossary-of-TDIR-and-DFIR-terms-and-definitions)
 
 --------
 #### I. USEFUL RESOURCES
@@ -36,7 +36,7 @@
 + [Digital Forensics Discord Server](https://discord.com/servers/digital-forensics-427876741990711298) - This is a server for DFIR Professionals by DFIR Professionals. Community of 12,900+ working professionals from Law Enforcement, Private Sector, Students and Forensic Vendors. 
 
 --------
-#### II. TDIR TOOLS (Free/Community/Open-Source) 
+#### II. TDIR TOOLS (Free/Community/Open-Source)
 
 + Threat Hunting / Logs search / Incident Response
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
@@ -87,7 +87,7 @@
   + GitHub - [APTSimulator](https://github.com/NextronSystems/APTSimulator) - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.
 
 --------
-#### III. MITRE ATTACK Framework	
+#### III. MITRE ATTACK Framework
 
 + MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 
   It documents common tactics, techniques, and procedures (TTPs) that advanced persistent threats use against Windows enterprise networks.
@@ -127,7 +127,7 @@ There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/ente
 
 
 --------
-#### IV. The CYBER ATTACK KILL CHAIN MODEL & DEFENSE	
+#### IV. The Cyber Attack Kill Chain Model & Defense
 
 + Definition and Goals
   + The “Kill Chain” is a traditional warfare term most often used by the US Air Force in defining the command and control process for targeting 
