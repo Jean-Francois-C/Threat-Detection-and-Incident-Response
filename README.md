@@ -39,7 +39,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   
 - TDR / TDIR - Threat Detection & (Incident) Response <br>
   + Threat Detection & Incident Response (TDIR) refers to the processes, tools, and strategies used to identify, monitor, and analyze cybersecurity threats in real-time, and to respond to security incidents when they occur. While Threat Detection focuses on identifying malicious activities or vulnerabilities within a system or a network, Incident Response is concerned with managing and mitigating the impact of a security breach or attack once detected.
-  + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors (e.g., external hackers, malicious users), abnormal activities, malicious behaviors and anything that could compromise a network. Threat detection is built on threat intelligence, which involves tools that are strategic, tactical and operational.
+  + Threat detection is the process of analyzing a security ecosystem at the holistic level to find threat actors, abnormal activities, malicious behaviors and anything that could compromise a network.
   + Threat response consists of the mitigation efforts used to neutralize and prevent cyber threats before they create damages.
  
 - Cyber Threats
@@ -52,7 +52,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
   + Motivations for Threat Actors range from hacktivism to cyber espionage and financial gain:
     + Cybercriminals usually seeks monetary gain by retrieving/stealing data that they can sell to a 3rd party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
-    + Insider threats may be following the lead of other cybercriminals by selling information to competitors. They may also be more personally motivated; if they have a grudge against their company or boss, they could attempt to compromise the network in retaliation. Finally, insider threats who plan to start a competing business may steal data to give themselves an edge.
+    + Insider threats may be selling information to competitors. They may also be more personally motivated; if they have a grudge against their company, they could attempt to compromise the network in retaliation. Finally, insider threats who plan to start a competing business may steal data to give themselves an edge.
     + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
     + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs, usually rooted in a social or political issue. Terrorists, on the other hand, aim to spread mayhem and fear to accomplish their goals.
 
