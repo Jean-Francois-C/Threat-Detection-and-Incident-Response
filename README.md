@@ -446,6 +446,8 @@ to expansion and one or more command and control phases, until the target is ide
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
   + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
   + GitHub - [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) - DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
+  + GitHub - [FastFinder](https://github.com/codeyourweb/fastfinder) - A lightweight tool made for threat hunting, live forensics and triage on both Windows and Linux Platforms.
+  + GitHub - [APT-Hunter](https://github.com/ahmedkhlief/APT-Hunter) - Threat Hunting tool for windows event logs (made with a purple team mindset) to detect APT movements hidden in the sea of windows event logs and to reduce the time to uncover suspicious activity.
   + GitHub - [GRR Rapid Response](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response (https://grr-doc.readthedocs.io/en/latest/).
 
 + On-line Malware Analysis Platform & Sandbox (Free/Community) 
