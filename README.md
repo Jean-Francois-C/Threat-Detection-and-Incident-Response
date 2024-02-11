@@ -440,30 +440,22 @@ to expansion and one or more command and control phases, until the target is ide
 ```
 
 --------
-#### VII. TDIR Tools
+#### VII. Threat Detection & Incident Response Tools (Free/Community/Open-Source) 
 
-
-+ SIEM / XDR
-  + GitHub - [Wazuh](https://github.com/wazuh/wazuh) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads.
-
-+ EDR
-  + GitHub - [EDR Telemetry](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
-  + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) - Open EDR public repository.
-  + GitHub - [Sysmon EDR](https://github.com/ion-storm/sysmon-edr) - Sysmon EDR POC Build within Powershell to prove ability.
-  + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
-
-+ Threat Hunting / Logs search
-  + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
++ Threat Hunting / Logs search (Free/Community/Open-Source) 
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
+  + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
   + GitHub - [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) - DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
 
-+ On-line Malware analysis platform & sandbox (Free/Community) 
++ On-line Malware Analysis Platform & Sandbox (Free/Community) 
   + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
   + [Joe Sandbox (Community)](https://www.joesandbox.com) - Analyzes potential malicious files & URLs on Windows/MacOS/Linux/Android/iOS providing comprehensive and detailed analysis reports.
-  + GitHub - [Saferwall Malware Analysis Platform](https://github.com/saferwall/saferwall) - Allow you to analyze, triage and classify threats in just minutes.
-  + [ScanHolistic Malware Analysis Platform](https://app.threat.zone/scanHolistic) - Interactive Sandbox, Static Analyzer, Emulation.
-    
-+ Malware analysis (Open-Source command-line tools)
+  + [ScanHolistic](https://app.threat.zone/scanHolistic) - Malware analysis platform (Interactive Sandbox, Static Analyzer, Emulation).
+  + [Metadefender](https://metadefender.opswat.com) - Malware analysis platform (Upload and scan your file for viruses with 38 anti-malware engines)
+  + GitHub - [Saferwall](https://github.com/saferwall/saferwall) -  Malware analysis platform allowing to analyze, triage and classify threats in just minutes.
+  + [Valkyrie Comodo](https://valkyrie.comodo.com) - Valkyrie conducts several analysis using run-time behavior and hundreds of features from a file and based on analysis results can warn users against malware undetected by classic Anti-Virus products.
+
++ Malware Analysis Command-line Tools (Free/Community/Open-Source) 
   + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
   + GitHub - [Mandiant CAPA](https://github.com/mandiant/capa) - Capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, shellcode file, or a sandbox report and it tells you what it thinks the program can do. 
   + GitHub - [PE-BEAR](https://github.com/hasherezade/pe-bear) - Portable Executable (PE) reversing tool with a friendly GUI which deliver fast and flexible “first view” for malware analyst.
@@ -475,3 +467,15 @@ to expansion and one or more command and control phases, until the target is ide
   + GitHub - [De4dot](https://github.com/de4dot/de4dot) - It is an open source .NET deobfuscator and unpacker that will try its best to restore a packed and obfuscated assembly to almost the original assembly.
   + GitHub - [Themida Unpacker for .NET](https://github.com/cg10036/Themida-Unpacker-for-.NET) - Tool developed to quickly and easily unpack packed .NET files.
 
++ SIEM / XDR (Free/Community/Open-Source) 
+  + GitHub - [Wazuh](https://github.com/wazuh/wazuh) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads.
+
++ Endpoint Detection and Response (EDR) (Free/Community/Open-Source)
+  + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) (www.comodo.com / info.comodo.com/open-source-edr/) - Free and Open-Source Endpoint Detection and Response (EDR) Platform.
+  + [Elastic Security for Endpoint](https://www.elastic.co/fr/downloads) - Start a trial or the community version
+  + [Elastic Detection Rules Explorer](https://elastic.github.io/detection-rules-explorer/) - Elastic Security detection rules help users to set up and get their detections and security monitoring going as soon as possible. 
+  + GitHub - [Elastic Detection Rules](https://github.com/elastic/detection-rules) - Rules for Elastic Security's detection engine.
+  + Other
+    + GitHub - [EDR Telemetry](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
+    + GitHub - [Sysmon EDR](https://github.com/ion-storm/sysmon-edr) - Sysmon EDR POC Build within Powershell to prove ability.
+    + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
