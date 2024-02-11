@@ -5,14 +5,14 @@
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
 - [II. TDIR Tools (Free/Community/Open-Source)](#II-TDIR-Tools-FreeCommunityOpen-Source)
 - [III. MITRE ATTACK Framework](#III-MITRE-ATTACK-Framework)
-- [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model---Defense)
-- [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection---Incident-Response-(TDIR))
+- [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model--Defense)
+- [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection--Incident-Response-(TDIR))
 - [VI. Security Operation Center (SOC)](#VI-SOC---Security-Operation-Center)
 - [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035--Information-security-incident-management)
 - [VIII. Glossary of TDIR and DFIR terms and definitions](#VIII-Glossary-of-TDIR-and-DFIR-terms-and-definitions)
 
 --------
-#### I. USEFUL RESOURCES
+### I. USEFUL RESOURCES
 + ENISA Publication  - [Good Practice Guide for Incident Management](https://www.enisa.europa.eu/publications/good-practice-guide-for-incident-management/@@download/fullReport)
 + ENISA Publication - [Cyber Crisis Communication Guide](https://www.enisa.europa.eu/topics/cybersecurity-education/2023-ar-in-a-box-material/cyber_crisis_comm_guide_03-online.pdf)
 + NIST Publication - [Digital Forensics & Incident Response framework dedicated to Operational Technology](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf)
@@ -36,7 +36,7 @@
 + [Digital Forensics Discord Server](https://discord.com/servers/digital-forensics-427876741990711298) - This is a server for DFIR Professionals by DFIR Professionals. Community of 12,900+ working professionals from Law Enforcement, Private Sector, Students and Forensic Vendors. 
 
 --------
-#### II. TDIR TOOLS (Free/Community/Open-Source)
+### II. TDIR TOOLS (Free/Community/Open-Source)
 
 + Threat Hunting / Logs search / Incident Response
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
@@ -87,7 +87,7 @@
   + GitHub - [APTSimulator](https://github.com/NextronSystems/APTSimulator) - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.
 
 --------
-#### III. MITRE ATTACK Framework
+### III. MITRE ATTACK Framework
 
 + MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 
   It documents common tactics, techniques, and procedures (TTPs) that advanced persistent threats use against Windows enterprise networks.
@@ -127,7 +127,7 @@ There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/ente
 
 
 --------
-#### IV. The Cyber Attack Kill Chain Model & Defense
+### IV. The Cyber Attack Kill Chain Model & Defense
 
 + Definition and Goals
   + The “Kill Chain” is a traditional warfare term most often used by the US Air Force in defining the command and control process for targeting 
@@ -201,7 +201,7 @@ to expansion and one or more command and control phases, until the target is ide
 ```
 
 --------
-### V. Threat Detection & Incident Response (TDIR)
+###  V. Threat Detection & Incident Response (TDIR)
 
 #### PROCESS / METHODOLOGY
 
