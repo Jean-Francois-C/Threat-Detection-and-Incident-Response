@@ -326,17 +326,15 @@ typically by improving the preventive controls or other risk treatments.
   in government, and in the cybersecurity product and service community.
 
 + Tactics, Techniques, and Procedures (TTPs) 
-```
-➤ TACTICS represent the “why” of an ATT&CK technique or sub-technique. 
-  It is the adversary’s tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access.
+  + TACTICS represent the “why” of an ATT&CK technique or sub-technique. 
+    It is the adversary’s tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access.
   
-➤ TECHNIQUES represent “how” an adversary achieves a tactical goal by performing an action. 
-  For example, an adversary may dump credentials to achieve credential access.
+  + TECHNIQUES represent “how” an adversary achieves a tactical goal by performing an action. 
+    For example, an adversary may dump credentials to achieve credential access.
   
-➤ PROCEDURES are the specific implementation the adversary uses for techniques or sub-techniques. 
-  For example, a procedure could be an adversary using PowerShell to inject into lsass.exe to dump credentials by scraping LSASS memory on a victim.
-  Procedures are categorized in ATT&CK as the observed in the wild use of techniques in the "Procedure Examples" section of technique pages.
-```
+  + PROCEDURES are the specific implementation the adversary uses for techniques or sub-techniques. 
+    For example, a procedure could be an adversary using PowerShell to inject into lsass.exe to dump credentials by scraping LSASS memory on a victim.
+    Procedures are categorized in ATT&CK as the observed in the wild use of techniques in the "Procedure Examples" section of technique pages.
 
 There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/enterprise/)
 
