@@ -5,14 +5,15 @@
 Nowadays companies are more exposed than ever to a vast array of cyber threats. From ransomware to crypto-mining malware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
 
 #### Table of Contents
+- [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
 + I. Useful resources (ENISA, NIST, ANSSI, etc.)
 + II. TDIR Tools (Free/Community/Open-Source) 
 + III. MITRE ATTACK Framework 
 + IV. The Cyber Attack Kill Chain Modem & Defense
-+ V. Threat Detection & Incident Response Methodology (TDIR)
++ V. Threat Detection & Incident Response (TDIR) Methodology
 + VI. Security Operation Center (SOC)
 + VII. ISO/IEC 27035 — Information security incident management  
-+ VIII. Glossary
++ VIII. Glossary of TDIR and DFIR terms and definitions
 
 --------
 #### I. USEFUL RESOURCES
@@ -397,7 +398,7 @@ typically by improving the preventive controls or other risk treatments.
 + Step 5 - Learn and document key takeaways from every incident (more than simply identifying the things that might have been done better, this stage involves actually making changes that improve the processes)
 
 --------
-#### VIII. GLOSSARY
+#### VIII. Glossary of TDIR and DFIR terms and definitions
 
 - DFIR - Digital Forensics & Incident Response <br>
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
