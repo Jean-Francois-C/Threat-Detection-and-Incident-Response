@@ -69,6 +69,10 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + A security operations center is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts and IT engineers who use a variety of tools and techniques to detect, analyze, and respond to security threats. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
   + The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
 
++ CFC - Cyber Fusion Center
+  + A Cyber Fusion Center (CFC) can be thought of as an advanced or next-generation SOC.
+  + The CFC employs a proactive approach to identifying threats and defending against them in a unified and timely manner. It fosters collaboration among various teams within an organization to support cybersecurity. This improves threat intelligence gathering, shortens the time it takes to respond to and stop an attack and reduces overall damage to the organization. These teams can include Security Operations, CSIRT, Threat Intelligence team, IT Operations, Fraud/Legal, and so on.
+
 + SOC Use Cases
   + SOC use cases are security incident detection rules applied to logs that trigger alerts. For each use case there should be a playbook or instructions on how to respond to them (i.e. steps to analyse and mitigate).
   + SOC use case development is a formalized mechanism for the selection and implementation of scenarios of cybersecurity incident detection rules, tools, and response measures. The end goal: build a repetitive process for detecting incidents and put down standardized response plans to various types of threats.
@@ -118,7 +122,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
     + Cleaning up logs after mutiple IT operations to leave no trace.
 
 --------
-#### III. ISO/IEC 27035 — Information Security Incident Managemen
+### III. ISO/IEC 27035 — Information Security Incident Management
 
 > The standard covers the processes for managing information security events, incidents and vulnerabilities.
 Managing incidents effectively involves detective and corrective controls designed to recognize and respond to events and incidents, minimize adverse impacts,
@@ -142,7 +146,6 @@ typically by improving the preventive controls or other risk treatments.
 #### PROCESS / METHODOLOGY
 
 #### STEP 1. Preparation 
-
 + Define and assign clear Roles and Responsibilities
   + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
     + IT Team: assessing severity, investigating incident, containing attack, recovering impacted systems, tracking and documenting activities
@@ -162,8 +165,7 @@ typically by improving the preventive controls or other risk treatments.
     + Recovered systems
 + Training security analysts and defining how to test processes
 
-#### Step 2. Proactive Threat Hunting (and Attack Surface Monitoring)
-
+#### STEP 2. Proactive Threat Hunting (and Attack Surface Monitoring)
 + The second step involves monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
 + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
 
@@ -189,14 +191,12 @@ typically by improving the preventive controls or other risk treatments.
 ```
 
 #### STEP 3. Incident Detection
-
 + The third step is the detection and identification of threats and anomalies at scale thanks to advanced security tools (e.g., SIEM, EDR, XDR, IPS, AV) that use both signature-based and behaviour-based detection methods and that perform log analysis and event correlation.
 + The main objectives are to:
   + detect threat actors' tactics, techniques, and procedures at the earliest stages of execution
   + trace the malicious activities to identify compromised assets and identify the malicious actor
 
 #### STEP 4. Incident Investigation (Threat Analysis and Prioritization)
-
 + The fourth step is to prioritize and analyze the threats and anomalies that have been detected. Not all threats pose the same level of risk in terms of affect or impact to the organization, so it’s important to determine which ones need immediate attention. This step is crucial for devising an effective response strategy.
 + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory.
 + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
@@ -221,7 +221,7 @@ typically by improving the preventive controls or other risk treatments.
 
 + Traditional threat detection uses technology like security information and event management (SIEM), endpoint detection and response (EDR) and network traffic analysis. SIEM collects data to generate security alerts, but lacks the ability to respond to threats. Network traffic analysis and endpoint detection and response are greatly effective in identifying localized threats, but cannot detect evasive threats and require complex integration. An intrusion detection system can monitor a network for policy violations and malicious activity. Advanced threat detection and response uses threat intelligence to monitor the entire system for attacks that bypass traditional threat detection.
             
-#### Some best practices for effective TDIR:
+#### Some best practices for effective TDIR
 
 + Proactive threat hunting
   - Actively look for potential threats that could jeopardize your organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damage.
@@ -265,7 +265,7 @@ typically by improving the preventive controls or other risk treatments.
 --------
 #### V. SOC - Security Operation Center 
 
-#### DEFINITION
+#### Definition
 
   + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
 
@@ -370,12 +370,12 @@ a new defensive strategy for guarding against advanced persistent threats (APT) 
 to expansion and one or more command and control phases, until the target is identified, manipulated and ex-filtrated.  
 
 + Objective
- + The goal of a kill chain defense is to break one or more stages in the attack chain to stop the progress of the attack and force the opponent to start over. 
- + It is important to remember three things in this method:
-   - the bad guy must make the entire chain work to succeed; 
-   - you need only kill one link to stop them;
-   - having detection and kill capability at each point in the enemy’s attack chain gives you the highest probability of success in this defense.	
- + The goal is to use the “kill chain” to help you develop capabilities that allow you to identify attacks earlier in the kill chain, rather than waiting for late-stage attacks to become apparent. In other words, develop capabilities that help you identify intrusions while they are still in phases 1, 2, or 3 – and the lower the number, the better.
+  + The goal of a kill chain defense is to break one or more stages in the attack chain to stop the progress of the attack and force the opponent to start over. 
+  + It is important to remember three things in this method:
+    - the bad guy must make the entire chain work to succeed; 
+    - you need only kill one link to stop them;
+    - having detection and kill capability at each point in the enemy’s attack chain gives you the highest probability of success in this defense.	
+  + The goal is to use the “kill chain” to help you develop capabilities that allow you to identify attacks earlier in the kill chain, rather than waiting for late-stage attacks to become apparent. In other words, develop capabilities that help you identify intrusions while they are still in phases 1, 2, or 3 – and the lower the number, the better.
 
 + The 7 "Kill Chain" phases
   + The intrusion kill chain breaks intrusions down into distinct phases, which are defined quite well in the Lockheed Martin paper:
