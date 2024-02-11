@@ -454,13 +454,18 @@ to expansion and one or more command and control phases, until the target is ide
 
 + Threat Hunting / Logs search
   + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
+  + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
+
+
  
-+ Digital Forensics and Malware analysis
++ Malware analysis & Digital Forensics
   + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
   + GitHub - [Mandiant CAPA](https://github.com/mandiant/capa) - Capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, shellcode file, or a sandbox report and it tells you what it thinks the program can do. 
   + GitHub - [Saferwall](https://github.com/saferwall/saferwall) - Collaborative Malware Analysis Platform at Scale. It allows you to analyze, triage and classify threats in just minutes.
   + GitHub - [PE-BEAR](https://github.com/hasherezade/pe-bear) - Portable Executable (PE) reversing tool with a friendly GUI which deliver fast and flexible “first view” for malware analyst.
   + GitHub - [PE-SIEVE](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches)
-  + GitHub - [Systeminformer](https://github.com/winsiderss/systeminformer) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
- 
+  + GitHub - [System informer](https://github.com/winsiderss/systeminformer) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
+  + GitHub - [Moneta](https://github.com/forrest-orr/moneta) - Moneta is a live usermode memory analysis tool for Windows with the capability to detect malware IOCs
+  + GitHub - [CyberChef](https://github.com/gchq/CyberChef) (https://gchq.github.io/CyberChef/) - The Cyber Swiss Army Knife. A web app for encryption, encoding, compression and data analysis.
+  + GitHub - [CyberChef Recipes](https://github.com/mattnotmax/cyberchef-recipes) - A list of cyber-chef recipes and curated links.
 
