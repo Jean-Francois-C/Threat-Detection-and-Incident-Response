@@ -8,7 +8,7 @@
 - [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model---Defense)
 - [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection---Incident-Response-(TDIR))
 - [VI. Security Operation Center (SOC)](#VI-Security-Operation-Center-(SOC))
-- [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035-Information-security-incident-management)
+- [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035--Information-security-incident-management)
 - [VIII. Glossary of TDIR and DFIR terms and definitions](#VIII-Glossary-of-TDIR-and-DFIR-terms-and-definitions)
 
 --------
@@ -396,7 +396,7 @@ typically by improving the preventive controls or other risk treatments.
 + Step 5 - Learn and document key takeaways from every incident (more than simply identifying the things that might have been done better, this stage involves actually making changes that improve the processes)
 
 --------
-#### VIII. Glossary of TDIR and DFIR terms and definitions
+### VIII. Glossary of TDIR and DFIR terms and definitions
 
 - DFIR - Digital Forensics & Incident Response <br>
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
