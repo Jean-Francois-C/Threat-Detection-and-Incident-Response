@@ -428,7 +428,8 @@ to expansion and one or more command and control phases, until the target is ide
   + Only now, after progressing through the first six phases, can intruders take actions to achieve their original objectives. 
     Typically, this objective is data exfiltration which involves collecting, encrypting and extracting information from the victim environment; 
     violations of data integrity or availability are potential objectives as well. 
-    Alternatively, the intruders may only desire access to the initial victim box for use as a hop point to compromise additional systems and move laterally inside the network.
+    Alternatively, the intruders may only desire access to the initial victim box for use as a hop point to compromise additional systems
+    and move laterally inside the network.
 ```
 
 + What are the differences between the Cyber Kill Chain Model and the MITRE ATT&CK Framework?
@@ -438,7 +439,8 @@ However, the two tools differ in several ways:
 
 ➤ Depth: 
   + The Cyber Kill Chain is designed to outline the stages of the cyberattack lifecycle.  
-  + MITRE ATT&CK’s Tactics loosely map to these stages, but MITRE ATT&CK goes deeper to describe the methods by which an attacker could meet the goals of a particular stage.
+  + MITRE ATT&CK’s Tactics loosely map to these stages, but MITRE ATT&CK goes deeper to describe the methods by which an attacker could
+    meet the goals of a particular stage.
 
 ➤ Coverage: 
   + The Cyber Kill Chain maps the complete lifecycle of a cyberattack.  
@@ -450,7 +452,8 @@ However, the two tools differ in several ways:
   
 ➤  Ordering: 
   + The Cyber Kill Chain has a defined order, where adversaries are expected to move linearly from one phase to another.  
-  + The MITRE ATT&CK Framework is deliberately unordered to acknowledge that an adversary may move through Tactics out of order, skip some Tactics, and revisit some Tactics multiple times throughout the course of an attack.
+  + The MITRE ATT&CK Framework is deliberately unordered to acknowledge that an adversary may move through Tactics out of order, skip
+    some Tactics, and revisit some Tactics multiple times throughout the course of an attack.
 ```
 --------
 #### VII. TDIR Tools
