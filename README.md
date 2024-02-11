@@ -469,9 +469,10 @@ to expansion and one or more command and control phases, until the target is ide
 
 + SIEM / XDR (Free/Community/Open-Source) 
   + GitHub - [Wazuh](https://github.com/wazuh/wazuh) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads.
+  + [AlienVault OSSIM](https://cybersecurity.att.com/products/ossim) - OSSIM (Open Source Security Information Management / SIEM) includes asset discovery, vulnerability assessment, intrusion detection, behavioral monitoring, SIEM event correlation).
 
 + Endpoint Detection and Response (EDR) (Free/Community/Open-Source)
-  + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) (www.comodo.com / info.comodo.com/open-source-edr/) - Free and Open-Source Endpoint Detection and Response (EDR) Platform.
+  + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) - Free and Open-Source Endpoint Detection and Response (EDR) Platform (www.comodo.com).
   + [Elastic Security for Endpoint](https://www.elastic.co/fr/downloads) - Start a trial or the community version
   + [Elastic Detection Rules Explorer](https://elastic.github.io/detection-rules-explorer/) - Elastic Security detection rules help users to set up and get their detections and security monitoring going as soon as possible. 
   + GitHub - [Elastic Detection Rules](https://github.com/elastic/detection-rules) - Rules for Elastic Security's detection engine.
