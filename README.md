@@ -50,9 +50,9 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
   + Motivations for Threat Actors range from hacktivism to cyber espionage and financial gain:
     + Cybercriminals usually seeks monetary gain by retrieving/stealing data that they can sell to a 3rd party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
-    + Insider threats may be selling information to competitors. If they have a grudge against their company, they could attempt to compromise the network in retaliation. 
+    + Insider threats may be selling information to competitors or comitting frauds. If they have a grudge against their company, they could attempt to compromise the network in retaliation. 
     + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counterintelligence. However, they may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
-    + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs, usually rooted in a social or political issue. Terrorists, on the other hand, aim to spread mayhem and fear to accomplish their goals.
+    + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs while terrorists aim to spread mayhem and fear to accomplish their goals.
 
 - Threat Intelligencee
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
