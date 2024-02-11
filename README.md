@@ -11,7 +11,8 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 + IV. Threat Detection & Incident Response Methodology (TDIR)
 + V. Security Operation Center (SOC)
 + VI. MITRE ATTACK Framework	
-+ VII. The CYBER ATTACK KILL CHAIN MODEL & DEFENSE
++ VII. The Cyber Attack Kill Chain Modem & Defense
++ VIII. TDIR Tools
 
 --------
 #### I. USEFUL RESOURCES
@@ -443,3 +444,6 @@ However, the two tools differ in several ways:
   + The Cyber Kill Chain has a defined order, where adversaries are expected to move linearly from one phase to another.  
   + The MITRE ATT&CK Framework is deliberately unordered to acknowledge that an adversary may move through Tactics out of order, skip some Tactics, and revisit some Tactics multiple times throughout the course of an attack.
 ```
+--------
+#### VII. TDIR Tools
+
