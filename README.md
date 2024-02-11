@@ -208,17 +208,23 @@ to expansion and one or more command and control phases, until the target is ide
 #### PROCESS / METHODOLOGY
 
 #### STEP 1. Preparation 
-+ Define and assign clear Roles and Responsibilities
-  + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
-    + IT Team: assessing severity, investigating incident, containing attack, recovering impacted systems, tracking and documenting activities
-    + Human Resources: communicating with employees whose data has been impacted
-    + Marketing or Communications: communicating across social media and responding to media requests
-    + Senior Leadership: monitoring ongoing business impact and reviewing post-incident reports
-    + Customer Support: handling incoming support tickets and updating customers during the incident
+
++ Define and implement a comprehensive incident response plan
+  - An incident response plan is a set of instructions that help organizations respond to a security incident swiftly and effectively. This plan should outline the roles and responsibilities of all team members, detail the procedures for ingestion and troubleshooting, then responding to different types of incidents. It should provide guidelines for communicating with stakeholders during and after an incident, including lessons learned and process improvement along with potential tooling enhancement.
+  - Having a comprehensive incident response plan in place can significantly reduce the time it takes to respond to a security incident, minimizing the damage and disruption it can cause. It can also help to ensure that all team members know what to do in the event of an attack, boosting the organization’s overall security posture.
+  - A clearly communicated incident response plan is critical to an organization’s cyber resilience. By defining discrete steps across all response activities, the plan enables security teams to reduce business disruption and mitigate operational impact arising from security incidents.
+
++ Determine a clear escalation path
+  - Establishing a clear escalation path is crucial for efficient threat response. When a potential threat is detected, the relevant information should be quickly escalated to the right personnel or team for further analysis and remediation.
+  - The escalation path may vary depending on the severity of the threat, its potential impact, and the skills required to handle it. Some types of threat, if they are high-level in terms of potential impact for media or external awareness, should have an executive sponsor or contact for informing at speed.
+  - A clear and well-documented escalation and communication path can speed up the response process and ensure threats are handled by the appropriate expertise.
+
 + Centralize the Incident Response Process
   + By using SIEM and SOAR solutions, we can more effectively correlate and analyze information from across our environment. When we are responding to an attack, logging into multiple tools slows down our investigation, giving attackers more opportunities to hide in our systems and networks. With all our monitoring and investigation in a centralized location, we can build workflows and processes that streamline activities, enabling us to contain, eradicate, and recover from the incident faster.
+
 + Identify attack scenarios, define relevant detection use cases and create high-fidelity risk-based alerts
   + Security operations centers (SOCs) commonly receive many more alerts than they can process, which results in time being wasted investigating false positives while true threats are overlooked. Threat detection tools must generate high-quality alerts with low false-positive rates to ensure that security teams are able to focus on real threats to the enterprise
+
 + Define Reporting Requirements
   + We should have well-defined processes for reporting to management after you recover impacted systems. As part of reviewing our incident response plan’s effectiveness, we should have metrics for how quickly and effectively we:
     + Detected the incident
@@ -280,6 +286,14 @@ to expansion and one or more command and control phases, until the target is ide
 
 #### Some best practices for effective TDIR
 
++ Define and assign clear Roles and Responsibilities
+  + Cyber attacks disrupt IT services, but they’re more than just technical issues. Attacks impact everyone across the organization, so you should define the following roles and responsibilities:
+    + IT Team: assessing severity, investigating incident, containing attack, recovering impacted systems, tracking and documenting activities
+    + Human Resources: communicating with employees whose data has been impacted
+    + Marketing or Communications: communicating across social media and responding to media requests
+    + Senior Leadership: monitoring ongoing business impact and reviewing post-incident reports
+    + Customer Support: handling incoming support tickets and updating customers during the incident
+
 + Proactive threat hunting
   - Actively look for potential threats that could jeopardize your organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damage.
 
@@ -289,16 +303,6 @@ to expansion and one or more command and control phases, until the target is ide
 
 + Conduct regular TDIR testing
   - Regularly test your detection and response capabilities through purple and red teaming exercises.
-
-+ Define and implement a comprehensive incident response plan
-  - An incident response plan is a set of instructions that help organizations respond to a security incident swiftly and effectively. This plan should outline the roles and responsibilities of all team members, detail the procedures for ingestion and troubleshooting, then responding to different types of incidents. It should provide guidelines for communicating with stakeholders during and after an incident, including lessons learned and process improvement along with potential tooling enhancement.
-  - Having a comprehensive incident response plan in place can significantly reduce the time it takes to respond to a security incident, minimizing the damage and disruption it can cause. It can also help to ensure that all team members know what to do in the event of an attack, boosting the organization’s overall security posture.
-  - A clearly communicated incident response plan is critical to an organization’s cyber resilience. By defining discrete steps across all response activities, the plan enables security teams to reduce business disruption and mitigate operational impact arising from security incidents.
-
-+ Determine a clear escalation path
-  - stablishing a clear escalation path is crucial for efficient threat response. When a potential threat is detected, the relevant information should be quickly escalated to the right personnel or team for further analysis and remediation.
-  - The escalation path may vary depending on the severity of the threat, its potential impact, and the skills required to handle it. Some types of threat, if they are high-level in terms of potential impact for media or external awareness, should have an executive sponsor or contact for informing at speed.
-  - A clear and well-documented escalation and communication path can speed up the response process and ensure threats are handled by the appropriate expertise.
 
 + Implement continuous monitoring
   - Implement tools and solutions that provide real-time monitoring of networks, systems, and applications.
