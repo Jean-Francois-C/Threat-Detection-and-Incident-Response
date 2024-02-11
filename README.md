@@ -3,7 +3,7 @@
 
 ### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
-- [II. TDIR Tools (Free/Community/Open-Source)](#II-TDIR-Tools-FreeCommunityOpen-Source))
+- [II. TDIR Tools (Free/Community/Open-Source)](#II-TDIR-Tools-FreeCommunityOpen-Source)
 - [III. MITRE ATTACK Framework](#III-MITRE-ATTACK-Framework)
 - [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model---Defense)
 - [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection---Incident-Response-(TDIR))
