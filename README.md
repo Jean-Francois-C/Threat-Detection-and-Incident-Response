@@ -117,12 +117,9 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 
 
 --------
-#### III. ISO/IEC 27035 — Information security incident management (2016+)
+#### III. ISO/IEC 27035 — Information Security Incident Management (2016+)
 
-   ➤ https://www.iso27001security.com/html/27035.html
-
-The standard covers the processes for managing information security events, incidents and vulnerabilities.
-
+> The standard covers the processes for managing information security events, incidents and vulnerabilities.
 Managing incidents effectively involves detective and corrective controls designed to recognize and respond to events and incidents, minimize adverse impacts,
 gather forensic evidence (where applicable) and in due course ‘learn the lessons’ in terms of prompting improvements to the ISMS,
 typically by improving the preventive controls or other risk treatments.
