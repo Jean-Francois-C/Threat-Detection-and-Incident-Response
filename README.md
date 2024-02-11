@@ -32,12 +32,12 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 + GitHub - [The Threat Hunter Playbook](https://threathunterplaybook.com/intro.html) - Community-driven, open source project to share detection logic, adversary tradecraft and resources to make detection development more efficient.
 
 --------
-#### II. GLOSSARY & ACRONYMS
+#### II. GLOSSARY
 
 - DFIR - Digital Forensics & Incident Response <br>
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
   
-- TDR / TDIR - Threat Detection & (Incident) Response <br>
+- TDIR - Threat Detection & Incident Response <br>
   + Threat Detection & Incident Response (TDIR) refers to the processes, tools, and strategies used to identify, monitor, and analyze cybersecurity threats in real-time, and to respond to security incidents when they occur. While Threat Detection focuses on identifying malicious activities, abnormal behaviour or vulnerabilities within a system or a network, Incident Response is concerned with managing and mitigating the impact of a security breach or attack once detected.
  
 - Cyber Threats
@@ -46,7 +46,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
     + Common cyber threats including: data leakage, ransomware, crypto mining malware, distributed-denial-of-service (DDoS) attacks, etc.
     + Advanced persistent threats (APT) which are sophisticated cyber attacks that include long-term surveillance and intelligence gathering, punctuated by attempts to steal sensitive information and target vulnerable systems. They intentionally attack specific high-value targets.
 
-- Threat Actors
++ TA - Threat Actors
   + A threat actor, also known as a malicious actor, is any person or organization that intentionally causes harm in the digital sphere. They exploit weaknesses in computers, networks and systems to carry out disruptive attacks on individuals or organizations.
   + Motivations for Threat Actors range from hacktivism to cyber espionage and financial gain:
     + Cybercriminals usually seeks monetary gain by retrieving/stealing data that they can sell to a 3rd party or by directly exploiting a victim through a ransomware attack or installation of crypto mining malware.
@@ -54,20 +54,28 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
     + Nation-state threat actors are politically or nationalistically motivated. They primarily seek to improve their nation’s counter-intelligence but may have more disruptive goals as well, such as espionage, spreading disinformation and propaganda, and even interfering with key companies, leaders or infrastructure. 
     + Terrorists and hacktivists are also politically motivated but do not act at the state level. Hacktivists want to spread their individual ideas and beliefs while terrorists aim to spread mayhem and fear to accomplish their goals.
 
-- Threat Intelligencee
++ TI - Threat Intelligencee
   + Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables to make faster, more informed, data-backed security decisions and change behavior from reactive to proactive in the fight against threat actors.
   + Gathering actionable intelligence can be done from various sources including open-source intelligence (OSINT), network traffic analysis, and other security tools. Threat intelligence is evidence-based knowledge (e.g., context, mechanisms, indicators, implications and action-oriented advice) about existing or emerging menaces or hazards to assets.
 
-- CERT - Computer Emergency Response Team / CSIRT - Cyber Security Incident Response Team <br>
-  + A CERT / CSIRT is a team of cybersecurity experts that handles computer security incidents.
-  
++ CERT / CSIRT - Computer Emergency Response Team / Cyber Security Incident Response Team
+  + A computer emergency response team (CERT) is an expert group that handles computer security incidents. Alternative names for such groups include cyber emergency response team, computer emergency readiness team, and Cyber Security Incident Response Team (CSIRT).
+  + Although CSIRT and CERT are often used intertwined, there is a distinct difference between the two. The term CERT is typically reserved for the predominant computer security organisations authorised by government authorities, while a CSIRT can be the general incident response team in any organisation.
+
++ FIRST - Forum of Incident Response and Security Teams
+  + FIRST is a global forum of incident response and security teams. They aim to improve cooperation between security teams on handling major cybersecurity incidents. FIRST is an association of incident response teams with global coverage.
+
 + SOC - Security Operation Center
   + A security operations center is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts and IT engineers who use a variety of tools and techniques to detect, analyze, and respond to security threats. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
   + The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
-     
+
++ SOC Use Cases
+  + SOC use cases are security incident detection rules applied to logs that trigger alerts. For each use case there should be a playbook or instructions on how to respond to them (i.e. steps to analyse and mitigate).
+  + SOC use case development is a formalized mechanism for the selection and implementation of scenarios of cybersecurity incident detection rules, tools, and response measures. The end goal: build a repetitive process for detecting incidents and put down standardized response plans to various types of threats.
+
 + SOAR - Security Orchestration, Automation & Response solution
   + Software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows. SOAR's orchestration and automation capabilities allow it to serve as a central console for security incident response. Security analysts can use SOARs to investigate and resolve incidents without moving between multiple tools.
-  + By integrating security tools and automating tasks, SOAR platforms can streamline common security workflows like case management, vulnerability management, and incident response. SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization. SOARs can also trigger the automated actions of integrated security tools.
+  + By integrating security tools and automating tasks, SOAR platforms can streamline common security workflows like case management, vulnerability management, and incident response. SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization.
   
 + SIEM - Security Information & Event Management
   + A SIEM product collects information (raw logs and security alerts) from applications, systems and internal security tools (e.g. IPS/IDS, EDR, AV, WAF, Firewall, Proxy) aggregate it in a central log, and detect anomalies. They provide real-time analysis of logs and security alerts making them a vital component in the threat detection process.
@@ -108,7 +116,6 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
     + Malware reinfection within a few minutes of removal. This could be indicative of an Advanced Persistent Threat.
     + Multiple user logins from different regions or one source towards numerous systems in a short period of time. This could be indicative of stolen user credentials and lateral movement.
     + Cleaning up logs after mutiple IT operations to leave no trace.
-
 
 --------
 #### III. ISO/IEC 27035 — Information Security Incident Management (2016+)
