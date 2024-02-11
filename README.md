@@ -278,11 +278,6 @@ to expansion and one or more command and control phases, until the target is ide
 #### STEP 7. Lessons Learned
 + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
 
-
-#### TOOLS and TECHNOLOGIES IN TDIR
-
-+ Traditional threat detection uses technology like security information and event management (SIEM), endpoint detection and response (EDR) and network traffic analysis. SIEM collects data to generate security alerts, but lacks the ability to respond to threats. Network traffic analysis and endpoint detection and response are greatly effective in identifying localized threats, but cannot detect evasive threats and require complex integration. An intrusion detection system can monitor a network for policy violations and malicious activity. Advanced threat detection and response uses threat intelligence to monitor the entire system for attacks that bypass traditional threat detection.
-            
 #### Some best practices for effective TDIR
 
 + Proactive threat hunting
@@ -325,7 +320,7 @@ to expansion and one or more command and control phases, until the target is ide
 
 
 --------
-#### VI. SOC - Security Operation Center 
+### VI. SOC - Security Operation Center 
 
 #### Definition
 
