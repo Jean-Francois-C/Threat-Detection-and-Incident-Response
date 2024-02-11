@@ -70,8 +70,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
   + With multi-vector attacks, it is no surprise that SOC is becoming an increasingly important part of organizations’ efforts to keep ahead of the latest cybersecurity threats.
      
 + SOAR - Security Orchestration, Automation & Response solution
-  + Software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows.
-  + SOAR's orchestration and automation capabilities allow it to serve as a central console for security incident response. Security analysts can use SOARs to investigate and resolve incidents without moving between multiple tools.
+  + Software solution that enables security teams to integrate and coordinate separate tools into streamlined threat response workflows. SOAR's orchestration and automation capabilities allow it to serve as a central console for security incident response. Security analysts can use SOARs to investigate and resolve incidents without moving between multiple tools.
   + By integrating security tools and automating tasks, SOAR platforms can streamline common security workflows like case management, vulnerability management, and incident response. SOAR security solutions can automate low-level, time-consuming, repetitive tasks like opening and closing support tickets, event enrichment, and alert prioritization. SOARs can also trigger the automated actions of integrated security tools.
   
 + SIEM - Security Information & Event Management
