@@ -118,7 +118,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
     + Cleaning up logs after mutiple IT operations to leave no trace.
 
 --------
-#### III. ISO/IEC 27035 — Information Security Incident Management (2016+)
+#### III. ISO/IEC 27035 — Information Security Incident Managemen
 
 > The standard covers the processes for managing information security events, incidents and vulnerabilities.
 Managing incidents effectively involves detective and corrective controls designed to recognize and respond to events and incidents, minimize adverse impacts,
@@ -340,22 +340,22 @@ typically by improving the preventive controls or other risk treatments.
 
 There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/enterprise/)
 
-ID	Name			Description
-----------------------------------------------------------------------------------------------------------------------
-TA0043	Reconnaissance		The adversary is trying to gather information they can use to plan future operations.
-TA0042	Resource Development	The adversary is trying to establish resources they can use to support operations.
-TA0001	Initial Access		The adversary is trying to get into your network.
-TA0002	Execution		The adversary is trying to run malicious code.
-TA0003	Persistence		The adversary is trying to maintain their foothold.
-TA0004	Privilege Escalation	The adversary is trying to gain higher-level permissions.
-TA0005	Defense Evasion		The adversary is trying to avoid being detected.
-TA0006	Credential Access	The adversary is trying to steal account names and passwords.
-TA0007	Discovery		The adversary is trying to figure out your environment.
-TA0008	Lateral Movement	The adversary is trying to move through your environment.
-TA0009	Collection		The adversary is trying to gather data of interest to their goal.
-TA0011	Command and Control	The adversary is trying to communicate with compromised systems to control them.
-TA0010	Exfiltration		The adversary is trying to steal data.
-TA0040	Impact			The adversary is trying to manipulate, interrupt, or destroy your systems and data.
+|    ID   |   Name  | DESCRIPTION | 
+| :-----: | :-----: |  :-------:  |
+| TA0043  |  Reconnaissance  |  The adversary is trying to gather information they can use to plan future operations.  |  
+| TA0042  |  Resource Development  |  The adversary is trying to establish resources they can use to support operations.  |  
+| TA0001  |  Initial Access  |  The adversary is trying to get into your network.  |  
+| TA0002  |  Execution  |  The adversary is trying to run malicious code.  |  
+| TA0003  |  Persistence  |  The adversary is trying to maintain their foothold.  |  
+| TA0004  |  Privilege Escalation  |  The adversary is trying to gain higher-level permissions.  |  
+| TA0005  |  Defense Evasion  |  The adversary is trying to avoid being detected.  |  
+| TA0006  |  Credential Access  |  The adversary is trying to steal account names and passwords.  |  
+| TA0007  |  Discovery  |  The adversary is trying to figure out your environment.  |  
+| TA0008  |  Lateral Movement  |  The adversary is trying to move through your environment.  |  
+| TA0009  |  Collection  |  The adversary is trying to gather data of interest to their goal.  |  
+| TA0011  |  Command and Control  |  The adversary is trying to communicate with compromised systems to control them.  |  
+| TA0010  |  Exfiltration  |  The adversary is trying to steal data.  |  
+| TA0040  |  Impact  |  The adversary is trying to manipulate, interrupt, or destroy your systems and data.  |  
 
 
 --------
