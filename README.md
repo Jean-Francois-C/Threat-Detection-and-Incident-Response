@@ -8,7 +8,7 @@
 - [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model---Defense)
 - [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection---Incident-Response-(TDIR))
 - [VI. Security Operation Center (SOC)](#VI-Security-Operation-Center-(SOC))
-- [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035---Information-security-incident-management)
+- [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035-Information-security-incident-management)
 - [VIII. Glossary of TDIR and DFIR terms and definitions](#VIII-Glossary-of-TDIR-and-DFIR-terms-and-definitions)
 
 --------
