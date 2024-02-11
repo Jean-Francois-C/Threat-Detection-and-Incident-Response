@@ -31,6 +31,7 @@ Nowadays companies are more exposed than ever to a vast array of cyber threats. 
 + GitHub - [Awesome Incident Response](https://github.com/meirwah/awesome-incident-response/tree/master) - A curated list of tools and resources for security incident response and DFIR teams.
 + GitHub - [Awesome SOC](https://github.com/cyb3rxp/awesome-soc) - A collection of sources of documentation, as well as field best practices, to build/run a SOC
 + GitHub - [The Threat Hunter Playbook](https://threathunterplaybook.com/intro.html) - Community-driven, open source project to share detection logic, adversary tradecraft and resources to make detection development more efficient.
++ Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
 
 --------
 #### II. GLOSSARY
