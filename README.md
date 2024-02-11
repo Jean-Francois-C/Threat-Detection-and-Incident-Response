@@ -5,8 +5,8 @@
 Nowadays companies are more exposed than ever to a vast array of cyber threats. From ransomware to crypto-mining malware, phishing emails to DDoS attacks, organizations constantly grapple with the challenge of identifying and responding to threats in real time. Failure to do so can result in data breaches, financial losses, damaged reputation, and regulatory fines.
 
 #### Table of Contents
-+ I. USEFUL RESOURCES
-+ II. GLOSSARY & ACRONYMS
++ I. Useful resources (ENISA, NIST, ANSSI, etc.)
++ II. Glossary
 + III. ISO/IEC 27035 — Information security incident management (2016+)
 + IV. Threat Detection & Incident Response Methodology (TDIR)
 + V. Security Operation Center (SOC)
