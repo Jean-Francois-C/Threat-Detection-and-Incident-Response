@@ -232,8 +232,11 @@ to expansion and one or more command and control phases, until the target is ide
     + Investigated the incident
     + Contained and eradicated the attacker
     + Recovered systems
-+ Training security analysts and defining how to test processes
 
++ Conduct regular TDIR testing and training
+  - Regularly test your detection and response capabilities through purple and red teaming exercises.
+  - Conduct training sessions for staff on the latest threats and response procedures to ensure everyone is prepared.
+        
 #### STEP 2. Proactive Threat Hunting (and Attack Surface Monitoring)
 + The second step involves monitoring the attack surface of an organization and actively looking for potential threats that could jeopardize an organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damages.
 + Threat hunting requires acquiring and maintaining a deep understanding of the organization’s infrastructure, systems, and typical network behaviors. By knowing what’s normal, security teams can quickly spot any anomalies that could indicate a potential threat. It also involves staying updated on the latest threat intelligence externally, especially specific to your industry and geography, to anticipate new types of attacks.
@@ -298,13 +301,6 @@ to expansion and one or more command and control phases, until the target is ide
 + Proactive threat hunting
   - Actively look for potential threats that could jeopardize your organization’s digital assets. Unlike traditional security measures that react to threats, proactive threat hunting seeks to identify threats before they cause damage.
 
-+ Conduct regular security assessemnts
-  - Regular vulnerability assessments can help organizations identify security weaknesses (e.g., missing critical patches, default credentials) before a threat actor can exploit them. These assessments should be comprehensive, covering all aspects of the organization’s systems, applications, and networks.
-  - Regular network and application penetration testing can help to uncover vulnerabilities that might not be visible during a vulnerability assessment. Penetration tests simulate real-world attacks, testing the organization’s defenses and providing insights into how well they can withstand an actual attack. 
-
-+ Conduct regular TDIR testing
-  - Regularly test your detection and response capabilities through purple and red teaming exercises.
-
 + Implement continuous monitoring
   - Implement tools and solutions that provide real-time monitoring of networks, systems, and applications.
   - Continuous monitoring is crucial for effective threat detection and response. Organizations should monitor their systems and networks 24/7, using tools like SIEM and EDR to detect suspicious activities as soon as they occur.
@@ -313,16 +309,20 @@ to expansion and one or more command and control phases, until the target is ide
   - Automating threat response can help organizations quickly and effectively neutralize threats. This can involve using automated scripts to block malicious IP addresses, isolate affected systems, or execute other predefined response actions. Automation can also extend to the remediation process, such as automatically patching known vulnerabilities.
   - Advanced tools such as next-generation SIEM, and XDR systems can integrate with other security systems like security orchestration, automation, and response (SOAR) to automatically react to threats and anomalies they identify. 
 
-+ Educate employees on cybersecurity to reduce human error and promote security awareness
-+ Regular TDIR Training
-  - Conduct training sessions for staff on the latest threats and response procedures to ensure everyone is prepared.
++ Educate employees on cybersecurity to reduce human error and promote security awareness.
+  
 + Threat Intelligence Integration
   - Leverage threat intelligence feeds to stay updated on the latest threat vectors and indicators of compromise.
+
 + Forensic Capabilities
   - Maintain capabilities to conduct digital forensics, helping to understand the scope and impact of an incident and to prevent future occurrences.
+
++ Conduct regular security assessemnts
+  - Regular vulnerability assessments can help organizations identify security weaknesses (e.g., missing critical patches, default credentials) before a threat actor can exploit them. These assessments should be comprehensive, covering all aspects of the organization’s systems, applications, and networks.
+  - Regular network and application penetration testing can help to uncover vulnerabilities that might not be visible during a vulnerability assessment. Penetration tests simulate real-world attacks, testing the organization’s defenses and providing insights into how well they can withstand an actual attack.
+
 + Network Segmentation
   - Use network segmentation to limit the spread of threats and contain incidents.
-
 
 --------
 ### VI. SOC - Security Operation Center 
