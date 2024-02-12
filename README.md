@@ -50,7 +50,7 @@
 + On-line Malware Analysis Platform & Sandbox
   + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
   + [Joe Sandbox (Community)](https://www.joesandbox.com) - Analyzes potential malicious files & URLs on Windows/MacOS/Linux/Android/iOS providing comprehensive and detailed analysis reports.
-  + [ScanHolistic](https://app.threat.zone/scanHolistic) - Malware analysis platform (Interactive Sandbox, Static Analyzer, Emulation).
+  + [Threat Zone Scan Holistic](https://app.threat.zone/scan) - Malware analysis platform (Interactive Sandbox, Static Analyzer, Emulation).
   + [Metadefender](https://metadefender.opswat.com) - Malware analysis platform (Upload and scan your file for viruses with 38 anti-malware engines)
   + GitHub - [Saferwall](https://github.com/saferwall/saferwall) -  Malware analysis platform allowing to analyze, triage and classify threats in just minutes.
   + [Valkyrie Comodo](https://valkyrie.comodo.com) - Valkyrie conducts several analysis using run-time behavior and hundreds of features from a file and based on analysis results can warn users against malware undetected by classic Anti-Virus products.
