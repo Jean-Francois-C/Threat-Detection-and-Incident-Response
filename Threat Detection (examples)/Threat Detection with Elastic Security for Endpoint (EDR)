@@ -10,7 +10,7 @@ The malware use various defense evasion techniques such as: AMSI patching, ETW p
 Threat detection results
 ===========================
 
-The Elastic Security solution (EDR) is pretty efficient and was able to detect almost all my malware and raised multiple critical alerts such as:
+The Elastic Security solution (EDR) is pretty efficient and was able to detect almost all my malware and raise multiple critical alerts such as:
 > Malware Detection Alert
 > Malicious Behavior Detection Alert: AMSI or WLDP Bypass via Memory Patching
 > Malicious Behavior Detection Alert: Parallel NTDLL Loaded from Unbacked Memory
