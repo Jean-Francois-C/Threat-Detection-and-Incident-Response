@@ -1,0 +1,108 @@
+=====================================================================================================================
+Examples of Threat Detection with Elastic Security for Endpoint (EDR)
+=====================================================================================================================
+
+For testing and research purposes, I created, uploaded and ran several malware (obfuscated/encrypted C2 implants & shellcode loaders, packed version of mimikatz)
+on a Windows server 2022 hosted in my Red Team Lab protected by an AV solution and Elastic Security for Endpoint (EDR).
+The malware use various defense evasion techniques such as: AMSI patching, ETW patching, NTDLL unhooking, sandbox evasion, obfuscation and encryption, etc.
+
+===========================
+Threat detection results
+===========================
+
+The Elastic Security solution (EDR) is pretty efficient and was able to detect almost all my malware and raised multiple critical alerts such as:
+> Malware Detection Alert
+> Malicious Behavior Detection Alert: AMSI or WLDP Bypass via Memory Patching
+> Malicious Behavior Detection Alert: Parallel NTDLL Loaded from Unbacked Memory
+> Malicious Behavior Detection Alert: Network Module Loaded from Suspicious Unbacked Memory
+> Memory Threat Detection Alert: Windows.Hacktool.Mimikatz
+> Memory Threat Detection Alert: Windows.Trojan.Havoc
+> Memory Threat Detection Alert: Windows.Trojan.Donutloader
+> Memory Threat Detection Alert: Shellcode Injection
+
+Elastic Security for Endpoint detects malware and advanced threats based on:
+> malicious signatures / heuristic checks
+> malicious behaviour checks
+> live memory scans
+
+To display security alerts raised by Elastic Security
+-----------------------------------------------------
+1. Log into the Elastic Web interface
+2. Go to the section "Security > Alerts" to display the security alerts.
+
+======================================================================================================================================================================================================
+@timestamp			             Rule				                   Severity		 Risk Score		Reason						                         host.name	       user.name	  process.name		          <SNIP>
+======================================================================================================================================================================================================
+9 Feb, 2024 @ 18:42:29.433	 Malware Detection Alert		   critical		99			      malware, intrusion_detection, 			       WinServer2022 	   john.doe		  explorer.exe
+																																										file event with process explorer.exe, 
+														                                                        parent process userinit.exe, 
+                                                                      							File Packed-Mimi-Katz2.exe, 
+                                                                      							by john.doe on WinServer2022 created 
+                                                                      							critical alert Malware Detection Alert.
+
+9 Feb, 2024 @ 18:47:32.475	 Memory Threat Detection  	   critical		99			      malware, intrusion_detection, 			       WinServer2022 	   john.doe		  Packed-Mimi-Katz1.exe
+				                                                                            Alert: 	Windows.Hacktool.Mimikatz						
+                                                                                    process event with process Packed-Mimi-Katz1.exe,
+														                                                        parent process cmd.exe,
+                                                        														by john.doe on WinServer2022 created 
+                                                        														critical alert Memory Threat Detection
+                                                        														Alert: Windows.Hacktool.Mimikatz.
+
+9 Feb, 2024 @ 18:52:35.809	Memory Threat Detection 	     critical		99			      malware, intrusion_detection event		      WinServer2022 	 john.doe		  Packed-Mimi-Katz2.exe
+				                                                                            Alert: Shellcode Injection with 
+                                                                                    process Packed-Mimi-Katz2.exe,
+                                                         														parent process cmd.exe, 
+                                                        														by john.doe on WinServer2022 created 
+                                                        														critical alert Memory Threat Detection 
+                                                        														Alert: Shellcode Injection.
+
+9 Feb, 2024 @ 18:52:35.786	Memory Threat Detection 	     critical		99			      malware, intrusion_detection,			          WinServer2022 	 john.doe		Packed-Mimi-Katz2.exe
+                                                    				                        Alert: process event with process
+                                                                                    Packed-Mimi-Katz2.exe,
+                                                    				                        Windows.Trojan.Donutloader 
+                                                                                    parent process cmd.exe,
+                                                        														by john.doe on WinServer2022 created
+                                                        														critical alert Memory Threat Detection
+                                                        														Alert: Windows.Trojan.Donutloader.
+
+9 Feb, 2024 @ 18:52:35.701	Malicious Behavior Detection 	 critical		99			      malware, intrusion_detection event		       WinServer2022 	john.doe		Packed-Mimi-Katz2.exe
+                                                                            				Alert: AMSI or WLDP Bypass with 
+                                                                                    process Packed-Mimi-Katz2.exe,
+                                                                            				via Memory Patching	by john.doe 
+                                                                                    on WinServer2022 created critical 
+                                                                            				alert Malicious Behavior Detection
+														                                                        Alert: AMSI or WLDP Bypass via Memory Patching.
+
+9 Feb, 2024 @ 18:52:35.672	Malicious Behavior Detection 	 critical		99			      malware, intrusion_detection event		      WinServer2022 	john.doe		Packed-Mimi-Katz2.exe
+                                                                            				Alert: Network Module Loaded with 
+                                                                                    process Packed-Mimi-Katz2.exe,
+                                                                            				from Suspicious Unbacked Memory							
+                                                                                    by john.doe on WinServer2022 created
+                                                                            				alert Malicious Behavior Detection
+                                                                            			  Alert: Network Module Loaded from 
+                                                                            				Suspicious Unbacked Memory.
+
+9 Feb, 2024 @ 19:43:05.970	Malicious Behavior Detection 	 critical		99			      malware, intrusion_detection event		       WinServer2022 	john.doe		superaudit.exe
+                                                                            				Alert: AMSI or WLDP Bypass with 
+                                                                                    process superaudit.exe,
+                                                                            				via Memory Patching	by john.doe 
+                                                                                    on WinServer2022 created critical
+                                                                            				alert Malicious Behavior Detection
+                                                                            				Alert: AMSI or WLDP Bypass via Memory Patching.
+
+9 Feb, 2024 @ 19:43:05.962	Memory Threat Detection 	     critical		99			      malware, intrusion_detection event		       WinServer2022 	john.doe		superaudit.exe
+				                                                                            Alert: Windows.Trojan.Havoc	process 
+                                                                                    event with process superaudit.exe,
+                                                        														parent process explorer.exe,
+                                                        											 			by john.doe on WinServer2022 created 
+                                                        														critical alert Memory Threat Detection 
+                                                        														Alert: Windows.Trojan.Havoc.
+
+9 Feb, 2024 @ 19:43:05.956	Malicious Behavior Detection 	 critical		99			      malware, intrusion_detection event		       WinServer2022 	john.doe		superaudit.exe
+                                                                            				Alert: Parallel NTDLL Loaded process 
+                                                                                    event with process superaudit.exe,
+                                                                            				from Unbacked Memory parent process explorer.exe,
+                                                                            				by john.doe on WinServer2022 created 
+                                                                            				alert Malicious Behavior Detection
+                                                                            				Alert: Parallel NTDLL Loaded from Unbacked Memory.
+<SNIP>
