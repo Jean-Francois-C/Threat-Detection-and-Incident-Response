@@ -30,6 +30,7 @@
 + GitHub - [The Threat Hunter Playbook](https://threathunterplaybook.com/intro.html) - Community-driven, open source project to share detection logic, adversary tradecraft and resources to make detection development more efficient.
 + GitHub - [Breach Report Collection](https://github.com/BushidoUK/Breach-Report-Collection) - A collection of companies that disclose adversary TTPs after they have been breached.
 + GitHub - [Awesome Yara rules](https://github.com/InQuest/awesome-yara) - A curated list of awesome YARA rules, tools, and people.
++ GitHub - [Sigma rules](https://github.com/SigmaHQ/sigma) - SIGMA rule repository (more than 3000 detection rules).
 + Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
 + AWS - [AWS Incident Response Playbook Samples](https://github.com/aws-samples/aws-incident-response-playbooks)
 + AWS - [AWS Customer Playbook Framework](https://github.com/aws-samples/aws-customer-playbook-framework) - This repository provides sample templates for security playbooks against various scenarios when using Amazon Web Services.
@@ -484,3 +485,13 @@ typically by improving the preventive controls or other risk treatments.
     + Malware reinfection within a few minutes of removal. This could be indicative of an Advanced Persistent Threat.
     + Multiple user logins from different regions or one source towards numerous systems in a short period of time. This could be indicative of stolen user credentials and lateral movement.
     + Cleaning up logs after mutiple IT operations to leave no trace.
+   
++ YARA rules
+  + It is a pattern-matching framework used to identify and classify malware and other IT security threats / Indicators of Compromise (IOCs).
+  + It provides an effective means to search for patterns of interest (such as IoCs) within multiple files, analyze them, and make informed decisions based on the results, making it an essential component of both network protection and endpoint security.
+  + YARA is built into many malware scanners, including, but not limited to, ClamAV, Avast, ESET, Kaspersky, and VirusTotal; it is also featured in other popular types of IT security products such as Extended Detection and Response (EDR), Intrusion Detection and Prevention Systems (IDS/IPS), Security Information and Event Management (SIEM) solutions including AlienVault, and general threat intelligence platforms.  
+
++ SIGMA rules
+  + It is a powerful tool that can be used for detection and malware threat hunting.
+  + SIGMA rules are a type of open rule language that can be used to describe malicious activity and allow defenders to share detections (alerts, use cases) in a common language.
+  + Much like YARA, or Snort Rules, SIGMA is another tool for the open sharing of detection, except focused on SIEM instead of files or network traffic.
