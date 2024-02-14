@@ -23,7 +23,7 @@ The Windows server is protected by 2 AV solutions and an EDR product:
 
 Important note: 
 The 3 security solutions have been updated before the test and then the Windows server has been disconnected from Internet. 
-This prevent my malware samples being sent to the cloud for analysis. Obviously this has an impact (to keep in mind) on the 
+This prevent my malware samples to be sent to the cloud for analysis. Obviously this has an impact (to keep in mind) on the 
 detection capabilities of the security products.
 
 -----------------------------
@@ -34,7 +34,7 @@ The 2 antivirus solutions (Windows Defender and Norton 360) did not detect my ma
 The heuristic and signature based checks of the AV solutions were bypassed. 
 
 On the other hand, the Elastic Security solution (EDR) was able to detect almost all my malware when I ran them.
-It raised multiple critical alerts such as:
+It raised multiple security alerts such as:
 > Malware Detection Alert
 > Malicious Behavior Detection Alert: AMSI or WLDP Bypass via Memory Patching
 > Malicious Behavior Detection Alert: Parallel NTDLL Loaded from Unbacked Memory
@@ -90,7 +90,7 @@ To display security alerts raised by Elastic Security
 														critical alert Memory Threat Detection
 														Alert: Windows.Trojan.Donutloader.
 
-9 Feb, 2024 @ 18:52:35.701	Malicious Behavior Detection 	 critical		99			malware, intrusion_detection event		WinServer2022 	   john.doe	Packed-Mimi-Katz2.exe
+9 Feb, 2024 @ 18:52:35.701	Malicious Behavior Detection 	     critical		99			malware, intrusion_detection event		WinServer2022 	   john.doe	Packed-Mimi-Katz2.exe
 														Alert: AMSI or WLDP Bypass with 
 														process Packed-Mimi-Katz2.exe,
 														via Memory Patching	by john.doe 
@@ -98,7 +98,7 @@ To display security alerts raised by Elastic Security
 														alert Malicious Behavior Detection
 														Alert: AMSI or WLDP Bypass via Memory Patching.
 
-9 Feb, 2024 @ 18:52:35.672	Malicious Behavior Detection 	 critical		99			malware, intrusion_detection event		WinServer2022 	   john.doe	Packed-Mimi-Katz2.exe
+9 Feb, 2024 @ 18:52:35.672	Malicious Behavior Detection 	     critical		99			malware, intrusion_detection event		WinServer2022 	   john.doe	Packed-Mimi-Katz2.exe
 														Alert: Network Module Loaded with 
 														process Packed-Mimi-Katz2.exe,
 														from Suspicious Unbacked Memory							
@@ -107,7 +107,7 @@ To display security alerts raised by Elastic Security
 														Alert: Network Module Loaded from 
 														Suspicious Unbacked Memory.
 
-9 Feb, 2024 @ 19:43:05.970	Malicious Behavior Detection 	 critical		99			malware, intrusion_detection event		 WinServer2022 	    john.doe	superaudit.exe
+9 Feb, 2024 @ 19:43:05.970	Malicious Behavior Detection 	     critical		99			malware, intrusion_detection event		 WinServer2022 	    john.doe	superaudit.exe
 														Alert: AMSI or WLDP Bypass with 
 														process superaudit.exe,
 														via Memory Patching by john.doe 
@@ -123,11 +123,16 @@ To display security alerts raised by Elastic Security
 														critical alert Memory Threat Detection 
 														Alert: Windows.Trojan.Havoc.
 
-9 Feb, 2024 @ 19:43:05.956	Malicious Behavior Detection 	 critical		99			malware, intrusion_detection event		 WinServer2022 	    john.doe	superaudit.exe
+9 Feb, 2024 @ 19:43:05.956	Malicious Behavior Detection 	     critical		99			malware, intrusion_detection event		 WinServer2022 	    john.doe	superaudit.exe
 														Alert: Parallel NTDLL Loaded process 
 														event with process superaudit.exe,
 														from Unbacked Memory parent process explorer.exe,
 														by john.doe on WinServer2022 created 
 														alert Malicious Behavior Detection
 														Alert: Parallel NTDLL Loaded from Unbacked Memory.
+
+9 Feb, 2024 @ 19:59:12.106	Malicious Behavior Detection	     medium		99			api event with process SuperTest.exe,	 	WinServer2022 	    john.doe	SuperTest.exe
+														by john.doe on WinServer2022 created 
+														medium alert LSASS Process Access 
+														via Windows API.
 <SNIP>
