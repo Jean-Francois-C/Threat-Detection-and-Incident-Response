@@ -1,16 +1,40 @@
-=====================================================================================================================
-Examples of Threat Detection with Elastic Security for Endpoint (EDR)
+====================================================================================================================
+Basic threat detection capability test between AV and EDR products
 =====================================================================================================================
 
-For testing and research purposes, I created, uploaded and ran several malware (obfuscated/encrypted C2 implants & shellcode loaders, packed version of mimikatz)
-on a Windows server 2022 hosted in my Red Team Lab protected by an AV solution and Elastic Security for Endpoint (EDR).
-The malware use various defense evasion techniques such as: AMSI patching, ETW patching, NTDLL unhooking, sandbox evasion, obfuscation and encryption, etc.
+-----------------------------
+Context
+-----------------------------
 
-===========================
+To compare the threat detection capability of different security products (AV and EDR), I created, uploaded and ran several malware 
+on a Windows server 2022 hosted in my Red Team Lab.
+
+My malware (C2 implants & shellcode loaders, packed version of mimikatz) use various defense evasion techniques such as: 
+> Obfuscation & encryption
+> Sandbox evasion 
+> AMSI patching
+> ETW patching 
+> NTDLL unhooking 
+
+The Windows server is protected by 2 AV solutions and an EDR product:
+> Windows Defender Antivirus
+> Norton 360 Antivirus
+> Elastic Security for Endpoint (EDR - EndPoint Detection & Response solution)
+
+Important note: 
+The 3 security solutions have been updated before the test and then the Windows server has been disconnected from Internet. 
+This prevent my malware samples being sent to the cloud for analysis. Obviously this has an impact (to keep in mind) on the 
+detection capabilities of the security products.
+
+-----------------------------
 Threat detection results
-===========================
+-----------------------------
 
-The Elastic Security solution (EDR) is pretty efficient and was able to detect almost all my malware and raise multiple critical alerts such as:
+The 2 antivirus solutions (Windows Defender and Norton 360) did not detect my malware when I uploaded and ran them on the server. 
+The heuristic and signature based checks of the AV solutions were bypassed. 
+
+On the other hand, the Elastic Security solution (EDR) was able to detect almost all my malware when I ran them.
+It raised multiple critical alerts such as:
 > Malware Detection Alert
 > Malicious Behavior Detection Alert: AMSI or WLDP Bypass via Memory Patching
 > Malicious Behavior Detection Alert: Parallel NTDLL Loaded from Unbacked Memory
@@ -19,11 +43,12 @@ The Elastic Security solution (EDR) is pretty efficient and was able to detect a
 > Memory Threat Detection Alert: Windows.Trojan.Havoc
 > Memory Threat Detection Alert: Windows.Trojan.Donutloader
 > Memory Threat Detection Alert: Shellcode Injection
+> LSASS Process Access via Windows API
 
 Elastic Security for Endpoint detects malware and advanced threats based on:
-> malicious signatures / heuristic checks
-> malicious behaviour checks
-> live memory scans
+> malicious signatures
+> malicious behaviour
+> memory threat (live memory scan)
 
 To display security alerts raised by Elastic Security
 -----------------------------------------------------
