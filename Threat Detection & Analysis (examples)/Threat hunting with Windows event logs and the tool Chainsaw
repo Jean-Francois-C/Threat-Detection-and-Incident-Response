@@ -608,3 +608,85 @@ C:\Users\analyst\Documents\Tools\17-DFIR\Chainsaw> chainsaw.exe hunt -r rules/ .
 [+] Created rdp_attacks.csv
 
 [+] 827 Detections found on 759 documents
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example 5 - Search with a specific keyword through all Windows event logs of a Windows computer using SIGMA & Chainsaw rules to detect potential malicious activities
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 1 - Extract the Windows event logs of a Windows machine (e.g. Windows 10 laptop) and place them in a log folder
+---------------------------------------------------------------------------------------------------------------------
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\Chainsaw\Logs2> ls
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         2/15/2024   7:56 PM       12652544 Application.evtx
+-a----         2/15/2024   7:55 PM        4263936 PowerShell.evtx
+-a----         2/15/2024   7:54 PM       21041152 Security.evtx
+-a----         2/15/2024   7:55 PM       21041152 System.evtx
+
+
+Step 2 - Run Chainsaw  
+----------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\Chainsaw> chainsaw.exe search mimikatz -i ./Logs2/
+
+ ██████╗██╗  ██╗ █████╗ ██╗███╗   ██╗███████╗ █████╗ ██╗    ██╗
+██╔════╝██║  ██║██╔══██╗██║████╗  ██║██╔════╝██╔══██╗██║    ██║
+██║     ███████║███████║██║██╔██╗ ██║███████╗███████║██║ █╗ ██║
+██║     ██╔══██║██╔══██║██║██║╚██╗██║╚════██║██╔══██║██║███╗██║
+╚██████╗██║  ██║██║  ██║██║██║ ╚████║███████║██║  ██║╚███╔███╔╝
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚══╝╚══╝
+    By WithSecure Countercept (@FranticTyping, @AlexKornitzer)
+
+[+] Loading forensic artefacts from: ./Logs2/
+[+] Loaded 8 forensic files (133.8 MB)
+[+] Searching forensic artefacts...
+---
+Event:
+  EventData:
+    Binary: null
+    Data:
+    - mimikatz.exe
+    - 2.2.0.0
+    - '63288e67'
+    - ntdll.dll
+    - 10.0.19041.2130
+    - b5ced1c6
+    - c0000374
+    - 00000000000ff6a9
+    - 2dbc
+    - 01d967a0ff103b7c
+    - C:\temp\mimikatz_trunk_last\x64\mimikatz.exe
+    - C:\Windows\SYSTEM32\ntdll.dll
+    - c75d4409-2bc2-4017-bd3a-2a648ed07d5b
+    - ''
+    - ''
+  System:
+    Channel: Application
+    Computer: Laptop01.lab.local 
+    Correlation: null
+    EventID: 1000
+    EventID_attributes:
+      Qualifiers: 0
+    EventRecordID: 13828
+    Execution_attributes:
+      ProcessID: 0
+      ThreadID: 0
+    Keywords: '0x80000000000000'
+    Level: 2
+    Opcode: 0
+    Provider_attributes:
+      Name: Application Error
+    Security: null
+    Task: 100
+    TimeCreated_attributes:
+      SystemTime: 2023-04-05T09:28:35.682625Z
+    Version: 0
+Event_attributes:
+  xmlns: http://schemas.microsoft.com/win/2004/08/events/event
+
+---
+<SNIP>
+
