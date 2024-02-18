@@ -42,7 +42,7 @@ In addition to supporting sigma rules, Chainsaw also supports a custom rule form
 
 
 ==================================================================================================================================
-PoC/T - Threat Hunting using Chainsaw
+PoC / Test - Threat Hunting using Chainsaw
 ==================================================================================================================================
 
 C:\Users\analyst\Documents\Tools\17-DFIR\Chainsaw> chainsaw.exe
