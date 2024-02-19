@@ -1,0 +1,446 @@
+==================================================================================================================================
+Threat hunting with Windows event logs and the tool DeepBlueCli
+==================================================================================================================================
+
+DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
+It is an open-source framework that automatically parses Windows event logs, either on Windows (PowerShell version) or now on ELK (Elasticsearch).
+
+GitHub link - https://github.com/sans-blue-team/DeepBlueCLI
+
+----------------------------------
+1. Usage
+----------------------------------
++ Process local Windows security event log (PowerShell must be run as Administrator):
+  > .\DeepBlue.ps1`
+  or
+  > .\DeepBlue.ps1 -log security
+
++ Process local Windows system event log:
+  > .\DeepBlue.ps1 -log system
+
++ Process evtx file:
+  > .\DeepBlue.ps1 .\evtx\new-user-security.evtx
+
+----------------------------------
+2. Windows Event Logs processed
+----------------------------------
++ Windows Security 
++ Windows System
++ Windows Application
++ Windows PowerShell 
++ Sysmon
+
+----------------------------------
+3. Detected events
+----------------------------------
++ Suspicious account behavior
+  * User creation
+  * User added to local/global/universal groups
+  * Password guessing (multiple logon failures, one account)
+  * Password spraying via failed logon (multiple logon failures, multiple accounts)
+  * Password spraying via explicit credentials
+  * Bloodhound (admin privileges assigned to the same account with multiple Security IDs)
++ Command line/Sysmon/PowerShell auditing
+  * Long command lines
+  * Regex searches
+  * Obfuscated commands
+  * PowerShell launched via WMIC or PsExec
+  * PowerShell Net.WebClient Downloadstring
+  * Compressed/Base64 encoded commands (with automatic decompression/decoding)
+  * Unsigned EXEs or DLLs
++ Service auditing
+  * Suspicious service creation
+  * Service creation errors
+  * Stopping/starting the Windows Event Log service (potential event log manipulation)
++ Mimikatz
+  * `lsadump::sam`
++ EMET & Applocker Blocks
++ ...
+
+----------------------------------
+4. Output
+----------------------------------
+DeepBlueCLI outputs in PowerShell objects, allowing a variety of output methods and types, including JSON, HTML, CSV, etc.
+
+Output Type 	          Syntax
+------------------------------------------------------------------------------------
+CSV 	                  .\DeepBlue.ps1 .\evtx\psattack-security.evtx | ConvertTo-Csv
+Format list (default) 	.\DeepBlue.ps1 .\evtx\psattack-security.evtx | Format-List
+Format table 	          .\DeepBlue.ps1 .\evtx\psattack-security.evtx | Format-Table
+GridView 	              .\DeepBlue.ps1 .\evtx\psattack-security.evtx | Out-GridView
+HTML 	                  .\DeepBlue.ps1 .\evtx\psattack-security.evtx | ConvertTo-Html
+JSON 	                  .\DeepBlue.ps1 .\evtx\psattack-security.evtx | ConvertTo-Json
+XML 	                  .\DeepBlue.ps1 .\evtx\psattack-security.evtx | ConvertTo-Xml
+
+
+========================================================================================================================================
+PoC / Test - Threat Hunting using DeepBlueCli
+========================================================================================================================================
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Example 1 - Hunt through Windows event logs of a Windows computer using the tool 'DeepBlueCLI' to detect potential malicious activities
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Step 1 - Extract the Windows event logs of the Windows machine that you want to audit and then copy the logs on your DFIR computer/VM
+--------------------------------------------------------------------------------------------------------------------------------------
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> ls .\Logs\
+
+    Directory: PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master\Logs
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         2/18/2024   9:27 PM       12652544 Application.evtx
+-a----         2/18/2024  11:36 PM        4263936 Powershell.evtx
+-a----         2/18/2024   9:27 PM       15798272 Powershell_Operational.evtx
+-a----         2/18/2024   9:27 PM       21041152 Security.evtx
+-a----         2/18/2024   9:27 PM       21041152 System.evtx
+
+
+Step 2 - Run DeepBlueCLI on your DFIR computer/VM
+---------------------------------------------------
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\Logs\Security.evtx > DeepBlue-Threat-Hunting-Security-Logs.txt
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\Logs\System.evtx > DeepBlue-Threat-Hunting-System-Logs.txt
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\Logs\Application.evtx > DeepBlue-Threat-Hunting-Application-Logs.txt
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\Logs\Powershell.evtx > DeepBlue-Threat-Hunting-PowerShell-Logs.txt
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\Logs\Powershell_Operational.evtx > DeepBlue-Threat-Hunting-PowerShell_Operational-Logs.txt
+
+Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding
+characters, or an illegal character among the padding characters. "
+<SNIP>
+
+PS C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> 
+
+    Directory: C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+<SNIP>
+-a----         2/18/2024  11:32 PM              0 DeepBlue-Threat-Hunting-Application-Logs.txt
+-a----         2/18/2024  11:34 PM             84 DeepBlue-Threat-Hunting-PowerShell-Logs.txt
+-a----         2/18/2024  11:33 PM        1334246 DeepBlue-Threat-Hunting-PowerShell_Operational-Logs.txt
+-a----         2/18/2024  11:30 PM           2688 DeepBlue-Threat-Hunting-Security-Logs.txt
+-a----         2/18/2024  11:31 PM              0 DeepBlue-Threat-Hunting-System-Logs.txt
+<SNIP>
+
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> more .\DeepBlue-Threat-Hunting-Security-Logs.txt
+
+Date    : 11/19/2023 6:09:15 PM
+Log     : Security
+EventID : 4720
+Message : New User Created
+Results : Username: webadmin
+          User SID: S-1-5-21-623615720-976303472-281948982-1006
+Command :
+Decoded :
+
+Date    : 10/5/2023 2:13:51 PM
+Log     : Security
+EventID : 4672
+Message : Multiple admin logons for one account
+Results : Username: auditor
+          User SID Access Count: 115
+Command :
+Decoded :
+
+Date    : 10/5/2023 2:13:51 PM
+Log     : Security
+EventID : 4672
+Message : Multiple admin logons for one account
+Results : Username: Laptop01$
+          User SID Access Count: 40
+Command :
+Decoded :
+
+Date    : 10/5/2023 2:13:51 PM
+Log     : Security
+EventID : 4625
+Message : High number of logon failures for one account
+Results : Username: Administrator
+          Total logon failures: 31
+Command :
+Decoded :
+
+Date    : 10/5/2023 2:13:51 PM
+Log     : Security
+EventID : 4625
+Message : High number of total logon failures for multiple accounts
+Results : Total accounts: 4
+          Total logon failures: 38
+
+-- More  --
+
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> more .\DeepBlue-Threat-Hunting-PowerShell_Operational-Logs.txt
+
+Date    : 2/13/2024 6:52:28 PM
+Log     : Powershell
+EventID : 4104
+Message : Suspicious Command Line
+Results : Long Command Line: greater than 1000 bytes
+
+Command :     $__cmdletization_methodParameter = [Microsoft.PowerShell.Cmdletization.MethodParameter]@{Name = 'CmdletOutput'; ParameterType =
+          'Microsoft.Management.Infrastructure.CimInstance'; Bindings = 'Out'; Value = $__cmdletization_defaultValue; IsValuePresent =
+          $__cmdletization_defaultValueIsPresent}
+                  $__cmdletization_methodParameter.ParameterTypeName = 'Microsoft.Management.Infrastructure.CimInstance#MSFT_ClusteredScheduledTask'
+                  $__cmdletization_methodParameters.Add($__cmdletization_methodParameter)
+
+<SNIP>
+
+Date    : 2/8/2024 8:14:38 PM
+Log     : Powershell
+EventID : 4104
+Message : Suspicious Command Line
+Results : Long Command Line: greater than 1000 bytes
+          500+ consecutive Base64 characters
+          
+Command : 5JxuzwAHXbxrAAm5TfFteLAd/cUy+6Q8qaoLu6QBVndNl8my3KoW+ez4chPW0PGq1STX566dlpBACWf/Q5SuxU2bbUeC/bxOouP/1Vg0kIPS15blygqod3aO5B719hGLD+d1Ty
+          ...
+
+<SNIP>
+
+--------------
+Conclusion
+--------------
+The tool detected:
+> The creation of a new user (Webadmin)
+> Several password brute-force attacks (High number of total logon failures for multiple accounts)
+> Multiple (potentially suspicious) admin logons for one account (auditor)
+> Several suspicious Powershell commands (long command line greater than 1000 bytes and 500+ consecutive Base64 characters)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Multiple examples of hunting through Windows event logs using the tool 'DeepBlueCLI'
+---------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------
+> Detection of "Mimikatz lsadump::sam"
+---------------------------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\evtx\mimikatz-privesc-hashdump.evtx
+
+Date    : 4/30/2019 8:08:29 PM
+Log     : Security
+EventID : 4673
+Message : Sensitive Privilege Use Exceeds Threshold
+Results : Potentially indicative of Mimikatz, multiple sensitive privilege calls have been made.
+          Username: Sec504
+          Domain Name: SEC504STUDENT
+Command :
+Decoded :
+
+Date    : 4/30/2019 8:08:22 PM
+Log     : Security
+EventID : 1102
+Message : Audit Log Clear
+Results : The Audit log was cleared.
+          Account Name: Sec504
+Command :
+Decoded :
+
+-------------------------------------------
+> Detection of "Password spraying" attacks
+-------------------------------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\evtx\password-spray.evtx
+
+Date    : 4/30/2019 9:27:40 PM
+Log     : Security
+EventID : 4648
+Message : Distributed Account Explicit Credential Use (Password Spray Attack)
+Results : The use of multiple user account access attempts with explicit credentials is an indicator of a password spray attack.
+          Target Usernames: gsalinas cdavis lpesce Administrator melliott dpendolino cragoso baker cmoody rbowes jkulikowski jleytevidal tbennett zmathis bgreenwood
+          cspizor wstrzelec drook dmashburn sanson cfleener celgee bhostetler eskoudis kperryman mtoussain thessman bgalbraith ssims psmith jorchilles smisenar bking
+          mdouglas jlake jwright econrad edygert lschifano sarmstrong ebooth
+          Unique accounts sprayed: 41
+          Accessing Username: jwrig
+          Accessing Host Name: DESKTOP-JR78RLP
+Command :
+Decoded :
+
+----------------------------------
+> Detection of "PSAttack"
+----------------------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\evtx\psattack-security.evtx
+
+Date    : 9/20/2016 8:41:27 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Resource File To COFF Object Conversion Utility cvtres.exe
+          PSAttack-style command via cvtres.exe
+
+Command : C:\Windows\Microsoft.NET\Framework\v4.0.30319\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 "/OUT:C:\Users\IEUser\AppData\Local\Temp\RES3874.tmp"
+          "c:\Users\IEUser\AppData\Local\Temp\CSC14C61BA389694F5FAB6FBD8E9CFA7CEF.TMP"
+Decoded :
+
+Date    : 9/20/2016 8:41:27 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Use of C Sharp compiler csc.exe
+          PSAttack-style command via csc.exe
+
+Command : "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" /noconfig /fullpaths @"C:\Users\IEUser\AppData\Local\Temp\kwos13rh.cmdline"
+Decoded :
+
+Date    : 9/20/2016 8:33:13 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Resource File To COFF Object Conversion Utility cvtres.exe
+          PSAttack-style command via cvtres.exe
+
+Command : C:\Windows\Microsoft.NET\Framework\v4.0.30319\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 "/OUT:C:\Users\IEUser\AppData\Local\Temp\RESB25D.tmp"
+          "c:\Users\IEUser\AppData\Local\Temp\CSCAE981B6C775D478784A2D2A90379D51.TMP"
+Decoded :
+
+Date    : 9/20/2016 8:33:13 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Use of C Sharp compiler csc.exe
+          PSAttack-style command via csc.exe
+
+Command : "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" /noconfig /fullpaths @"C:\Users\IEUser\AppData\Local\Temp\0xqpayvt.cmdline"
+Decoded :
+
+Date    : 9/20/2016 8:28:58 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Resource File To COFF Object Conversion Utility cvtres.exe
+          PSAttack-style command via cvtres.exe
+
+Command : C:\Windows\Microsoft.NET\Framework\v4.0.30319\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 "/OUT:C:\Users\IEUser\AppData\Local\Temp\RESCB96.tmp"
+          "c:\Users\IEUser\AppData\Local\Temp\CSCDD7CF7985DD64D48B389AD7A587C926D.TMP"
+Decoded :
+
+Date    : 9/20/2016 8:28:58 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Use of C Sharp compiler csc.exe
+          PSAttack-style command via csc.exe
+
+Command : "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" /noconfig /fullpaths @"C:\Users\IEUser\AppData\Local\Temp\wlqywrdm.cmdline"
+Decoded :
+
+Date    : 9/20/2016 8:27:45 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Resource File To COFF Object Conversion Utility cvtres.exe
+          PSAttack-style command via cvtres.exe
+
+Command : C:\Windows\Microsoft.NET\Framework\v4.0.30319\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 "/OUT:C:\Users\IEUser\AppData\Local\Temp\RESADB2.tmp"
+          "c:\Users\IEUser\AppData\Local\Temp\CSC4EC78419D61349E285CD9DBCB3C7409.TMP"
+Decoded :
+
+Date    : 9/20/2016 8:27:44 PM
+Log     : Security
+EventID : 4688
+Message : Suspicious Command Line
+Results : Use of C Sharp compiler csc.exe
+          PSAttack-style command via csc.exe
+
+Command : "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" /noconfig /fullpaths @"C:\Users\IEUser\AppData\Local\Temp\g4g34pot.cmdline"
+Decoded :
+
+Date    : 9/20/2016 8:27:25 PM
+Log     : Security
+EventID : 1102
+Message : Audit Log Clear
+Results : The Audit log was cleared.
+          Account Name: IEUser
+Command :
+Decoded :
+
+----------------------------------------
+> Detection of "Event log manipulation"
+----------------------------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\evtx\disablestop-eventlog.evtx
+
+Date    : 4/27/2019 11:04:51 PM
+Log     : System
+EventID : 7040
+Message : Event Log Service Started
+Results : Service name: Windows Event Log
+          Selective event log manipulation may precede this event.
+Command :
+Decoded :
+
+Date    : 4/27/2019 11:04:32 PM
+Log     : System
+EventID : 7040
+Message : Event Log Service Stopped
+Results : Service name: Windows Event Log
+          Selective event log manipulation may follow this event.
+Command :
+Decoded :
+
+Date    : 4/27/2019 11:04:25 PM
+Log     : System
+EventID : 104
+Message : System Log Clear
+Results : The System log file was cleared.
+Command :
+Decoded :
+
+---------------------------------------------------
+> Detection of "User added to administrator group"
+---------------------------------------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\evtx\new-user-security.evtx
+
+Date    : 10/23/2013 6:22:40 PM
+Log     : Security
+EventID : 4732
+Message : User added to local Administrators group
+Results : Username: -
+          User SID: S-1-5-21-3463664321-2923530833-3546627382-1000
+
+Command :
+Decoded :
+
+Date    : 10/23/2013 6:22:39 PM
+Log     : Security
+EventID : 4720
+Message : New User Created
+Results : Username: IEUser
+          User SID: S-1-5-21-3463664321-2923530833-3546627382-1000
+
+Command :
+Decoded :
+
+---------------------------------------------------
+> Detection of SMB "Password guessing" attacks
+---------------------------------------------------
+
+C:\Users\analyst\Documents\Tools\17-DFIR\DeepBlueCLI-master> .\DeepBlue.ps1 .\evtx\smb-password-guessing-security.evtx
+
+Date    : 9/19/2016 6:50:06 PM
+Log     : Security
+EventID : 4625
+Message : High number of logon failures for one account
+Results : Username: Administrator
+          Total logon failures: 3560
+Command :
+Decoded :
+
+Date    : 9/19/2016 6:50:06 PM
+Log     : Security
+EventID : 4625
+Message : High number of total logon failures for multiple accounts
+Results : Total accounts: 2
+          Total logon failures: 3561
+
+Command :
