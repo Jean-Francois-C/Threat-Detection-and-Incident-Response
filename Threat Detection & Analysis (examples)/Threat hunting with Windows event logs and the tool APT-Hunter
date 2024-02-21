@@ -1,0 +1,235 @@
+==================================================================================================================================
+Threat hunting with Windows event logs and the tool APT-Hunter
+==================================================================================================================================
+
+> APT-Hunter is a threat hunting tool (python script) for windows event logs (made with a purple team mindset) to detect APT movements 
+  hidden in the sea of windows event logs and to reduce the time to uncover suspicious activities.
+> It produces several output files (xlsx and CSV): a global report, logon events, objects access events, process execution events, etc.
+
+GitHub link - https://github.com/ahmedkhlief/APT-Hunter
+
+
+==================================================================================================================================
+PoC / Test - Threat Hunting using APT-Hunter
+==================================================================================================================================
+
+-----------------------------------------------------------------------------
+Step 1 - Download, install and update the tool in your Linux DFIR machine/VM
+-----------------------------------------------------------------------------
+
+Download URL:  https://github.com/ahmedkhlief/APT-Hunter
+
+jeff@linuxbox:~/Documents/Tools/APT-Hunter-main$ pip3 install -r ./requirements.txt                
+<SNIP>
+
+jeff@linuxbox:~/Documents/Tools/APT-Hunter-main$ ./Get_Latest_Sigma_Rules.sh 
+<SNIP>
+
+jeff@linuxbox:~/Documents/Tools/APT-Hunter-main$ python3 /home/jeff/Documents/Tools/APT-Hunter-main/APT-Hunter.py -h
+
+  /$$$$$$  /$$$$$$$  /$$$$$$$$         /$$   /$$                       /$$
+ /$$__  $$| $$__  $$|__  $$__/        | $$  | $$                      | $$
+| $$  \ $$| $$  \ $$   | $$           | $$  | $$ /$$   /$$ /$$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$
+| $$$$$$$$| $$$$$$$/   | $$    /$$$$$$| $$$$$$$$| $$  | $$| $$__  $$|_  $$_/   /$$__  $$ /$$__  $$
+| $$__  $$| $$____/    | $$   |______/| $$__  $$| $$  | $$| $$  \ $$  | $$    | $$$$$$$$| $$  \__/
+| $$  | $$| $$         | $$           | $$  | $$| $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$
+| $$  | $$| $$         | $$           | $$  | $$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$
+|__/  |__/|__/         |__/           |__/  |__/ \______/ |__/  |__/   \___/   \_______/|__/
+
+                                                                By : Ahmed Khlief , @ahmed_khlief
+                                                                Version : 3.2
+                                                                                                  
+usage: APT-Hunter.py [-h] [-p PATH] [-o OUT] [-tz TIMEZONE] [-hunt HUNT] [-huntfile HUNTFILE]
+                     [-eid EID] [-start START] [-end END] [-procexec] [-logon] [-objaccess]
+                     [-allreport] [-sigma] [-rules RULES] [-cores CORES]
+
+options:
+  -h, --help            show this help message and exit
+  -p PATH, --path PATH  path to folder containing windows event logs , APT-Hunter will detect
+                        each log type automatically
+  -o OUT, --out OUT     output file name
+  -tz TIMEZONE, --timezone TIMEZONE
+                        default Timezone is Local timezone , you can enter ( 'local' : for
+                        local timzone , <Country time zone> : like (Asia/Dubai) )
+  -hunt HUNT, --hunt HUNT
+                        String or regex to be searched in evtx log path
+  -huntfile HUNTFILE, --huntfile HUNTFILE
+                        file contain Strings or regex to be searched in evtx log path (
+                        strings should be new line separated )
+  -eid EID, --eid EID   Event ID to search if you chosed the hunt module
+  -start START, --start START
+                        Start time for timeline ( use ISO format Ex:2022-04-03T20:56+04:00 )
+  -end END, --end END   End time for timeline ( use ISO format Ex: 2022-04-03T20:56+04:00 or
+                        2022-04-03T20:56 or 2022-04-03 20:56 or 2022-04-03 )
+  -procexec, --procexec
+                        Produce Process Execution report
+  -logon, --logon       Produce Success and faild authentication report
+  -objaccess, --objaccess
+                        Produce Object Access report
+  -allreport, --allreport
+                        Produce all reports
+  -sigma, --sigma       use sigma module to search logs using sigma rules
+  -rules RULES, --rules RULES
+                        path to sigma rules in json format
+  -cores CORES, --cores CORES
+                        cpu cores to be used in multiprocessing , default is half the number
+                        of availble CPU cores
+
+----------------------------------------------------------------------------------------------------------------
+Step 2 - Extract the Windows event logs of the Windows machine that you want to audit (e.g. Windows 10 laptop) 
+----------------------------------------------------------------------------------------------------------------
+
+PS C:\temp> .\windows-log-collector-full-v3-EVTX.ps1
+
+Directory: C:\temp
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2/18/2024   9:27 PM                wineventlog
+
+PS C:\temp> ls .\wineventlog\
+
+    Directory: C:\temp\wineventlog
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         2/18/2024   9:27 PM       12652544 Application.evtx
+-a----         2/18/2024   9:27 PM        1118208 LocalSessionManager.evtx
+-a----         2/18/2024   9:27 PM       15798272 Powershell_Operational.evtx
+-a----         2/18/2024   9:27 PM       21041152 Security.evtx
+-a----         2/18/2024   9:27 PM       21041152 System.evtx
+-a----         2/18/2024   9:27 PM       10555392 TaskScheduler.evtx
+-a----         2/18/2024   9:27 PM        4263936 Windows_Defender.evtx
+-a----         2/18/2024   9:27 PM        4263936 Windows_PowerShell.evtx
+-a----         2/18/2024   9:27 PM        1118208 WinRM.evtx
+
+
+----------------------------------------------------------------------------------------------------------------
+Step 3: Copy all the Windows event logs on your Linux DFIR computer/VM
+----------------------------------------------------------------------------------------------------------------
+
+jeff@linuxbox:~/Documents/Tools/APT-Hunter-main$ ls ./Logs
+Application.evtx   
+LocalSessionManager.evtx     
+Security.evtx  
+TaskScheduler.evtx
+Forward.evtx       
+Powershell.evtx              
+Setup.evtx     
+Windows_Defender.evtx
+HP-Analytics.evtx  
+Powershell_Operational.evtx  
+System.evtx    
+Windows_PowerShell.evtx
+
+
+----------------------------------------------------------------------------------------------------------------
+Step 4: Run APT-Hunter on your Linux DFIR computer/VM to detect suspicious activities and potential threats
+----------------------------------------------------------------------------------------------------------------
+
+jeff@linuxbox:~/Documents/Tools/APT-Hunter-main$ python3 /home/jeff/Documents/Tools/APT-Hunter-main/APT-Hunter.py -p /home/jeff/Documents/Tools/APT-Hunter-main/Logs/ -o TestThreatHunting -allreport
+
+  /$$$$$$  /$$$$$$$  /$$$$$$$$         /$$   /$$                       /$$
+ /$$__  $$| $$__  $$|__  $$__/        | $$  | $$                      | $$
+| $$  \ $$| $$  \ $$   | $$           | $$  | $$ /$$   /$$ /$$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$
+| $$$$$$$$| $$$$$$$/   | $$    /$$$$$$| $$$$$$$$| $$  | $$| $$__  $$|_  $$_/   /$$__  $$ /$$__  $$
+| $$__  $$| $$____/    | $$   |______/| $$__  $$| $$  | $$| $$  \ $$  | $$    | $$$$$$$$| $$  \__/
+| $$  | $$| $$         | $$           | $$  | $$| $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$
+| $$  | $$| $$         | $$           | $$  | $$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$
+|__/  |__/|__/         |__/           |__/  |__/ \______/ |__/  |__/   \___/   \_______/|__/
+
+                                                                By : Ahmed Khlief , @ahmed_khlief
+                                                                Version : 3.2
+                                                                                                  
+output folder TestThreatHunting has been created
+all reports value : True
+logons value False
+temp/ has been created
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Forward.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Security.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Powershell_Operational.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/System.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Setup.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/HP-Analytics.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Windows_Defender.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Windows_PowerShell.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Application.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/TaskScheduler.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/Powershell.evtx
+Analyzing /home/jeff/Documents/Tools/APT-Hunter-main/Logs/LocalSessionManager.evtx
+<SNIP>
+Windows Defender Logs Done in 19.3473 seconds
+Security Logs Done in 20.0833 seconds
+Powershell Operational Done in 23.2291 seconds
+ScheduledTask Logs Done in 27.4283 seconds
+preparing results
+temp/_User_SIDs_report.csv does not exist.
+preparing report
+temp/_User_SIDs_report.csv does not exist.
+temp/_Sysmon_report.csv does not exist.
+temp/_WinRM_events_report.csv does not exist.
+temp/_TerminalServices_RDPClient_report.csv does not exist.
+temp/_Group_Policy_report.csv does not exist.
+temp/_SMB_Server_report.csv does not exist.
+temp/_SMB_Client_report.csv does not exist.
+Time Sketch Report saved as TestThreatHunting/TestThreatHunting_TimeSketch.csv
+Logon Events Report saved as TestThreatHunting/TestThreatHunting_Logon_Events.csv
+Object Access Events Report saved as TestThreatHunting/TestThreatHunting_Object_Access_Events.csv
+Process Execution Events Report saved as TestThreatHunting/TestThreatHunting_Process_Execution_Events.csv
+<SNIP>
+Report saved as TestThreatHunting/TestThreatHunting_Report.xlsx
+
+Detection Summary :
+############################################
+Number of incidents by Severity:
+Medium      8345
+High        3552
+Critical    1148
+Low          112
+############################################
+Number of incidents by Detection Rule:
+Suspicious PowerShell commands Detected                                    5794
+schedule task updated                                                      5009
+Windows Defender Found Malware                                              499
+powershell script block - Found Suspicious PowerShell commands              341
+Windows Defender took action against Malware                                315
+Windows Defender antimalware platform configuration changed                 298
+Service installed in the system                                             220
+Powershell Executing Pipeline - Suspicious Powershell Commands detected     201
+User Loggedon to machine                                                    112
+Suspicious Command or process found in the log                              108
+Windows Defender real-time protection disabled                               86
+Windows Defender deleted history of malwares                                 55
+User Loggedon to machine after working hours                                 31
+Powershell Executing Pipeline - Operation including TEMP folder              24
+Windows Defender failed to take action against Malware                       17
+schedule task registered                                                     11
+schedule task deleted                                                         8
+Windows is shutting down                                                      7
+Pass the hash attempt Detected                                                4
+User connected RDP to this machine                                            3
+Windows Defender detected suspicious behavior Malware                         3
+User added to global group                                                    2
+User Created through management interface                                     2
+Password Spray Detected                                                       1
+User added to local group                                                     1
+User Account Removed                                                          1
+User Removed from Global Group                                                1
+Process running in Unusual location                                           1
+Powershell Module logging - Malicious Commands Detected                       1
+Powershell Executing Pipeline - User Powershell Commands                      1
+
+Analysis finished in 33.4626 seconds
+
+------------------------
+Conclusion
+------------------------
+> Numerous suspicious activities and potential threats have been detected in the Windows event logs.
+> All the reports files have been created in the folder 'TestThreatHunting'.
+
+jeff@linuxbox:~/Documents/Tools/APT-Hunter-main$ ls TestThreatHunting
+TestThreatHunting_Collected_SIDs.csv        
+TestThreatHunting_Process_Execution_Events.csv
+TestThreatHunting_Logon_Events.csv          
+TestThreatHunting_Report.xlsx
+TestThreatHunting_Object_Access_Events.csv  
+TestThreatHunting_TimeSketch.csv
