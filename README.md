@@ -106,6 +106,7 @@
   + Cynet 360 AutoXDR
   + Trend Micro Vision One
   + ...
+    
   Useful GitHub project: [EDR Telemetry](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
 
 + Security Information and Event Management (SIEM) 
