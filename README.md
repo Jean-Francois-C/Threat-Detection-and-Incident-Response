@@ -98,7 +98,7 @@
 #### 2. Commercial products
 
 + Endpoint Detection and Response (EDR)
-  + Microsoft Defender EDR/XDR
+  + Microsoft Defender EDR
   + Cybereason EDR
   + CrowdStrike EDR
   + SentinelOne EDR
