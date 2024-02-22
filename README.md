@@ -82,7 +82,6 @@
   + [Elastic Detection Rules Explorer](https://elastic.github.io/detection-rules-explorer/) - Elastic Security detection rules help users to set up and get their detections and security monitoring going as soon as possible. 
   + GitHub - [Elastic Detection Rules](https://github.com/elastic/detection-rules) - Rules for Elastic Security's detection engine.
   + Other
-    + GitHub - [EDR Telemetry](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
     + GitHub - [Sysmon EDR](https://github.com/ion-storm/sysmon-edr) - Sysmon EDR POC Build within Powershell to prove ability.
     + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
 
@@ -98,8 +97,8 @@
 
 #### 2. Commercial products
 
-+ Endpoint Detection and Response (EDR) / Extended Detection and Response (XDR)
-  + Microsoft Defender XDR
++ Endpoint Detection and Response (EDR)
+  + Microsoft Defender EDR/XDR
   + Cybereason EDR
   + CrowdStrike Falcon
   + SentinelOne Singularity
@@ -107,8 +106,9 @@
   + Cynet 360 AutoXDR
   + Trend Micro Vision One
   + ...
+  Useful GitHub project: [EDR Telemetry](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
 
-+ Security Information and Event mManagement (SIEM) 
++ Security Information and Event Management (SIEM) 
   + Microsoft Azure Sentinel SIEM
   + LogRhythm SIEM
   + LogPoint SIEM
