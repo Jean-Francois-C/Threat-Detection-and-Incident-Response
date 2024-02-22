@@ -100,11 +100,13 @@
 + Endpoint Detection and Response (EDR)
   + Microsoft Defender EDR/XDR
   + Cybereason EDR
-  + CrowdStrike Falcon
-  + SentinelOne Singularity
-  + Cortex XDR (Palo Alto Networks)
+  + CrowdStrike EDR
+  + SentinelOne EDR
+  + Carbon Black EDR (VMware)
+  + Cortex EDR/XDR (Palo Alto Networks)
   + Cynet 360 AutoXDR
   + Trend Micro Vision One
+  + WatchGuard EDR
   + ...
     
   Useful GitHub project: [EDR Telemetry](https://github.com/tsale/EDR-Telemetry) - This project aims to compare and evaluate the telemetry of various EDR products.
