@@ -3,7 +3,7 @@
 
 ### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
-- [II. TDIR Tools (Free/Community/Open-Source)](#II-TDIR-Tools-FreeCommunityOpen-Source)
+- [II. TDIR Tools](#II-TDIR-Tools-FreeCommunityOpen-Source)
 - [III. MITRE ATTACK Framework](#III-MITRE-ATTACK-Framework)
 - [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model--Defense)
 - [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection--Incident-Response-TDIR)
@@ -38,7 +38,9 @@
 + List of Threat Actors: [MITRE - Adversary Groups](https://attack.mitre.org/groups/), [Mandiant - APT Groups](https://www.mandiant.com/resources/insights/apt-groups), [Crowstrike - Global Threat Landscape & Adversaries](https://www.crowdstrike.com/adversaries/)
 
 --------
-### II. TDIR TOOLS (Free/Community/Open-Source)
+### II. TDIR TOOLS
+
+#### 1. Community / Open-Source / Free Tools
 
 + Threat Hunting / Logs search / Incident Response
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
@@ -70,13 +72,13 @@
   + GitHub - [De4dot](https://github.com/de4dot/de4dot) - It is an open source .NET deobfuscator and unpacker that will try its best to restore a packed and obfuscated assembly to almost the original assembly.
   + GitHub - [Themida Unpacker for .NET](https://github.com/cg10036/Themida-Unpacker-for-.NET) - Tool developed to quickly and easily unpack packed .NET files.
 
-+ SIEM / XDR
++ Security Information and Event mManagement (SIEM) / Extended Detection and Response (XDR)
   + GitHub - [Wazuh](https://github.com/wazuh/wazuh) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads.
   + [AlienVault OSSIM](https://cybersecurity.att.com/products/ossim) - OSSIM (Open Source Security Information Management / SIEM) includes asset discovery, vulnerability assessment, intrusion detection, behavioral monitoring, SIEM event correlation).
 
 + Endpoint Detection and Response (EDR)
   + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) - Free and Open-Source Endpoint Detection and Response (EDR) Platform (www.comodo.com).
-  + [Elastic Security for Endpoint](https://www.elastic.co/fr/downloads) - Start a trial or the community version
+  + [Elastic Security for Endpoint](https://www.elastic.co/fr/downloads) - A community version of Elastic Security is available.
   + [Elastic Detection Rules Explorer](https://elastic.github.io/detection-rules-explorer/) - Elastic Security detection rules help users to set up and get their detections and security monitoring going as soon as possible. 
   + GitHub - [Elastic Detection Rules](https://github.com/elastic/detection-rules) - Rules for Elastic Security's detection engine.
   + Other
@@ -84,11 +86,39 @@
     + GitHub - [Sysmon EDR](https://github.com/ion-storm/sysmon-edr) - Sysmon EDR POC Build within Powershell to prove ability.
     + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
 
++ Intrusion Detection System (IDS)
+  + GitHub - [OSSEC HIDS](https://github.com/ossec/ossec-hids) (https://www.ossec.net/) - Open Source Host-based Intrusion Detection System (HIDS) that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response.
+  + GitHub - [Zeek](https://github.com/zeek/zeek) - Zeek is a powerful network analysis framework that is much different from the typical IDS you may know. 
+
 + Adversary Emulation
   + GitHub - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) - Atomic Red Team™ is a library of tests mapped to the MITRE ATT&CK® framework. Security teams can use Atomic Red Team to quickly, portably, and reproducibly test their environments.
   + GitHub - [Atomic Red Team (PowerShell)](https://github.com/redcanaryco/invoke-atomicredteam) - Invoke-AtomicRedTeam is a PowerShell module to execute tests as defined in the atomics folder of Red Canary's Atomic Red Team project.
   + GitHub - [MITRE Caldera™](https://github.com/mitre/caldera) - A cyber security platform designed to easily automate adversary emulation, assist manual red-teams, and automate incident response (built on the MITRE ATT&CK™ framework).
   + GitHub - [APTSimulator](https://github.com/NextronSystems/APTSimulator) - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.
+
+#### 2. Commercial products
+
++ Endpoint Detection and Response (EDR) / Extended Detection and Response (XDR)
+  + Microsoft Defender XDR
+  + Cybereason EDR
+  + CrowdStrike Falcon
+  + SentinelOne Singularity
+  + Cortex XDR (Palo Alto Networks)
+  + Cynet 360 AutoXDR
+  + Trend Micro Vision One
+  + ...
+
++ Security Information and Event mManagement (SIEM) 
+  + Microsoft Azure Sentinel SIEM
+  + LogRhythm SIEM
+  + LogPoint SIEM
+  + Securonix SIEM
+  + IBM QRadar SIEM
+  + ArcSight Enterprise Security Manager
+  + McAfee Enterprise Security Manager
+  + Splunk Enterprise Security 
+  + Elastic Security for SIEM
+  + ...
 
 --------
 ### III. MITRE ATTACK Framework
