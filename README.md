@@ -21,6 +21,7 @@
 + ISO/IEC 27035 (2020-2023+) - [Information Security Incident Management](https://www.iso27001security.com/html/27035.html)
 + MITRE - [ATT&CK® Framework](https://attack.mitre.org) - Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
 + MITRE - [Enterprise Attack Excel matrix](https://attack.mitre.org/docs/enterprise-attack-v14.1/enterprise-attack-v14.1.xlsx) - This matrix covers the stages of a cyberattack lifecycle that occur after an exploit is initiated.
++ MITRE - [D3fend Matrix](https://d3fend.mitre.org) - A knowledge graph of cybersecurity countermeasures.
 + Tines - [SOC Automation Capability Matrix](https://tinesio.notion.site/4fd14ccf93e7408c8faf96c5aca8c3fd) - This matrix describes common activities which most SOC can automate.
 + ANSSI (French) - [Anticiper et gérer une crise Cyber](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
 + ANSSI (French) - [Organiser un exercice de gestion de crise cyber (Guide - v1.0)](https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber)
