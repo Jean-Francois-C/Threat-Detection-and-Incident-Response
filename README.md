@@ -21,9 +21,10 @@
 + ISO/IEC 27035 (2020-2023+) - [Information Security Incident Management](https://www.iso27001security.com/html/27035.html)
 + MITRE - [ATT&CK® Framework](https://attack.mitre.org) - Globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
 + MITRE - [Enterprise Attack Excel matrix](https://attack.mitre.org/docs/enterprise-attack-v14.1/enterprise-attack-v14.1.xlsx) - This matrix covers the stages of a cyberattack lifecycle that occur after an exploit is initiated.
-+ ANSSI (French)  - [Anticiper et gérer une crise Cyber](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
-+ ANSSI (French)  - [Organiser un exercice de gestion de crise cyber (Guide - v1.0)](https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber)
-+ ANSSI (French)  - Piloter la remédiation d’un incident cyber - [Volet stratégique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf) - [Volet opérationnel](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf) - [Volet technique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf)
++ Tines - [SOC Automation Capability Matrix](https://tinesio.notion.site/4fd14ccf93e7408c8faf96c5aca8c3fd) - This matrix describes common activities which most SOC can automate.
++ ANSSI (French) - [Anticiper et gérer une crise Cyber](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
++ ANSSI (French) - [Organiser un exercice de gestion de crise cyber (Guide - v1.0)](https://cyber.gouv.fr/publications/organiser-un-exercice-de-gestion-de-crise-cyber)
++ ANSSI (French) - Piloter la remédiation d’un incident cyber - [Volet stratégique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_strat%C3%A9gique_cyberattaquesetrem%C3%A9diation_v1g.pdf) - [Volet opérationnel](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_operationnel_cyberattaquesetremediation_a5_v1j.pdf) - [Volet technique](https://cyber.gouv.fr/sites/default/files/document/20231218_Volet_technique_cyberattaquesetremediation_a5_v1h.pdf)
 + GitHub - [Incident Response Methodologies](https://github.com/certsocietegenerale/IRM) - Incident Response Methodologies by CERT Societe Generale.
 + GitHub - [Awesome Incident Response](https://github.com/meirwah/awesome-incident-response/tree/master) - A curated list of tools and resources for security incident response and DFIR teams.
 + GitHub - [Awesome SOC](https://github.com/cyb3rxp/awesome-soc) - A collection of sources of documentation, as well as field best practices, to build/run a SOC
@@ -31,6 +32,7 @@
 + GitHub - [Breach Report Collection](https://github.com/BushidoUK/Breach-Report-Collection) - A collection of companies that disclose adversary TTPs after they have been breached.
 + GitHub - [Awesome Yara rules](https://github.com/InQuest/awesome-yara) - A curated list of awesome YARA rules, tools, and people.
 + GitHub - [Sigma rules](https://github.com/SigmaHQ/sigma) - SIGMA rule repository (more than 3000 detection rules).
++ Atomic Threat Coverage - [RE&CT Framework](https://atc-project.github.io/atc-react/) - The RE&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques.
 + Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
 + AWS - [AWS Incident Response Playbook Samples](https://github.com/aws-samples/aws-incident-response-playbooks)
 + AWS - [AWS Customer Playbook Framework](https://github.com/aws-samples/aws-customer-playbook-framework) - This repository provides sample templates for security playbooks against various scenarios when using Amazon Web Services.
@@ -309,19 +311,44 @@ to expansion and one or more command and control phases, until the target is ide
 + Analysis involves understanding the nature of the threat, its origin, its current reach and scope, and its potential trajectory.
 + Prioritization involves assessing the potential impact of the threat on the organization’s operations and data.
   
-#### STEP 5. Incident Response (Containment)
-+ The goal of the fifth step is to contain and mitigate the damages that have already been caused.
-+ The response could involve various actions such as disabling a user/service/machine account, shutting-down or isolating affected systems, blocking malicious IP addresses, forcing an MFA check, or removing malware from the network.
-+ A cyber incident response plan outlines the processes that the organization’s cybersecurity incident response team (CSIRT) follows once it detects an attack or data breach. 
+#### STEP 5. Containment
++ The objective of the fifth step is to contain and mitigate the damages that have already been caused.
++ The response could involve various actions such as:
+  + lock compromised or malicious user/service/machine accounts
+  + shut-down or isolate affected systems
+  + block malicious external/internal IP addresses, domains and URLs
+  + block malicious senders/domains on emails
+  + quarantine files
+  + disable system services
+  + force an MFA check
+  + rotate passwords
+  + patch a vulnerability
+  + ...
++ The cyber incident response plan should outline the containment procedures (playbook) that the CSIRT team must follow for each type incidents / cyber attacks. 
 
-#### STEP 5. Remediation
-+ Remediation involves identifying the incident’s root cause and repairing any damage caused by the threat.
-+ This could involve tasks like rotating passwords, patching vulnerabilities, hardening systems, recovering lost data, or reinstalling compromised software and systems.
-  
-#### STEP 6. Recovery
-+ Recovery involves restoring business operations to normal and addressing any residual effects of the threat.
+#### STEP 6. Eradication
++ The objective of the sixth step is to eradicate the threat and .
++ This step could involve various actions such as:
+  + remove malicious user/service/machine accounts
+  + remove malicious files, services, registry keys, ...
+  + remove rogue network device
+  + revoke authentication credentials (e.g. certificates, tokens, keys)
+  + ...
++ The cyber incident response plan should outline the eradication procedures (playbook) that the CSIRT team must follow for each type incidents / cyber attacks. 
 
-#### STEP 7. Lessons Learned
+#### STEP 7. Recovery and remediation
++ Recovery involves restoring business operations to normal, repairing any damage and addressing any residual effects of the threat.
++ This step could involve various actions such as:
+  + restore data from backup tapes
+  + recover lost data using forensic tool (if no backup)
+  + reinstall software and systems from (safe) backup images
+  + unlock legitimate user/service/machine accounts
+  + application & systems hardening
+  + patch vulnerabilitie
+  + upgrade software and OS versions
+  + ...
+    
+#### STEP 8. Lessons Learned
 + Learning involves conducting a post-incident analysis to understand what went wrong and how to prevent similar incidents in the future through process, technology and tools, and improved procedures.
 
 #### Some best practices for effective TDIR
