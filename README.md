@@ -416,7 +416,7 @@ to expansion and one or more command and control phases, until the target is ide
 #### Common SOC Job Roles
   + SOC Manager
     + Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
-  + Incident Response Manager
+  + Incident Response Lead
     + Responsible for managing incidents as they occur, and communicating security requirements to the organization in the case of a significant data breach.
   + SOC / Security Analyst Tier 1 – Triage
     + Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
@@ -424,12 +424,11 @@ to expansion and one or more command and control phases, until the target is ide
     + Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
   + SOC / Security Analyst Tier 3 – Threat Hunter
     + Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
-  + Security Architect
-    + Designs the security system and its processes, and integrates various technological and human components
-  + Security Engineer / Architect
-    + Manage and maintains the SOC monitoring and analysis tools and their underlying IT infrastructure
-  + Compliance Auditor
-    + Oversees the organization’s adherence to internal and external rules and regulations
+  + SOC Architect
+    + Designs and implements the technical and organizational aspects of a SOC and integrates various technological and human components
+  + SOC Engineer
+    + Operates and maintains the security monitoring and analysis solutions of the operations center on a 7x24x365 rotating shift schedule.
+    + Continuous fine-tuning of the security solutions to reduce the occurrence of false positive and false negative alerts
 
 #### Common SOC Challenges
   + Shortage of cybersecurity skills
