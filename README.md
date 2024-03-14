@@ -406,10 +406,9 @@ to expansion and one or more command and control phases, until the target is ide
   + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
   
 #### Common SOC Activities
-  + Network monitoring to provide complete visibility into digital activity and better detect anomalies
-  + Prevention techniques to deter and deflect a range of known and unknown risks
+  + Systems and network security monitoring to provide complete visibility into digital activity and better detect anomalies and threats
   + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
-  + Decisive incident response and remediation using a blend of automated technologies and human intervention
+  + Incident response and remediation using a blend of automated technologies and human intervention
   + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
   + Risk and compliance capabilities to ensure industry and government regulations are followed
       
