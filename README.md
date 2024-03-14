@@ -324,7 +324,7 @@ to expansion and one or more command and control phases, until the target is ide
   + rotate passwords
   + patch a vulnerability
   + ...
-+ The cyber incident response plan should outline the containment procedures (playbook) that the CSIRT team must follow for each type incidents / cyber attacks. 
++ The cyber incident response plan should outline the containment procedure (playbook) that the CSIRT team must follow for each type of incidents / cyber attacks. 
 
 #### STEP 6. Eradication
 + The objective of the sixth step is to eradicate the threat and .
@@ -334,13 +334,13 @@ to expansion and one or more command and control phases, until the target is ide
   + remove rogue network device
   + revoke authentication credentials (e.g. certificates, tokens, keys)
   + ...
-+ The cyber incident response plan should outline the eradication procedures (playbook) that the CSIRT team must follow for each type incidents / cyber attacks. 
++ The cyber incident response plan should outline the eradication procedure (playbook) that the CSIRT team must follow for each type of incidents / cyber attacks. 
 
 #### STEP 7. Recovery and remediation
 + Recovery involves restoring business operations to normal, repairing any damage and addressing any residual effects of the threat.
 + This step could involve various actions such as:
   + restore data from backup tapes
-  + recover lost data using forensic tool (if no backup)
+  + recover lost data using forensic tools (if no backup)
   + reinstall software and systems from (safe) backup images
   + unlock legitimate user/service/machine accounts
   + application & systems hardening
