@@ -328,7 +328,7 @@ to expansion and one or more command and control phases, until the target is ide
 + The cyber incident response plan should outline the containment procedure (playbook) that the CSIRT team must follow for each type of incidents / cyber attacks. 
 
 #### STEP 6. Eradication
-+ The objective of the sixth step is to eradicate the threat and .
++ The objective of the sixth step is to eradicate the threat.
 + This step could involve various actions such as:
   + remove malicious user/service/machine accounts
   + remove malicious files, services, registry keys, ...
@@ -391,7 +391,7 @@ to expansion and one or more command and control phases, until the target is ide
 --------
 ### VI. SOC - Security Operation Center 
 
-#### Definition
+#### SOC Definition
 
   + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
 
@@ -402,39 +402,42 @@ to expansion and one or more command and control phases, until the target is ide
   + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
   
   + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
-  
-  + In large organizations, SOCs rely on numerous tools to track and respond to cyberthreats.
-  
+    
   + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
   
-  + With multi-vector attacks, it is no surprise that SOC is becoming an increasingly important part of organizations’ efforts to keep ahead of the latest cybersecurity threats.
-
-#### SOC Activities, Roles and Responsabilities
-
-  + SOC activities and responsibilities include:
-    + Network monitoring to provide complete visibility into digital activity and better detect anomalies
-    + Prevention techniques to deter and deflect a range of known and unknown risks
-    + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
-    + Decisive incident response and remediation using a blend of automated technologies and human intervention
-    + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
-    + Risk and compliance capabilities to ensure industry and government regulations are followed
+#### Common SOC Activities
+  + Network monitoring to provide complete visibility into digital activity and better detect anomalies
+  + Prevention techniques to deter and deflect a range of known and unknown risks
+  + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
+  + Decisive incident response and remediation using a blend of automated technologies and human intervention
+  + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
+  + Risk and compliance capabilities to ensure industry and government regulations are followed
       
-  + SOC Job Roles
-    + When a cyberattack occurs, the SOC acts as the digital front line, responding to the security incident with force while also minimizing the impact on business operations.
-    + Common SOC roles include:
-      + SOC Manager: Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
-      + Director of incident response (IR): Responsible for managing incidents as they occur, and communicating security requirements to the organization in the case of a significant data breach.
-      + Security Analyst Tier 1 – Triage: Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
-      + Security Analyst Tier 2 – Incident Responder: Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
-      + Security Analyst Tier 3 – Threat Hunter: Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
-      + Security Architect: Designs the security system and its processes, and integrates various technological and human components
-      + Security engineer/architect: Maintains and suggests monitoring and analysis tools. 
-      + Compliance Auditor: Oversees the organization’s adherence to internal and external rules and regulations
+#### Common SOC Job Roles
+  + SOC Manager
+    + Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
+  + Incident Response Manager
+    + Responsible for managing incidents as they occur, and communicating security requirements to the organization in the case of a significant data breach.
+  + SOC / Security Analyst Tier 1 – Triage
+    + Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
+  + SOC / Security Analyst Tier 2 – Incident Responder
+    + Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
+  + SOC / Security Analyst Tier 3 – Threat Hunter
+    + Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
+  + Security Architect
+    + Designs the security system and its processes, and integrates various technological and human components
+  + Security Engineer / Architect
+    + Manage and maintains the SOC monitoring and analysis tools and their underlying IT infrastructure
+  + Compliance Auditor
+    + Oversees the organization’s adherence to internal and external rules and regulations
 
-    + SOC Challenges
-      + Shortage of cybersecurity skills: Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
-      + Too many alerts: As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
-      + Operational Overhead: Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
+#### Common SOC Challenges
+  + Shortage of cybersecurity skills
+    + Many SOC teams are understaffed and lack the advanced skills necessary to identify and respond to threats in a timely and effective manner. The (ISC)² Workforce Study estimated that the cybersecurity workforce needs to grow by 145% to close skills gap and better defend organizations worldwide.
+  + Too many alerts
+    + As organizations add new tools for threat detection, the volume of security alerts grows continually. With security teams today already inundated with work, the overwhelming number of threat alerts can cause threat fatigue. In addition, many of these alerts do not provide sufficient intelligence, context to investigate, or are false positives. False positives not only drain time and resources, but can also distract teams from real incidents.
+  + Operational Overhead
+    + Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
 
 #### Cyber Fusion Center (CFC)
 + Cyber Fusion Center (CFC) can be thought of as an advanced or next-generation SOC.
