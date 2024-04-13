@@ -64,7 +64,7 @@
   + [Valkyrie Comodo](https://valkyrie.comodo.com) - Valkyrie conducts several analysis using run-time behavior and hundreds of features from a file and based on analysis results can warn users against malware undetected by classic Anti-Virus products.
 
 + Digital Forensic & Incident Response Virtual Machine
-  + SANS - [SIFT Workstation (Linux VM)](https://github.com/mandiant/flare-vm) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
+  + SANS - [SIFT Workstation (Linux VM)](https://www.sans.org/tools/sift-workstation/) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
   + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
     
 + Malware Analysis Command-line Tools
