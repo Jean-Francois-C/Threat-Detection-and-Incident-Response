@@ -3,7 +3,7 @@
 
 ### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
-- [II. TDIR Tools](#II-TDIR-Tools)
+- [II. TDIR and DFIR Tools](#II-TDIR-and-DFIR-Tools)
 - [III. MITRE ATTACK Framework](#III-MITRE-ATTACK-Framework)
 - [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model--Defense)
 - [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection--Incident-Response-TDIR)
@@ -46,7 +46,7 @@
 + Cyber Crime news - [Security Affairs](http://securityaffairs.co/wordpress/) - Blog that covers topics like Cyber Crime, Cyber Warfare, Hacktivism...
 
 --------
-### II. TDIR TOOLS
+### II. TDIR and DFIR TOOLS
 
 #### 1. Community / Open-Source / Free Tools
 
@@ -60,6 +60,11 @@
   + Other - [Thor Lite](https://www.nextron-systems.com/thor-lite/) - Free IOC and YARA Scanner.
   + GitHub - [GRR Rapid Response](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response (https://grr-doc.readthedocs.io/en/latest/).
 
++ Digital Forensics & Incident Response (Virtual Machine and tools)
+  + [SANS - SIFT Workstation (Linux VM)](https://www.sans.org/tools/sift-workstation/) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
+  + [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
+  + [The Sleuth Kit (TSK) & Autopsy](https://sleuthkit.org) - The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools.
+
 + On-line Malware Analysis Platform & Sandbox
   + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
   + [Joe Sandbox (Community)](https://www.joesandbox.com) - Analyzes potential malicious files & URLs on Windows/MacOS/Linux/Android/iOS providing comprehensive and detailed analysis reports.
@@ -68,10 +73,6 @@
   + [Saferwall](https://saferwall.com) (https://github.com/saferwall/saferwall) -  Malware analysis platform allowing to analyze, triage and classify threats in just minutes.
   + [Threat Zone Scan Holistic](https://app.threat.zone/scan) - Malware analysis platform (Interactive Sandbox, Static Analyzer, Emulation).
   + [Valkyrie Comodo](https://valkyrie.comodo.com) - Valkyrie conducts several analysis using run-time behavior and hundreds of features from a file and based on analysis results can warn users against malware undetected by classic Anti-Virus products.
-
-+ Digital Forensic & Incident Response Virtual Machine
-  + SANS - [SIFT Workstation (Linux VM)](https://www.sans.org/tools/sift-workstation/) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
-  + GitHub - [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
     
 + Malware Analysis Command-line Tools
   + GitHub - [Mandiant CAPA](https://github.com/mandiant/capa) - Capa detects capabilities in executable files. You run it against a PE, ELF, .NET module, shellcode file, or a sandbox report and it tells you what it thinks the program can do. 
@@ -88,18 +89,18 @@
   + GitHub - [Wazuh](https://github.com/wazuh/wazuh) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads.
   + [AlienVault OSSIM](https://cybersecurity.att.com/products/ossim) - OSSIM (Open Source Security Information Management / SIEM) includes asset discovery, vulnerability assessment, intrusion detection, behavioral monitoring, SIEM event correlation).
 
++ Intrusion Detection System (IDS)
+  + GitHub - [OSSEC HIDS](https://github.com/ossec/ossec-hids) (https://www.ossec.net/) - Open Source Host-based Intrusion Detection System (HIDS) that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response.
+  + GitHub - [Zeek](https://github.com/zeek/zeek) - Zeek is a powerful network analysis framework that is much different from the typical IDS you may know. 
+
 + Endpoint Detection and Response (EDR)
   + GitHub - [Open EDR](https://github.com/ComodoSecurity/openedr) - Free and Open-Source Endpoint Detection and Response (EDR) Platform (www.comodo.com).
-  + [Elastic Security for Endpoint](https://www.elastic.co/fr/downloads) - A community version of Elastic Security is available.
+  + [Elastic Security for Endpoint (Community)](https://www.elastic.co/fr/downloads) - A community version of Elastic Security is available.
   + [Elastic Detection Rules Explorer](https://elastic.github.io/detection-rules-explorer/) - Elastic Security detection rules help users to set up and get their detections and security monitoring going as soon as possible. 
   + GitHub - [Elastic Detection Rules](https://github.com/elastic/detection-rules) - Rules for Elastic Security's detection engine.
   + Other
     + GitHub - [Sysmon EDR](https://github.com/ion-storm/sysmon-edr) - Sysmon EDR POC Build within Powershell to prove ability.
     + GitHub - [Whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows.
-
-+ Intrusion Detection System (IDS)
-  + GitHub - [OSSEC HIDS](https://github.com/ossec/ossec-hids) (https://www.ossec.net/) - Open Source Host-based Intrusion Detection System (HIDS) that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response.
-  + GitHub - [Zeek](https://github.com/zeek/zeek) - Zeek is a powerful network analysis framework that is much different from the typical IDS you may know. 
 
 + Adversary Emulation
   + GitHub - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) - Atomic Red Team™ is a library of tests mapped to the MITRE ATT&CK® framework. Security teams can use Atomic Red Team to quickly, portably, and reproducibly test their environments.
@@ -110,12 +111,13 @@
 #### 2. Commercial products
 
 + Endpoint Detection and Response (EDR)
-  + Microsoft Defender EDR
-  + Cybereason EDR
   + CrowdStrike EDR
+  + Cortex EDR/XDR (Palo Alto Networks)
+  + Microsoft Defender for Endpoint (EDR)
+  + Elastic Security for Endpoint Pro (EDR)
+  + Cybereason EDR
   + SentinelOne EDR
   + Carbon Black EDR (VMware)
-  + Cortex EDR/XDR (Palo Alto Networks)
   + Cynet 360 AutoXDR
   + Trend Micro Vision One
   + WatchGuard EDR
@@ -125,15 +127,20 @@
 
 + Security Information and Event Management (SIEM) 
   + Microsoft Azure Sentinel SIEM
+  + Splunk Enterprise Security 
+  + Elastic Security for SIEM
+  + IBM QRadar SIEM
+  + ArcSight Enterprise Security Manager
   + LogRhythm SIEM
   + LogPoint SIEM
   + Securonix SIEM
-  + IBM QRadar SIEM
-  + ArcSight Enterprise Security Manager
   + McAfee Enterprise Security Manager
-  + Splunk Enterprise Security 
-  + Elastic Security for SIEM
   + ...
+
++ Top 3 Computer Forensics investigation software
+  + EnCase Forensic
+  + Forensic ToolKit (FTK)
+  + X-Ways forensic suite
 
 --------
 ### III. MITRE ATTACK Framework
