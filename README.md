@@ -1,5 +1,5 @@
 ## Threat Detection and Incident Response (TDIR)
-> Collection of notes, useful resources, list of tools and scripts related to Threat Detection & Incident Response.
+> Collection of notes, useful resources, list of tools and scripts related to threat detection, digital forensics and incident response.
 
 ### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
