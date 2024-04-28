@@ -50,20 +50,21 @@
 
 #### 1. Community / Open-Source / Free Tools
 
-+ Threat Hunting / Logs search / Incident Response
-  + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
++ Digital Forensics & Incident Response (Virtual Machine and tools)
+  + [SANS - SIFT Workstation (Linux VM)](https://www.sans.org/tools/sift-workstation/) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
+  + [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
+  + [The Sleuth Kit (TSK) & Autopsy](https://sleuthkit.org) - The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools.
+  + [Velociraptor](https://docs.velociraptor.app) - Velociraptor is an advanced digital forensic and incident response tool that enhances your visibility into your endpoints. It is a tool for collecting host based state information using the Velociraptor Query Language (VQL) queries.
+  + [GRR Rapid Response](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response (https://grr-doc.readthedocs.io/en/latest/).
+
++ Threat Hunting & Logs search
+  + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Actively search for suspicious activities using Velociraptor's library of forensic artifacts.
   + GitHub - [Chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Forensic Artefacts.
   + GitHub - [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) - DeepBlueCLI is a PowerShell Module for Threat Hunting via Windows Event Logs.
   + GitHub - [FastFinder](https://github.com/codeyourweb/fastfinder) - A lightweight tool made for threat hunting, live forensics and triage on both Windows and Linux Platforms.
   + GitHub - [APT-Hunter](https://github.com/ahmedkhlief/APT-Hunter) - Threat Hunting tool for windows event logs (made with a purple team mindset) to detect APT movements hidden in the sea of windows event logs and to reduce the time to uncover suspicious activity.
   + GitHub - [Loki](https://github.com/Neo23x0/Loki) - Simple IOC and YARA Scanner.
   + Other - [Thor Lite](https://www.nextron-systems.com/thor-lite/) - Free IOC and YARA Scanner.
-  + GitHub - [GRR Rapid Response](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response (https://grr-doc.readthedocs.io/en/latest/).
-
-+ Digital Forensics & Incident Response (Virtual Machine and tools)
-  + [SANS - SIFT Workstation (Linux VM)](https://www.sans.org/tools/sift-workstation/) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
-  + [Mandiant FlareVM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.
-  + [The Sleuth Kit (TSK) & Autopsy](https://sleuthkit.org) - The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools.
 
 + On-line Malware Analysis Platform & Sandbox
   + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
@@ -137,7 +138,7 @@
   + McAfee Enterprise Security Manager
   + ...
 
-+ Top 3 Computer Forensics investigation software
++ Computer Forensics investigation software
   + EnCase Forensic
   + Forensic ToolKit (FTK)
   + X-Ways forensic suite
