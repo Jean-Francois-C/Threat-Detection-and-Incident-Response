@@ -56,6 +56,7 @@
   + [The Sleuth Kit (TSK) & Autopsy](https://sleuthkit.org) - The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools.
   + [Velociraptor](https://docs.velociraptor.app) - Velociraptor is an advanced digital forensic and incident response tool that enhances your visibility into your endpoints. It is a tool for collecting host based state information using the Velociraptor Query Language (VQL) queries.
   + [GRR Rapid Response](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response (https://grr-doc.readthedocs.io/en/latest/).
+  + [Volatility Framework](https://volatilityfoundation.org) - World’s most widely used memory forensics tool.
 
 + Threat Hunting & Logs search
   + GitHub - [Velociraptor](https://github.com/Velocidex/velociraptor) - Actively search for suspicious activities using Velociraptor's library of forensic artifacts.
