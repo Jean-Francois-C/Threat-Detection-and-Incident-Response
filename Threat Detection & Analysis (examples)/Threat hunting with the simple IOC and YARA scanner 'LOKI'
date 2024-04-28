@@ -1,0 +1,200 @@
+==================================================================================================================================
+Threat hunting with the simple IOC and YARA scanner 'LOKI'
+==================================================================================================================================
+
+> LOKI is a scanner for simple Indicators of Compromise. The Windows binary is compiled with PyInstaller and should run as x86 application on both x86 and x64 based systems.
+
+> GitHub link - https://github.com/Neo23x0/Loki
+
+> The detection is based on multiple methods
+  ------------------------------------------
+  1. File Name IOC - Regex match on full file path/name
+  2. Yara Rule Check - Yara signature match on file data and process memory
+  3. Hash Check -  Compares known malicious hashes (MD5, SHA1, SHA256) with scanned files
+  4. C2 Back Connect Check - Compares process connection endpoints with C2 IOCs (new since version v.10)
+  5. Additional Checks:
+     + Regin filesystem check (via --reginfs)
+     + Process anomaly check (based on [Sysforensics](http://goo.gl/P99QZQ)
+     + SWF decompressed scan (new since version v0.8)
+     + SAM dump check
+
+> How-To Run LOKI and Analyse the Reports
+  ---------------------------------------
+  + Download the newest version of LOKI from the releases section
+  + Extract the program package
+  + Run loki-upgrader.exe on system with Internet access to retrieve the newest signatures
+  + Bring the program folder to a target system that should be scanned: removable media, network share, folder on target system
+  + Open a command line "cmd.exe" as Administrator and run it from there (you can also run LOKI without administrative privileges but some checks will be disabled and relevant objects on disk will not be accessible)
+
+
+==================================================================================================================================
+PoC / Test - Scanning a Windows server with the simple IoC scanner 'LOKI'
+==================================================================================================================================
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator> cd C:\Temp
+
+C:\temp> cd loki_0.51.0
+
+C:\temp> 
+
+C:\temp> loki-upgrader.exe
+
+////////////////////////////////////////
+  LOKI UPGRADER
+////////////////////////////////////////
+[INFO] Updating LOKI ...
+[INFO] Checking location of latest release https://api.github.com/repos/Neo23x0/Loki/releases/latest ...
+[INFO] Downloading latest release https://github.com/Neo23x0/Loki/releases/download/v0.51.0/loki_0.51.0.zip ...
+[INFO] Extracting docs/LICENSE-doublepulsarcheck ...
+[INFO] Extracting docs/LICENSE-PE-Sieve ...
+[INFO] Extracting LICENSE ...
+[INFO] Extracting loki.exe ...
+[INFO] Extracting plugins/loki-plugin-wmi.py ...
+[INFO] Extracting README.md ...
+[INFO] Extracting requirements.txt ...
+[INFO] Extracting tools/pe-sieve32.exe ...
+[INFO] Extracting tools/pe-sieve64.exe ...
+[INFO] Updating Signatures ...
+[INFO] Downloading https://github.com/Neo23x0/signature-base/archive/master.zip ...
+[INFO] New signature file: bkdr_xz_util_cve_2024_3094.yar
+[INFO] New signature file: expl_connectwise_screenconnect_vuln_feb24.yar
+[INFO] New signature file: vuln_paloalto_cve_2024_3400_apr24.yar
+[INFO] Downloading https://github.com/reversinglabs/reversinglabs-yara-rules/archive/develop.zip ...
+[INFO] New signature file: ByteCode.MSIL.Backdoor.LimeRAT.yara
+[INFO] New signature file: Linux.Backdoor.Krasue.yara
+[INFO] New signature file: Win64.Backdoor.SideTwist.yara
+[INFO] New signature file: Win64.Ransomware.Albabat.yara
+[INFO] Update complete
+
+
+C:\temp\loki_0.51.0> loki.exe -h
+
+usage: loki.exe [-h] [-p path] [-s kilobyte] [-l log-file] [-r remote-loghost] [-t remote-syslog-port]
+                [-a alert-level] [-w warning-level] [-n notice-level] [--allhds] [--alldrives] [--printall]
+                [--allreasons] [--noprocscan] [--nofilescan] [--vulnchecks] [--nolevcheck] [--scriptanalysis]
+                [--rootkit] [--noindicator] [--dontwait] [--intense] [--csv] [--onlyrelevant] [--nolog] [--update]
+                [--debug] [--maxworkingset MAXWORKINGSET] [--syslogtcp] [--logfolder log-folder] [--nopesieve]
+                [--pesieveshellc] [--python PYTHON] [--nolisten] [--excludeprocess EXCLUDEPROCESS] [--force]
+                [--version]
+
+Loki - Simple IOC Scanner
+
+options:
+  -h, --help            show this help message and exit
+  -p path               Path to scan
+  -s kilobyte           Maximum file size to check in KB (default 5000 KB)
+  -l log-file           Log file
+  -r remote-loghost     Remote syslog system
+  -t remote-syslog-port
+                        Remote syslog port
+  -a alert-level        Alert score
+  -w warning-level      Warning score
+  -n notice-level       Notice score
+  --allhds              Scan all local hard drives (Windows only)
+  --alldrives           Scan all drives (including network drives and removable media)
+  --printall            Print all files that are scanned
+  --allreasons          Print all reasons that caused the score
+  --noprocscan          Skip the process scan
+  --nofilescan          Skip the file scan
+  --vulnchecks          Run the vulnerability checks
+  --nolevcheck          Skip the Levenshtein distance check
+  --scriptanalysis      Statistical analysis for scripts to detect obfuscated code (beta)
+  --rootkit             Skip the rootkit check
+  --noindicator         Do not show a progress indicator
+  --dontwait            Do not wait on exit
+  --intense             Intense scan mode (also scan unknown file types and all extensions)
+  --csv                 Write CSV log format to STDOUT (machine processing)
+  --onlyrelevant        Only print warnings or alerts
+  --nolog               Don't write a local log file
+  --update              Update the signatures from the "signature-base" sub repository
+  --debug               Debug output
+  --maxworkingset MAXWORKINGSET
+                        Maximum working set size of processes to scan (in MB, default 100 MB)
+  --syslogtcp           Use TCP instead of UDP for syslog logging
+  --logfolder log-folder
+                        Folder to use for logging when log file is not specified
+  --nopesieve           Do not perform pe-sieve scans
+  --pesieveshellc       Perform pe-sieve shellcode scan
+  --python PYTHON       Override default python path
+  --nolisten            Dot not show listening connections
+  --excludeprocess EXCLUDEPROCESS
+                        Specify an executable name to exclude from scans, can be used multiple times
+  --force               Force the scan on a certain folder (even if excluded with hard exclude in LOKI's code
+  --version             Shows welcome text and version of loki, then exit
+
+C:\temp\loki_0.51.0>
+
+C:\temp\loki_0.51.0> loki.exe --onlyrelevant --nolevcheck --rootkit
+      __   ____  __ ______
+     / /  / __ \/ //_/  _/
+    / /__/ /_/ / ,< _/ /
+   /____/\____/_/|_/___/
+   YARA and IOC Scanner
+
+   by Florian Roth, GNU General Public License
+   version 0.51.0 (Python 3 release)
+
+   DISCLAIMER - USE AT YOUR OWN RISK
+                                                                                                                      
+[WARNING]
+FILE: C:\temp\Get-System.ps1 SCORE: 70 TYPE: UNKNOWN SIZE: 26485
+FIRST_BYTES: 66756e6374696f6e204765742d53797374656d20 / <filter object at 0x0000019239AF45E0>
+MD5: 45a418848bfd7cd5d330dc63dd71a59e
+SHA1: b1eb88cd2d4d53adbd593081e4c37ca243ecca59
+SHA256: 795edc88ad1f89b9218fd03d0b48b3f5e9780d61c1919d47b554dbffb99424af CREATED: Sun Apr 28 15:25:45 2024 MODIFIED: Mon Dec 12 11:09:24 2016 ACCESSED: Sun Apr 28 15:25:45 2024
+REASON_1: Yara Rule MATCH: Empire_PowerShell_Framework_Gen4 SUBSCORE: 70
+DESCRIPTION: Detects Empire component REF: https://github.com/adaptivethreat/Empire AUTHOR: Florian Roth (Nextron Systems)
+MATCHES: $s1: 'Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split(\\\\)[-1].Equals(\System.dll\) }', $s2: '# Get a handle to the module specified', $s3: '$Kern32Handle = $GetModuleHandle.Invoke($null, @($Module))', $s4:
+'$DynAssembly = New-Object System.Reflection.AssemblyName(\ReflectedDelegate\)'                                                 
+
+[ALERT]
+FILE: C:\temp\PowerUp.ps1 SCORE: 120 TYPE: UNKNOWN SIZE: 562859
+FIRST_BYTES: 3c230a20202020506f77657255702061696d7320 / <filter object at 0x0000019239AF45E0>
+MD5: 95cdaf41b3422885994c6e31e33739a8
+SHA1: 7717b1e98b8a1cbb27d2c4b655fc6b3acdc0c1f4
+SHA256: e35ad9ca3533d400d2cb367f6c7ab4f45c9abdce48162e5e948a23d2b4b45922 CREATED: Sun Apr 28 15:25:45 2024 MODIFIED: Mon Apr 15 16:39:00 2024 ACCESSED: Sun Apr 28 15:25:45 2024
+REASON_1: Yara Rule MATCH: Base64_encoded_Executable SUBSCORE: 40
+DESCRIPTION: Detects an base64 encoded executable (often embedded) REF: - AUTHOR: Florian Roth (Nextron Systems)
+MATCHES: $s5: 'TVqQAAMAAAAEAAAA//8AALgAAAA'
+REASON_2: Yara Rule MATCH: ps1_toolkit_PowerUp SUBSCORE: 80
+DESCRIPTION: Auto-generated rule - file PowerUp.ps1 REF: https://github.com/vysec/ps1-toolkit AUTHOR: Florian Roth (Nextron Systems)
+MATCHES: $s4: 'C:\Windows\System32\InetSRV\appcmd.exe list vdir /text:physicalpath | ', $s5: 'if (Test-Path  ("$Env:SystemRoot\System32\inetsrv\appcmd.exe"))', $s6: 'if (Test-Path  ("$Env:SystemRoot\System32\InetSRV\appcmd.exe")) {'      
+
+[WARNING]
+FILE: C:\temp\ADModule-master\Microsoft.ActiveDirectory.Management.dll SCORE: 70 TYPE: EXE SIZE: 1127936
+FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x0000019239AF6140>
+MD5: ff32c0a9f3396290009277767e76ae22
+SHA1: 0f0e18be1811c48beb4a75a7502f4ff9a36996c1
+SHA256: 8eb311a48c6bb32577dac1844372513fbc66e0093351206fb17679ebd1272135 CREATED: Tue Jan 10 03:23:33 2023 MODIFIED: Mon Nov  5 00:04:40 2018 ACCESSED: Tue Jan 10 03:23:33 2023
+REASON_1: File Name IOC matched PATTERN: \\Microsoft\.ActiveDirectory\.Management\.dll$ SUBSCORE: 70 DESC: Suspicious ADModule locations https://github.com/samratashok/ADModule                                                              
+
+[WARNING]
+FILE: C:\Windows\SoftwareDistribution\Download\632e66f7ea09ad6e3866313465eff957\amd64_microsoft.activedirectory.management_31bf3856ad364e35_10.0.14393.4046_none_8e617d01d0ac3e16\Microsoft.ActiveDirectory.Management.dll SCORE: 70 TYPE: EXE SIZE: 1127936
+FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x0000019239AF7400>
+MD5: 2e42c94a22f34c0994863fcae6870eb0
+SHA1: 2d5d7f27b8f50c0ad98d7e81f6770cbc247ba005
+SHA256: 42e83cb76d1978e54f875e91a445cf20070efd42842e98bc255da9112648c9d2 CREATED: Sun Apr 28 15:49:33 2024 MODIFIED: Wed Oct 28 21:46:40 2020 ACCESSED: Sun Apr 28 15:49:33 2024
+REASON_1: File Name IOC matched PATTERN: \\Microsoft\.ActiveDirectory\.Management\.dll$ SUBSCORE: 70 DESC: Suspicious ADModule locations https://github.com/samratashok/ADModule                                                              
+
+[WARNING]
+FILE: C:\Windows\SoftwareDistribution\Download\d8459242562a1e58d0468874dc492a02\amd64_microsoft.activedirectory.management_31bf3856ad364e35_10.0.14393.4046_none_8e617d01d0ac3e16\Microsoft.ActiveDirectory.Management.dll SCORE: 70 TYPE: EXE SIZE: 1127936
+FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x0000019239AF7F40>
+MD5: 2e42c94a22f34c0994863fcae6870eb0
+SHA1: 2d5d7f27b8f50c0ad98d7e81f6770cbc247ba005
+SHA256: 42e83cb76d1978e54f875e91a445cf20070efd42842e98bc255da9112648c9d2 CREATED: Sun Apr 28 14:45:18 2024 MODIFIED: Wed Oct 28 21:46:40 2020 ACCESSED: Sun Apr 28 14:45:18 2024
+REASON_1: File Name IOC matched PATTERN: \\Microsoft\.ActiveDirectory\.Management\.dll$ SUBSCORE: 70 DESC: Suspicious ADModule locations https://github.com/samratashok/ADModule                                                              
+
+[WARNING]
+FILE: C:\Windows\SoftwareDistribution\Download\d8459242562a1e58d0468874dc492a02\x86_microsoft.activedirectory.management_31bf3856ad364e35_10.0.14393.4046_none_3242e17e184ecce0\Microsoft.ActiveDirectory.Management.dll SCORE: 70 TYPE: EXE SIZE: 1127936
+FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x0000019239AF7BE0>
+MD5: ac06df2a7ee71167d78936c37fbd67dd
+SHA1: ed79c24dc1dc864975dae710d03924ca90985f7e
+SHA256: 3b35fc68473143978c5a151d00ad2dcc3095b296707929591f969a194cd53102 CREATED: Sun Apr 28 14:46:05 2024 MODIFIED: Wed Oct 28 21:28:36 2020 ACCESSED: Sun Apr 28 14:46:05 2024
+REASON_1: File Name IOC matched PATTERN: \\Microsoft\.ActiveDirectory\.Management\.dll$ SUBSCORE: 70 DESC: Suspicious ADModule locations https://github.com/samratashok/ADModule  
+
+
+=> Note: A log file has been generated with all the alert detected. 
+
