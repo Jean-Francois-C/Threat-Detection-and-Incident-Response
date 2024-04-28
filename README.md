@@ -30,15 +30,20 @@
 + GitHub - [Awesome Incident Response](https://github.com/meirwah/awesome-incident-response/tree/master) - A curated list of tools and resources for security incident response and DFIR teams.
 + GitHub - [Awesome SOC](https://github.com/cyb3rxp/awesome-soc) - A collection of sources of documentation, as well as field best practices, to build/run a SOC
 + GitHub - [The Threat Hunter Playbook](https://threathunterplaybook.com/intro.html) - Community-driven, open source project to share detection logic, adversary tradecraft and resources to make detection development more efficient.
-+ GitHub - [Breach Report Collection](https://github.com/BushidoUK/Breach-Report-Collection) - A collection of companies that disclose adversary TTPs after they have been breached.
 + GitHub - [Awesome Yara rules](https://github.com/InQuest/awesome-yara) - A curated list of awesome YARA rules, tools, and people.
 + GitHub - [Sigma rules](https://github.com/SigmaHQ/sigma) - SIGMA rule repository (more than 3000 detection rules).
++ GitHub - [Sigma rules](https://github.com/The-DFIR-Report/Sigma-Rules/) - A collection of SIGMA rules from the 'The-DFIR-Report'.
++ GitHub - [Yara rules](https://github.com/The-DFIR-Report/Yara-Rules) - A collection of YARA rules from the 'The-DFIR-Report'.
 + Atomic Threat Coverage - [RE&CT Framework](https://atc-project.github.io/atc-react/) - The RE&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques.
 + Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
 + AWS - [AWS Incident Response Playbook Samples](https://github.com/aws-samples/aws-incident-response-playbooks)
 + AWS - [AWS Customer Playbook Framework](https://github.com/aws-samples/aws-customer-playbook-framework) - This repository provides sample templates for security playbooks against various scenarios when using Amazon Web Services.
 + [Digital Forensics Discord Server](https://discord.com/servers/digital-forensics-427876741990711298) - This is a server for DFIR Professionals by DFIR Professionals. Community of 12,900+ working professionals from Law Enforcement, Private Sector, Students and Forensic Vendors.
 + List of Threat Actors: [MITRE - Adversary Groups](https://attack.mitre.org/groups/), [Mandiant - APT Groups](https://www.mandiant.com/resources/insights/apt-groups), [Crowstrike - Global Threat Landscape & Adversaries](https://www.crowdstrike.com/adversaries/)
++ DFIR reports - [Breach Report Collection](https://github.com/BushidoUK/Breach-Report-Collection) - A collection of companies that disclose adversary TTPs after they have been breached.
++ DFIR reports - [THE DFIR REPORT](https://thedfirreport.com) - Real intrusions by real attackers, the truth behind the intrusion.
++ DFIR news - [This week in4n6](https://thisweekin4n6.com) - Weekly roundup of Digital Forensics and Incident Response news.
++ Cyber Crime news - [Security Affairs](http://securityaffairs.co/wordpress/) - Blog that covers topics like Cyber Crime, Cyber Warfare, Hacktivism, etc.
 
 --------
 ### II. TDIR TOOLS
@@ -58,7 +63,8 @@
 + On-line Malware Analysis Platform & Sandbox
   + [Virustotal](https://www.virustotal.com/gui/home/upload) - Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community.
   + [Joe Sandbox (Community)](https://www.joesandbox.com) - Analyzes potential malicious files & URLs on Windows/MacOS/Linux/Android/iOS providing comprehensive and detailed analysis reports.
-  + [Metadefender](https://metadefender.opswat.com) - Malware analysis platform (Upload and scan your file for viruses with 38 anti-malware engines)
+  + [Hybrid-Analysis](https://www.hybrid-analysis.com) - Automated malware analysis service powered by Falcon sandbox.
+  + [Metadefender](https://metadefender.opswat.com) - Malware analysis platform (Upload and scan your file for viruses with 38 anti-malware engines).
   + [Saferwall](https://saferwall.com) (https://github.com/saferwall/saferwall) -  Malware analysis platform allowing to analyze, triage and classify threats in just minutes.
   + [Threat Zone Scan Holistic](https://app.threat.zone/scan) - Malware analysis platform (Interactive Sandbox, Static Analyzer, Emulation).
   + [Valkyrie Comodo](https://valkyrie.comodo.com) - Valkyrie conducts several analysis using run-time behavior and hundreds of features from a file and based on analysis results can warn users against malware undetected by classic Anti-Virus products.
