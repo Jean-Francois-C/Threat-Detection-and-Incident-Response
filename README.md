@@ -421,6 +421,8 @@ to expansion and one or more command and control phases, until the target is ide
     + The SOC maintains 24/7 monitoring of the organization's IT infrastructure, networks, and systems to detect and respond to security incidents in real time.
   + Incident Detection and Response
     + Rapid identification and analysis of security events and incidents, followed by appropriate response actions to mitigate and contain the impact of security breaches.
+  + Incident Reporting and Analysis
+    + Documenting and analyzing security incidents to understand their root causes, patterns, and trends, and using this information to improve security controls and incident response processes.
   + Threat Intelligence Integration
     + Incorporating threat intelligence feeds and data to stay informed about emerging cyber threats and to enhance the organization's ability to detect and respond to evolving attack techniques.
   + Proactive Threat Hunting
@@ -431,8 +433,6 @@ to expansion and one or more command and control phases, until the target is ide
     + Facilitating effective communication and collaboration with internal teams, external partners, and stakeholders to coordinate incident response efforts and enhance overall security posture.
   + Training and Skill Development
     + Providing continuous training and skill development for SOC personnel to ensure they are equipped with the knowledge and expertise required to effectively manage security operations.
-  + Incident Reporting and Analysis
-    + Documenting and analyzing security incidents to understand their root causes, patterns, and trends, and using this information to improve security controls and incident response processes.
       
 #### Common SOC Job Roles
 
