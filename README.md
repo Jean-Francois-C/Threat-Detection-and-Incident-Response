@@ -411,42 +411,51 @@ to expansion and one or more command and control phases, until the target is ide
 ### VI. SOC - Security Operation Center 
 
 #### SOC Definition
-
-  + The function of the security operations center (SOC) is to monitor, prevent, detect, investigate, and respond to cyber threats around the clock. SOC teams are charged with monitoring and protecting the organization’s assets including intellectual property, personnel data, business systems, and brand integrity. The SOC team implements the organization’s overall cybersecurity strategy and acts as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.
-
-  + A security operations center, or SOC, is a central function in an organization where security experts monitor, detect, analyze, respond to, and report security incidents. A SOC is typically staffed 24/7 by security analysts, engineers, and other IT personnel who use a variety of tools and techniques to detect, analyze, and respond to security threats.
-  
-  + A SOC is related to the people, processes and technologies that provide situational awareness through the detection, containment, and remediation of IT threats in order to manage and enhance an organization's security posture.
-  
-  + A SOC will handle, on behalf of an institution or company, any threatening IT incident, and will ensure that it is properly identified, analyzed, communicated, investigated and reported.
-  
-  + The SOC also monitors applications to identify a possible cyber-attack or intrusion (event), and determines if it is a genuine malicious threat (incident), and if it could affect business.
-    
-  + One key attribute of the SOC is that it operates continuously, providing 24/7 monitoring, detection and response capabilities. This helps ensure threats are contained and neutralized quickly, which in turn allows organizations to reduce their “breakout time” — the critical window between when an intruder compromises the first machine and when they can move laterally to other parts of the network.
+  + A Security Operations Center (SOC) is a centralized unit within an organization responsible for monitoring, detecting, analyzing, and responding to cybersecurity incidents and threats.
+  + It serves as a command center where security analysts and professionals work to ensure the security of the organization's information systems, networks, and data.
+  + The SOC is equipped with technology, processes, and skilled personnel to actively defend against and mitigate potential cyber threats, as well as to maintain the overall security posture of the organization.
+  + The target operational model of a SOC aims to establish a proactive, resilient, and agile security posture that can effectively defend against and respond to cyber threats while minimizing the impact of security incidents on the organization.
   
 #### Common SOC Activities
-  + Systems and network security monitoring to provide complete visibility into digital activity and better detect anomalies and threats
-  + Threat detection and intelligence capabilities that assess the origin, impact and severity of each cybersecurity incident
-  + Incident response and remediation using a blend of automated technologies and human intervention
-  + Reporting to ensure all incidents and threats are fed into the data repository, making it more precise and responsive in the future
-  + Risk and compliance capabilities to ensure industry and government regulations are followed
+  + Continuous Monitoring
+    + The SOC maintains 24/7 monitoring of the organization's IT infrastructure, networks, and systems to detect and respond to security incidents in real time.
+  + Incident Detection and Response
+    + Rapid identification and analysis of security events and incidents, followed by appropriate response actions to mitigate and contain the impact of security breaches.
+  + Threat Intelligence Integration
+    + Incorporating threat intelligence feeds and data to stay informed about emerging cyber threats and to enhance the organization's ability to detect and respond to evolving attack techniques.
+  + Proactive Threat Hunting
+    + Actively seeking out and identifying potential security threats and vulnerabilities that may evade traditional security controls through proactive threat hunting initiatives.
+  + Security Tool Management
+    + Implementing and managing a suite of security tools, such as SIEM (Security Information and Event Management) systems, EDR (Endpoint Detection and Response) solutions, and other security technologies to support monitoring and incident response.
+  + Collaboration and Communication
+    + Facilitating effective communication and collaboration with internal teams, external partners, and stakeholders to coordinate incident response efforts and enhance overall security posture.
+  + Training and Skill Development
+    + Providing continuous training and skill development for SOC personnel to ensure they are equipped with the knowledge and expertise required to effectively manage security operations.
+  + Incident Reporting and Analysis
+    + Documenting and analyzing security incidents to understand their root causes, patterns, and trends, and using this information to improve security controls and incident response processes.
       
 #### Common SOC Job Roles
+
   + SOC Manager
-    + Acts as the security center leader, overseeing all aspects of the SOC, its workforce and operations
-  + Incident Response Lead
-    + Responsible for managing incidents as they occur, and communicating security requirements to the organization in the case of a significant data breach.
-  + SOC / Security Analyst Tier 1 – Triage
-    + Categorizes and prioritizes alerts, escalates incidents to tier 2 analysts
-  + SOC / Security Analyst Tier 2 – Incident Responder
-    + Investigates and remediates escalated incidents, identifies affected systems and scope of the attack, uses threat intelligence to uncover the adversary
-  + SOC / Security Analyst Tier 3 – Threat Hunter
-    + Proactively searches for suspicious behavior and tests and assesses network security to detect advanced threats and identify areas of vulnerability or insufficiently protected assets
+    + Oversees the overall operations of the SOC, including team management, resource allocation, and strategic decision-making to enhance security operations.
+  + SOC Team Lead
+    + Leads a team of analysts and engineers within the SOC, providing guidance, mentorship, and technical expertise to enhance the team's performance and effectiveness in handling security operations.
   + SOC Architect
-    + Designs and implements the technical and organizational aspects of a SOC and integrates various technological and human components
+    + Designs and implements the overall architecture and framework of the SOC, ensuring that it aligns with the organization's security objectives and industry best practices.
+  + Security Operations Specialist
+    + Provides specialized expertise in specific areas of security operations, such as network security, endpoint security, or threat intelligence analysis.
   + SOC Engineer
-    + Operates and maintains the security monitoring and analysis solutions of the operations center on a 7x24x365 rotating shift schedule.
-    + Continuous fine-tuning of the security solutions to reduce the occurrence of false positive and false negative alerts
+    + Designs, implements, and maintains the technical infrastructure and security tools within the SOC, ensuring the effectiveness of security monitoring and response capabilities.
+  + SOC Analyst (Level 1)
+    + Responsible for monitoring security events and alerts, analyzing potential security incidents (triage), and sometimes providing initial incident response.
+ + Incident Responder / SOC Analyst (Level 2)
+    + Engages in the immediate response to security incidents, containing and mitigating the impact of incidents as they occur, and leading post-incident analysis and remediation efforts.
+    + Part of the Security Incident Response Team (SIRT) focused on responding to and managing security incidents, often involving coordination with external stakeholders and law enforcement.
+  + Incident Responder / SOC Analyst (Level 3)
+    + Conducts in-depth analysis of security threats, performs forensic investigations, and contributes to the development of security policies and procedures.
+    + Part of the Security Incident Response Team (SIRT) focused on responding to and managing security incidents, often involving coordination with external stakeholders and law enforcement.
+  + Threat Hunter
+    + Proactively searches for and identifies advanced threats and vulnerabilities within the organization's environment that may evade traditional security measures.
 
 #### Common SOC Challenges
   + Shortage of cybersecurity skills
@@ -457,8 +466,24 @@ to expansion and one or more command and control phases, until the target is ide
     + Many organizations use an assortment of disconnected security tools. This means that security personnel must translate security alerts and policies between environments, leading to costly, complex, and inefficient security operations.
 
 #### Cyber Fusion Center (CFC)
-+ Cyber Fusion Center (CFC) can be thought of as an advanced or next-generation SOC.
-+ The CFC employs a proactive approach to identifying threats and defending against them in a unified and timely manner. It fosters collaboration among various teams within an organization to support cybersecurity. This improves threat intelligence gathering, shortens the time it takes to respond to and stop an attack and reduces overall damage to the organization. These teams can include Security Operations, CSIRT, Threat Intelligence team, IT Operations, Fraud/Legal, and so on.
++ A Cyber Fusion Center (CFC) is an advanced cybersecurity operations center or next-generation SOC that integrates and aligns people, processes, and technologies to enhance the organization's ability to detect, respond to, and mitigate cyber threats and incidents. It is an evolution of the traditional Security Operations Center (SOC) and typically incorporates elements of threat intelligence, incident response, and proactive threat hunting in a collaborative and integrated environment.
++ The overarching goal of a Cyber Fusion Center is to foster a holistic, collaborative, and intelligence-driven approach to cybersecurity operations, enabling organizations to proactively identify, respond to, and mitigate cyber threats in an agile and integrated manner.
+
++ Key characteristics of a Cyber Fusion Center may include:
+    + Integration of Threat Intelligence
+      + CFCs leverage threat intelligence feeds and sources to stay informed about emerging cyber threats, threat actor behavior, and tactics, techniques, and procedures (TTPs).
+    + Cross-Disciplinary Collaboration
+      + CFCs promote collaboration among different cybersecurity functions, such as threat intelligence analysts, incident responders, forensic analysts, and security operations specialists, to share insights and improve the organization's security posture.
+    + Proactive Threat Hunting
+      + CFCs engage in proactive threat hunting activities to identify and neutralize potential threats that may evade traditional security controls, often using advanced analytics and machine learning techniques.
+    + Advanced Incident Response Capabilities
+      + CFCs are equipped with advanced incident response capabilities, including playbooks, automated response actions, and coordinated efforts to contain and remediate security incidents.
+    + Real-Time Situational Awareness
+      + CFCs provide real-time situational awareness by aggregating and correlating security events, logs, and alerts from various sources to identify patterns and potential security incidents.
+    + Technology Integration
+      + CFCs leverage advanced cybersecurity technologies, such as Security Information and Event Management (SIEM), Endpoint Detection and Response (EDR), and threat intelligence platforms, to support holistic monitoring and response capabilities.
+    + Data-Driven Decision Making
+      + CFCs emphasize data-driven decision-making processes, leveraging analytics and metrics to measure the effectiveness of security operations and incident response efforts.
 
 --------
 ### VII. ISO/IEC 27035 — Information Security Incident Management
