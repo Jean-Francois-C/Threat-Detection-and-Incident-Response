@@ -52,7 +52,7 @@
 
 + Digital Forensics & Incident Response (Virtual Machine and tools)
   + [SANS - SIFT Workstation (Linux VM)](https://www.sans.org/tools/sift-workstation/) - The SIFT VM contains a collection of free and open-source incident response and forensic tools designed to conduct an in-depth forensic or incident response investigation.
-  + [Mandiant FlareVM (Windows VM](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a Windows VM.
+  + [Mandiant FlareVM (Windows VM)](https://github.com/mandiant/flare-vm) - A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a Windows VM.
   + [Kali Purple (Linux VM)](https://gitlab.com/kalilinux/kali-purple/documentation/-/wikis/home) - It is an extension of the Kali Linux distribution designed specifically for defensive security operations, focusing on threat detection, incident response, and threat intelligence. It contains numerous tools including SIEM, IDS/IPS, Forensics and Incident Response software.
   + [The Sleuth Kit (TSK) & Autopsy](https://sleuthkit.org) - The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools.
   + [Velociraptor](https://docs.velociraptor.app) - Velociraptor is an advanced digital forensic and incident response tool that enhances your visibility into your endpoints. It is a tool for collecting host based state information using the Velociraptor Query Language (VQL) queries.
@@ -90,7 +90,7 @@
   + GitHub - [Themida Unpacker for .NET](https://github.com/cg10036/Themida-Unpacker-for-.NET) - Tool developed to quickly and easily unpack packed .NET files.
 
 + Security Information and Event Management (SIEM)
-  + [Elastic Security (SIEM)](https://www.elastic.co/elastic-stack/) - Centralized logging, real-time analysis, and visualization of security events and logs from various sources within the network. The free and open solution delivers SIEM, endpoint security, threat hunting, cloud monitoring, and more. A paid subscription is needed to unlock advanced capabilities like XDR, automated response, and in-depth analytics.
+  + [Elastic Security (SIEM)](https://www.elastic.co/security) - Centralized logging, real-time analysis, and visualization of security events and logs from various sources within the network. The free and open solution delivers SIEM, endpoint security, threat hunting, cloud monitoring, and more. A paid subscription is needed to unlock advanced capabilities like XDR, automated response, and in-depth analytics.
   + [Wazuh (XDR-SIEM)](https://wazuh.com) - Free & open source platform (XDR-SIEM) used for threat prevention, detection, and response for endpoints & cloud workloads. It offers real-time correlation, context, response, and monitoring of security events and incidents across public, private, and on-premise environments.
   + [AlienVault OSSIM](https://cybersecurity.att.com/products/ossim) - OSSIM (Open Source Security Information Management / SIEM) includes asset discovery, vulnerability assessment, intrusion detection, behavioral monitoring, SIEM event correlation).
   
