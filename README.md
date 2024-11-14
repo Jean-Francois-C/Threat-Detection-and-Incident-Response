@@ -11,7 +11,7 @@
 - [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035--Information-security-incident-management)
 - [VIII. Glossary of TDIR and DFIR terms and definitions](#VIII-Glossary-of-TDIR-and-DFIR-terms-and-definitions)
 - [IX. Cybercrime Legislation Worldwide](#IX-Cybercrime-Legislation-Worldwide)
-- [X. World Cybercrime Index](#X-World-Cybercrime-Index)
+- [X. Cybercrime and Threat Actors](#X-Cybercrime-and-Threat-Actors)
 
 --------
 ### I. USEFUL RESOURCES
@@ -639,7 +639,9 @@ typically by improving the preventive controls or other risk treatments.
      + Africa the lowest (72 per cent).
 
 --------
-### X. World Cybercrime Index
+### X. Cybercrime and Threat Actors
+
+#### 1. World Cybercrime Index
   + Sources/Websites: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0297312 and https://www.ox.ac.uk/news/2024-04-10-world-first-cybercrime-index-ranks-countries-cybercrime-threat-level
     
   + Following three years of intensive research, an international team of researchers have compiled the first ever ‘World Cybercrime Index’, which identifies the globe’s key cybercrime hotspots by ranking the most significant sources of cybercrime at a national level (date: 2024).
@@ -679,3 +681,51 @@ Countries		WCI score
 19. Netherlands		- 1.92
 20. Latvia		- 1.68
 ```
+
+ #### 2. List of Threat/Activity Groups (Source: MITRE)
+
+  + Groups are activity clusters that are tracked by a common name in the security community. Analysts track these clusters using various analytic methodologies and terms such as threat groups, activity groups, and threat actors. Some groups have multiple names associated with similar activities due to various organizations tracking similar activities by different names. Organizations' group definitions may partially overlap with groups designated by other organizations and may disagree on specific activity.
+
+  + Groups are mapped to publicly reported technique use and original references are included. The information provided does not represent all possible technique use by Groups, but rather a subset that is available solely through open source reporting. Groups are also mapped to reported Software used and attributed Campaigns, and related techniques for each are tracked separately on their respective pages.
+
+  + More than 160 suspected threat/activity groups have been listed in the following MITRE page: https://attack.mitre.org/groups/
+  + For instance:
+    + Suspected Russian threat actors
+      + Allanite - https://attack.mitre.org/groups/G1000/
+      + Ember Bear - https://attack.mitre.org/groups/G1003/
+      + Gamaredon Group - https://attack.mitre.org/groups/G0047/
+      + Saint Bear - https://attack.mitre.org/groups/G1031/
+      + APT28 - https://attack.mitre.org/groups/G0007/
+      + APT29 - https://attack.mitre.org/groups/G0016/
+      + ...
+    + Suspected Chinese threat actors
+      + APT1 - https://attack.mitre.org/groups/G0006/
+      + APT19 - https://attack.mitre.org/groups/G0073/
+      + APT41 - https://attack.mitre.org/groups/G0096/
+      + ...
+    + Suspected North Korean threat actors
+      + Lazarus Group - https://attack.mitre.org/groups/G0032/
+      + APT38 - https://attack.mitre.org/groups/G0082/
+      + ...
+    + Suspected Iranian threat actors
+      + Agrius - https://attack.mitre.org/groups/G1030/
+      + APT33 - https://attack.mitre.org/groups/G0064/
+      + ...
+        
+#### 3. List of Threat Actors (Source: CrowdStrike)
+
+  + CrowdStrike has referenced numerous adversaries - https://www.crowdstrike.com/adversaries/
+  + For instance:
+    + eCrime groups
+      + Hook Spider, Sinful Spider, Donut Spider, Squab Spider, Merchant Spider, Wandering Spider, Samba Spider, Lunar Spider, ...
+    + Russian Federation
+      + Primitive Bear, Renaissance Spider, Fancy Bear, Cozy Bear
+    + China
+      + Ethereal Panda, Cascade Panda, Envoy Panda, Horde Panda, Vanguard Panda, Wicked Panda, Vixen Panda, Vertigo Panda, Horde Panda
+    + North Korea
+      + Famous Chollima, Velvet Chollima, Labyrinth Chollima, Stardust Chollima, Labyrinth Chollima
+    + India
+      + Viceroy Tiger
+    + Egypt
+      + Watchful Sphinx
+
