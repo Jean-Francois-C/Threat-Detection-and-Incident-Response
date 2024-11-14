@@ -10,6 +10,8 @@
 - [VI. Security Operation Center (SOC)](#VI-SOC---Security-Operation-Center)
 - [VII. ISO/IEC 27035 — Information Security Incident Management](#VII-ISOIEC-27035--Information-security-incident-management)
 - [VIII. Glossary of TDIR and DFIR terms and definitions](#VIII-Glossary-of-TDIR-and-DFIR-terms-and-definitions)
+- [IX. Cybercrime Legislation Worldwide](#IX-Cybercrime-Legislation-Worldwide)
+- [X. World Cybercrime Index](#X-World-Cybercrime-Index)
 
 --------
 ### I. USEFUL RESOURCES
@@ -509,13 +511,13 @@ typically by improving the preventive controls or other risk treatments.
 --------
 ### VIII. Glossary of TDIR and DFIR terms and definitions
 
-- DFIR - Digital Forensics & Incident Response <br>
++ DFIR - Digital Forensics & Incident Response
   + Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.
   
-- TDIR - Threat Detection & Incident Response <br>
++ TDIR - Threat Detection & Incident Response
   + Threat Detection & Incident Response (TDIR) refers to the processes, tools, and strategies used to identify, monitor, and analyze cybersecurity threats in real-time, and to respond to security incidents when they occur. While Threat Detection focuses on identifying malicious activities, abnormal behaviour or vulnerabilities within a system or a network, Incident Response is concerned with managing and mitigating the impact of a security breach or attack once detected.
  
-- Cyber Threats
++ Cyber Threats
   + The world of cybersecurity is constantly evolving, with new threats emerging every day. Understanding the different types of threats that exist is crucial for security teams to effectively protect their organizations.
   + Cyber threats can be separated into 2 main categories:
     + Common cyber threats including: data leakage, ransomware, crypto mining malware, distributed-denial-of-service (DDoS) attacks, etc.
@@ -605,3 +607,75 @@ typically by improving the preventive controls or other risk treatments.
   + It is a powerful tool that can be used for detection and malware threat hunting.
   + SIGMA rules are a type of open rule language that can be used to describe malicious activity and allow defenders to share detections (alerts, use cases) in a common language.
   + Much like YARA, or Snort Rules, SIGMA is another tool for the open sharing of detection, except focused on SIEM instead of files or network traffic.
+
+--------
+### IX. Cybercrime Legislation Worldwide
+
+#### 1. Budapest Convention on Cybercrime (ETS No. 185)
+  + Usefull links: https://www.coe.int/en/web/cybercrime/the-budapest-convention and https://www.coe.int/en/web/cybercrime/-/the-global-state-of-cybercrime-legislation-as-at-january-2023-
+      
+  + The Convention on Cybercrime, also known as the Budapest Convention on Cybercrime or the Budapest Convention, is the first international treaty seeking to address Internet and computer crime (cybercrime) harmonizing national laws, improving investigative techniques, and increasing cooperation among nations.
+    
+  + The Convention aims principally at:
+     + Harmonizing the domestic criminal substantive law elements of offenses and connected provisions in the area of cyber-crime
+     + Providing for domestic criminal procedural law powers necessary for the investigation and prosecution of such offenses as well as other offenses committed by means of a computer system or evidence in relation to which is in electronic form
+     + Setting up a fast and effective regime of international cooperation
+       
+  + The following offenses are defined by the Convention: illegal access, illegal interception, data interference, system interference, misuse of devices, computer-related forgery, computer-related fraud, offenses related to child pornography, and offenses related to copyright and neighboring rights.
+
+#### 2. Cybercrime Legislation Worldwide
+  + Source/Website: https://unctad.org/page/cybercrime-legislation-worldwide
+  + Cybercrime is a growing concern to countries at all levels of developments and affects both, buyers and sellers. The evolving cybercrime landscape and resulting skills gaps are a significant challenge for law enforcement agencies and prosecutors, especially for cross-border enforcement.
+  + The UNCTAD Global Cyberlaw Tracker is the first ever global mapping of cyberlaws. It tracks the state of e-commerce legislation in the field of e-transactions, consumer protection, data protection/privacy and cybercrime adoption in the 194 UNCTAD member states. It indicates whether or not a given country has adopted legislation, or has a draft law pending adoption. In some instances where information about a country's legislation adoption was not readily available, 'no data' is indicated.
+    
+  + State of cybercrime legislation (December 2021)
+     + 80% countries with legislation
+     + 5% countries with draft legislation
+     + 13% countries with no legislation
+     + 1% countries with no data
+       
+  + While 156 countries (80 per cent) have enacted cybercrime legislation, the pattern varies by region:
+     + Europe has the highest adoption rate (91 per cent)
+     + Africa the lowest (72 per cent).
+
+--------
+### X. World Cybercrime Index
+  + Sources/Websites: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0297312 and https://www.ox.ac.uk/news/2024-04-10-world-first-cybercrime-index-ranks-countries-cybercrime-threat-level
+    
+  + Following three years of intensive research, an international team of researchers have compiled the first ever ‘World Cybercrime Index’, which identifies the globe’s key cybercrime hotspots by ranking the most significant sources of cybercrime at a national level (date: 2024).
+    
+  + The researchers say the location of cybercrimes has been hard to track previously because offenders often mask their physical locations by hiding behind fake profiles and technical protections. To collect data, they surveyed 92 leading cybercrime experts from around the world who are involved in cybercrime intelligence gathering and investigations.
+    
+  + The five major categories of cybercrime assessed by the study were:
+     + Technical products/services (e.g. malware coding, botnet access, access to compromised systems, tool production).
+     + Attacks and extortion (e.g. denial-of-service attacks, ransomware).
+     + Data/identity theft (e.g. hacking, phishing, account compromises, credit card comprises).
+     + Scams (e.g. advance fee fraud, business email compromise, online auction fraud).
+     + Cashing out/money laundering (e.g. credit card fraud, money mules, illicit virtual currency platforms).
+       
+```
+Top 20 countries ranked by their World Cybercrime Index (WCI) score
+
+Countries		WCI score
+---------------------------------
+1. Russia 		- 58.39
+2. Ukraine 		- 36.44
+3. China 		- 27.86
+4. United States 	- 25.01
+5. Nigeria 		- 21.28
+6. Romania 		- 14.83
+7. North Korea 		- 10.61
+8. United Kingdom 	- 9.01
+9. Brazil		- 8.93
+10. India		- 6.13
+11. Iran		- 4.78
+12. Belarus		- 3.874
+13. Ghana		- 3.58
+14. South Africa	- 2.58
+15. Moldova		- 2.57
+16. Israel 		- 2.51
+17. Poland		- 2.22
+18. Germany 		- 2.17
+19. Netherlands		- 1.92
+20. Latvia		- 1.68
+```
