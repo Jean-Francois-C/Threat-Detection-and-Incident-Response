@@ -622,6 +622,8 @@ typically by improving the preventive controls or other risk treatments.
      + Setting up a fast and effective regime of international cooperation
        
   + The following offenses are defined by the Convention: illegal access, illegal interception, data interference, system interference, misuse of devices, computer-related forgery, computer-related fraud, offenses related to child pornography, and offenses related to copyright and neighboring rights.
+    
+  + In 2024 there are currently 76 parties to the Budapest Convention and 20 countries have signed or been invited to accede.
 
 #### 2. Cybercrime Legislation Worldwide
   + Source/Website: https://unctad.org/page/cybercrime-legislation-worldwide
@@ -636,7 +638,7 @@ typically by improving the preventive controls or other risk treatments.
        
   + While 156 countries (80 per cent) have enacted cybercrime legislation, the pattern varies by region:
      + Europe has the highest adoption rate (91 per cent)
-     + Africa the lowest (72 per cent).
+     + Africa has the lowest adoption rate (72 per cent).
 
 --------
 ### X. Cybercrime and Threat Actors
@@ -682,7 +684,45 @@ Countries		WCI score
 20. Latvia		- 1.68
 ```
 
- #### 2. List of Threat/Activity Groups (Source: MITRE)
+#### 2. ENISA Threat Landscape 2024
+
+  + Source (2024) - https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024
+
+  + Most active ransomware strains (reporting period = July 2023 - June 2024)
+    + Ransomware attacks target a broad spectrum of industries, with the Industrial and Manufacturing sector being the most frequent, high-impact victim, followed closely by Retail and Digital Service Providers.
+    + In the global landscape during the reporting period, LockBit, CL0P and PLAY were some of the top ransomware strains used in RaaS (Ransomware as a Service) and extortion attacks in terms of victim organisations. The information has been derived by merging data collected from the leak sites associated with various extortion groups and supplementing it with Open-Source Intelligence (OSINT). 
+      + TOP 3
+        - LockBit - 936 potential victims
+        - CL0P    - 391 potential victims
+        - PLAY    - 346 potential victims
+    + Note: On February 2024, authorities seized LockBit's infrastructure, recovered decryption keys for thousands of victims, and took control of its data leak site. 
+
+  + Ransom demand VS. Ransom payment
+    + An increasing number of organisations declare to pay ransom demands, signalling a growing resilience against these cyber-attacks. When payments are made, they often fall short of the initial amounts demanded, indicating that successful negotiation tactics were employed by victims. 
+    + In early 2024, a Fortune 50 company paid a record-breaking $75 million ransom payment to the Dark Angels ransomware gang, according to a report by Zscaler ThreatLabz. This extraordinary incident underscores the immense financial risk posed by ransomware attacks and the potential for catastrophic consequences if organisations are unprepared.
+
+  + Data breaches
+    + Data threats in general and data breaches in particular are widening, targeting almost all organisations and populations.
+    + Data breaches, particularly data exfiltration, are increasing in speed, with data exfiltrated in hours, not days. The median time in 45% of the cases for non-extortion attacks is less than a day.
+    + According to IBM in its 'Cost of a Data Breach Report 2023':
+      + the mean time to identify and contain breaches is stable at 277 days.
+      + the average total cost of a data breach increased by 2.3% from USD 4.35 million in 2022 to USD 4.45 million in 2023.
+
+  + Malware information stealers persist and evolve
+    + Information stealers, a type of malware that pilfers sensitive data, continue to be a significant concern.
+    + According to information from multiple sources and from data collected by ENISA itself, the most common information stealers throughout 2023 and 2024 were:
+      + RedLine: a malware that steals saved credentials, autofill data and banking information appeared in 2020, and saw a wide distribution in different cyber-attacks. Most of the time, however, it was aimed against single users, as its functionality fits best for this purpose.
+      + Raccoon Stealer: a password stealer and crypto stealer that targets autofill logs, cryptocurrency wallets. In its scope are browser autofill files, cookies and online banking credentials, on top of the ability to pluck cryptocurrency wallets.
+      + Vidar: A trojan malware that can steal sensitive information via a computer. It offers a modular approach towards data stealing. It also performs self-destruction after successful data exfiltration.
+      + ...
+
+  + DDoS attacks
+    + Distributed Denial of Service (DDoS) targets system and data availability and, though it is not a new threat (it celebrates its 25th anniversary in 2024), it plays a significant role in the cybersecurity threat landscape.
+    + DDoS reached an average of 1,700 attacks per day according to Microsoft, and 13 million attacks worldwide. 
+    + According to Gcore, attacks of unprecedented power were observed in 2023, with a 100% plus increase in the peaks of attack volume in the last three years, from 300Gbps in 2021 to 1.6Tbps in 2023. The attack duration varied from three minutes to nine hours with an average of about one hour. 
+      
+
+ #### 3. MITRE - List of Threat/Activity Groups
 
   + Groups are activity clusters that are tracked by a common name in the security community. Analysts track these clusters using various analytic methodologies and terms such as threat groups, activity groups, and threat actors. Some groups have multiple names associated with similar activities due to various organizations tracking similar activities by different names. Organizations' group definitions may partially overlap with groups designated by other organizations and may disagree on specific activity.
 
@@ -711,8 +751,8 @@ Countries		WCI score
       + Agrius - https://attack.mitre.org/groups/G1030/
       + APT33 - https://attack.mitre.org/groups/G0064/
       + ...
-        
-#### 3. List of Threat Actors (Source: CrowdStrike)
+
+#### 4. List of Threat Actors (Source: CrowdStrike)
 
   + CrowdStrike has referenced numerous adversaries - https://www.crowdstrike.com/adversaries/
   + For instance:
