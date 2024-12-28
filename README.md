@@ -4,7 +4,7 @@
 ### Table of Contents
 - [I. Useful resources (ENISA, NIST, ANSSI, etc.)](#I-USEFUL-RESOURCES)
 - [II. TDIR and DFIR Tools](#II-TDIR-and-DFIR-Tools)
-- [III. MITRE ATTACK Framework](#III-MITRE-ATTACK-Framework)
+- [III. MITRE ATTACK & DEFEND Frameworks](#III-MITRE-ATTACK--DEFEND-FRAMEWORKS)
 - [IV. The Cyber Attack Kill Chain Model & Defense](#IV-The-Cyber-Attack-Kill-Chain-Model--Defense)
 - [V. Threat Detection & Incident Response (TDIR) Methodology](#V-Threat-Detection--Incident-Response-TDIR)
 - [VI. Security Operation Center (SOC)](#VI-SOC---Security-Operation-Center)
@@ -150,7 +150,9 @@
   + X-Ways forensic suite
 
 --------
-### III. MITRE ATTACK Framework
+### III. MITRE ATTACK & DEFEND FRAMEWORKS
+
+#### 1. MITRE ATTACK Framework
 
 + MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 
   It documents common tactics, techniques, and procedures (TTPs) that advanced persistent threats use against Windows enterprise networks.
@@ -188,6 +190,27 @@ There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/ente
 | TA0010  |  Exfiltration  |  The adversary is trying to steal data.  |  
 | TA0040  |  Impact  |  The adversary is trying to manipulate, interrupt, or destroy your systems and data.  |  
 
+#### 2. MITRE DEFEND Framework
+
++ The MITRE D3FEND framework is an initiative developed to enhance cybersecurity defense mechanisms by creating a structured and comprehensive knowledge base of defensive cybersecurity techniques. It is designed to help cybersecurity professionals understand and counter adversary tactics and techniques by offering a catalog of defensive measures, specifically focused on mitigating potential cyber threats. 
+
++ The D3FEND matrix encodes a knowledge base of cybersecurity countermeasures using a semantic model and linked data. It aims to support queries, analysis, and automation of cyber defense solutions and threats.
+
++ It’s mission is to reduce the attack surface and improve an organization's security posture by offering real-world countermeasures based on adversary tactics and techniques.
+
++ By utilizing the D3FEND matrix, security teams can develop specific threat models and methodologies that address the unique risks they face.
+
++ The D3FEND matrix (https://d3fend.mitre.org)
+  
+|   ID   |   Tactic   |  Technique  | 
+| :-----: | :-----: | :-----: |
+| 1  |  Model  | Asset Inventory, Network Mapping, Operational Activity Mapping, System Mapping  |
+| 2  |  Harden  | Agent Authentication, Application Hardening, Credentials Hardening, Message Hardening, Platform Hardening, Source Code Hardening  |
+| 3  |  Detect  | File Analysis, Identifier Analysis, Message Analysis, Network Traffic Analysis, Platform Monitoring, Process Analysis, User Behaviour Analysis  |
+| 4  |  Isolate  | Access Mediation, Access Policy Administration, Execution Isolation, Network Isolation  |
+| 5  |  Deceive  | Decoy Environment,  Decoy Object  |
+| 6  |  Evict  |  Credential Eviction, Object Eviction, Process Eviction  |
+| 7  |  Restore  |  Restore Access, Restore Object  |
 
 --------
 ### IV. The Cyber Attack Kill Chain Model & Defense
@@ -611,21 +634,7 @@ typically by improving the preventive controls or other risk treatments.
 --------
 ### IX. Cybercrime Legislation Worldwide
 
-#### 1. Budapest Convention on Cybercrime (ETS No. 185)
-  + Usefull links: https://www.coe.int/en/web/cybercrime/the-budapest-convention and https://www.coe.int/en/web/cybercrime/-/the-global-state-of-cybercrime-legislation-as-at-january-2023-
-      
-  + The Convention on Cybercrime, also known as the Budapest Convention on Cybercrime or the Budapest Convention, is the first international treaty seeking to address Internet and computer crime (cybercrime) harmonizing national laws, improving investigative techniques, and increasing cooperation among nations.
-    
-  + The Convention aims principally at:
-     + Harmonizing the domestic criminal substantive law elements of offenses and connected provisions in the area of cyber-crime
-     + Providing for domestic criminal procedural law powers necessary for the investigation and prosecution of such offenses as well as other offenses committed by means of a computer system or evidence in relation to which is in electronic form
-     + Setting up a fast and effective regime of international cooperation
-       
-  + The following offenses are defined by the Convention: illegal access, illegal interception, data interference, system interference, misuse of devices, computer-related forgery, computer-related fraud, offenses related to child pornography, and offenses related to copyright and neighboring rights.
-    
-  + In 2024 there are currently 76 parties to the Budapest Convention and 20 countries have signed or been invited to accede.
-
-#### 2. Cybercrime Legislation Worldwide
+#### 1. Cybercrime Legislation
   + Source/Website: https://unctad.org/page/cybercrime-legislation-worldwide
   + Cybercrime is a growing concern to countries at all levels of developments and affects both, buyers and sellers. The evolving cybercrime landscape and resulting skills gaps are a significant challenge for law enforcement agencies and prosecutors, especially for cross-border enforcement.
   + The UNCTAD Global Cyberlaw Tracker is the first ever global mapping of cyberlaws. It tracks the state of e-commerce legislation in the field of e-transactions, consumer protection, data protection/privacy and cybercrime adoption in the 194 UNCTAD member states. It indicates whether or not a given country has adopted legislation, or has a draft law pending adoption. In some instances where information about a country's legislation adoption was not readily available, 'no data' is indicated.
@@ -639,6 +648,55 @@ typically by improving the preventive controls or other risk treatments.
   + While 156 countries (80 per cent) have enacted cybercrime legislation, the pattern varies by region:
      + Europe has the highest adoption rate (91 per cent)
      + Africa has the lowest adoption rate (72 per cent).
+
+#### 2. Budapest Convention on Cybercrime (ETS No. 185)
+  + Usefull links: https://www.coe.int/en/web/cybercrime/the-budapest-convention and https://www.coe.int/en/web/cybercrime/-/the-global-state-of-cybercrime-legislation-as-at-january-2023-
+      
+  + The Convention on Cybercrime, also known as the Budapest Convention on Cybercrime or the Budapest Convention, is the first international treaty seeking to address Internet and computer crime (cybercrime) harmonizing national laws, improving investigative techniques, and increasing cooperation among nations.
+  + It was drawn up by the Council of Europe in Strasbourg, France, with the active participation of the Council of Europe's observer states Canada, Japan, the Philippines, South Africa and the United States.
+    
+  + The Convention aims principally at:
+     + Harmonizing the domestic criminal substantive law elements of offenses and connected provisions in the area of cyber-crime
+     + Providing for domestic criminal procedural law powers necessary for the investigation and prosecution of such offenses as well as other offenses committed by means of a computer system or evidence in relation to which is in electronic form
+     + Setting up a fast and effective regime of international cooperation
+       
+  + The following offenses are defined by the Convention:
+    + illegal access and illegal interception
+    + data interference and system interference
+    + misuse of devices
+    + computer-related forgery
+    + computer-related fraud
+    + offenses related to child pornography
+    + offenses related to copyright and neighboring rights
+    
+  + In 2024 there are currently 76 parties to the Budapest Convention and 20 countries have signed or been invited to accede.
+
+#### 3. United Nations Convention against Cybercrime
+  + Source/Website: https://www.unodc.org/unodc/en/cybercrime/convention/home.html
+    
+  + The United Nations Convention against Cybercrime was adopted by the General Assembly of the United Nations in December 2024 in New York. The Convention is the first comprehensive global treaty on this matter, which provides States with a range of measures to be undertaken to prevent and combat cybercrime. It also aims to strengthen international cooperation in sharing electronic evidence for serious crimes.
+  + The Convention will be opened for signature in Ha Noi, Viet Nam, and remain open at UN Headquarters in New York, until 31 December 2026. Signature is typically a requirement for a State to proceed with ratification. The Convention will enter into force, and become legally binding, 90 days after 40 States have expressed their consent to be bound by the Convention through depositing their instruments of ratification, acceptance, approval or accession. 
+    
+  + Chapters of the United Nations Convention against Cybercrime
+    + General provisions
+      + The Convention unites States parties in a common purpose: to prevent and combat cybercrime, strengthen international cooperation, and promote technical assistance and capacity-building, in particular for developing countries. The chapter on general provisions forms the foundation for a comprehensive response against cybercrime and sets out the ground rules applicable to the entire Convention. 
+    + Criminalization
+      + The Convention’s chapter on criminalization requires that States parties establish a comprehensive framework targeting crimes committed through ICT systems.
+    + Jurisdiction
+      + The chapter on jurisdiction establishes clear and flexible rules to prevent criminals from exploiting jurisdictional gaps to escape punishment, while delineating the legal spheres that States parties can regulate.
+    + Procedural measures and law enforcement
+      + The chapter on procedural measures and law enforcement empowers States parties to address these challenges, adjusting traditional means and methods of investigation to the ICT environment. These measures enable the effective collection of electronic evidence while protecting human rights and supporting both domestic criminal proceedings and international cooperation.
+    + International cooperation
+      + The chapter on international cooperation therefore establishes a global framework that enables its Parties to assist each other in investigations, prosecutions, asset recovery, and judicial proceedings across borders.
+    + Preventive measures
+      + The chapter on preventive measures is designed to contribute to reducing and managing the risks and threats of cybercrime. Successfully preventing cybercrime requires active participation from and coordination of all stakeholders – governments, private sector, academia, civil society organizations, and the public as a whole.
+    + Technical assistance and information exchange
+      + The chapter on technical assistance and information exchange therefore establishes extensive measures for technical assistance, capacity-building and information exchange between States parties, with particular attention to developing countries' needs.
+    + Mechanism of implementation
+      + The chapter on the Mechanism of implementation therefore establishes the Conference of the States Parties to the Convention. The Conference serves as the primary mechanism to oversee the Convention’s implementation and improve the capacity of and cooperation between States parties to achieve the Convention’s objectives.
+    + Final provisions
+      + The chapter on final provisions includes the rules and modalities on how States may become parties to and withdraw from the Convention, on the entry into force of the Convention, its effects, related settlement of disputes, and potential amendment procedure and supplementation by protocols.
+        
 
 --------
 ### X. Cybercrime and Threat Actors
@@ -684,7 +742,45 @@ Countries		WCI score
 20. Latvia		- 1.68
 ```
 
-#### 2. ENISA Threat Landscape 2024
+#### 2. Fighting cybercrime around the world 
+
+> European Cybercrime Centre (EC3 - Europol)
+ + Website: https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3
+
+ + The European Cybercrime Centre (EC3) was set up by Europol to strengthen the law enforcement response to cybercrime in the EU and thus to help protect European citizens, businesses and governments from online crime. It offers operational, strategic, analytical and forensic support to Member States’ investigations.
+ 
+ + Since its establishment in 2013, EC3 has made a significant contribution to the fight against cybercrime and it has been involved in many high-profile operations and hundreds of operational-support deployments. 
+ 
+> Joint Cybercrime Action Taskforce (J-CAT)
+ + The Joint Cybercrime Action Taskforce (J-CAT) was launched in September 2014. Located at Europol’s European Cybercrime Centre (EC3), it helps fighting cybercrime within and outside the EU.
+ 
+  + J-CAT’s objective is to drive intelligence-led, coordinated action against key cybercrime threats and targets by facilitating the joint identification, prioritisation, preparation, initiation and execution of cross-border investigations and operations by its partners. It tackles:
+     + cyber-dependent crimes;
+     + transnational payment fraud;
+     + online child sexual exploitation;
+     + cross-crime cyber facilitators (e.g. bulletproof hosting, counter-antivirus services, criminal use of the dark web, etc.).
+
+  + It consists of a standing operational team of cyber liaison officers from several EU Member States and non-EU cooperation partners, who are based in Europol headquarters and complemented with EC3 staff. The cyber liaison officers come from:
+     + 13 EU Member States (Austria, Belgium, Czechia, Finland, France, Germany, Italy, the Netherlands, Romania, Poland, Sweden, Denmark and Spain, which is represented by two agencies: Policía Nacional and Guardia Civil);
+     + 7 non-EU partner countries (Australia, Canada, Colombia*, Norway, Switzerland, the United Kingdom, and the United States, which is represented by four agencies: the Federal Bureau of Investigation, the Secret Service, the Internal Revenue Service, and the Homeland Security Investigations);
+     + Europol’s European Cybercrime Centre (EC3).
+
+  + Over the past decade, the J-CAT has been instrumental in numerous high-profile operations, such as:
+     + Operation Cronos (2024)
+       + The global law enforcement operation that took down LockBit, one of the world’s most harmful ransomware groups. 
+       + The results of the operation were unprecedented: on top of seizing LockBit’s data leak site and affiliate panel, law enforcement agencies seized 34 servers operated by LockBit, closed 14,000 “rogue accounts” involved with data exfiltration or the group’s infrastructure” and froze 200 cryptocurrency accounts linked to LockBit and its affiliates.
+     + Operation EndGame (2024)
+       + Largest ever operation against botnets. This operation adopted an international and comprehensive approach to address the growing threat of botnets being used as initial access points for ransomware and other malware.
+       + This international operation shut down droppers including IcedID, SystemBC, Pikabot, Smokeloader and Bumblebee leading to four arrests and takedown of over 100 servers worldwide
+     + Operation PowerOFF (2022)
+       + Some fifty of the world’s biggest booter services, designed to enable users to launch crippling distributed denial-of-service (DDoS) against critical online infrastructure, have been taken down as part of an international crackdown against DDoS service providers.
+       + Known as Operation Power Off, this operation saw law enforcement in the United States, the United Kingdom, the Netherlands, Poland and Germany take action against these types of attacks which can paralyse the internet.  
+     + Operation Fifth Element (2021)
+       + A total of 12 individuals wreaking havoc across the world with ransomware attacks against critical infrastructure were targeted as the result of a law enforcement and judicial operation involving eight countries. More than 50 foreign investigators, including six Europol specialists, were deployed to Ukraine for the action day to assist the National Police with conducting jointly investigative measures.
+       + These attacks are believed to have affected over 1800 victims in 71 countries. These cyber actors were known for specifically targeting large corporations, effectively bringing their business to a standstill.
+
+	    
+#### 3. ENISA Threat Landscape 2024
 
   + Source (2024) - https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024
 
@@ -722,7 +818,7 @@ Countries		WCI score
     + According to Gcore, attacks of unprecedented power were observed in 2023, with a 100% plus increase in the peaks of attack volume in the last three years, from 300Gbps in 2021 to 1.6Tbps in 2023. The attack duration varied from three minutes to nine hours with an average of about one hour. 
       
 
- #### 3. MITRE - List of Threat/Activity Groups
+ #### 4. MITRE - List of Threat/Activity Groups
 
   + Groups are activity clusters that are tracked by a common name in the security community. Analysts track these clusters using various analytic methodologies and terms such as threat groups, activity groups, and threat actors. Some groups have multiple names associated with similar activities due to various organizations tracking similar activities by different names. Organizations' group definitions may partially overlap with groups designated by other organizations and may disagree on specific activity.
 
@@ -752,7 +848,7 @@ Countries		WCI score
       + APT33 - https://attack.mitre.org/groups/G0064/
       + ...
 
-#### 4. List of Threat Actors (Source: CrowdStrike)
+#### 5. List of Threat Actors (Source: CrowdStrike)
 
   + CrowdStrike has referenced numerous adversaries - https://www.crowdstrike.com/adversaries/
   + For instance:
