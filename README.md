@@ -171,7 +171,7 @@
     For example, a procedure could be an adversary using PowerShell to inject into lsass.exe to dump credentials by scraping LSASS memory on a victim.
     Procedures are categorized in ATT&CK as the observed in the wild use of techniques in the "Procedure Examples" section of technique pages.
 
-There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/enterprise/)
++ There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/enterprise/)
 
 |    ID   |   Name  | DESCRIPTION | 
 | :-----: | :-----: |  :-------:  |
@@ -198,19 +198,17 @@ There are currently 14 Enterprise tactics (https://attack.mitre.org/tactics/ente
 
 + It’s mission is to reduce the attack surface and improve an organization's security posture by offering real-world countermeasures based on adversary tactics and techniques.
 
-+ By utilizing the D3FEND matrix, security teams can develop specific threat models and methodologies that address the unique risks they face.
-
-+ The D3FEND matrix (https://d3fend.mitre.org)
++ There are currently 7 tactics in the D3FEND matrix (https://d3fend.mitre.org)
   
-|   ID   |   Tactic   |  Technique  | 
+|   Tactic   |   Tactic description  | Defensive technique  | 
 | :-----: | :-----: | :-----: |
-| 1  |  Model  | Asset Inventory, Network Mapping, Operational Activity Mapping, System Mapping  |
-| 2  |  Harden  | Agent Authentication, Application Hardening, Credentials Hardening, Message Hardening, Platform Hardening, Source Code Hardening  |
-| 3  |  Detect  | File Analysis, Identifier Analysis, Message Analysis, Network Traffic Analysis, Platform Monitoring, Process Analysis, User Behaviour Analysis  |
-| 4  |  Isolate  | Access Mediation, Access Policy Administration, Execution Isolation, Network Isolation  |
-| 5  |  Deceive  | Decoy Environment,  Decoy Object  |
-| 6  |  Evict  |  Credential Eviction, Object Eviction, Process Eviction  |
-| 7  |  Restore  |  Restore Access, Restore Object  |
+| 1. Model  |  The model tactic is used to apply security engineering, vulnerability, threat, and risk analyses to digital systems | Asset Inventory, Network Mapping, Operational Activity Mapping, System Mapping  |
+| 2. Harden  |  The harden tactic is used to increase the opportunity cost of computer network exploitation | Agent Authentication, Application Hardening, Credentials Hardening, Message Hardening, Platform Hardening, Source Code Hardening  |
+| 3. Detect  |  The detect tactic is used to identify adversary access to or unauthorized activity on computer networks | File Analysis, Identifier Analysis, Message Analysis, Network Traffic Analysis, Platform Monitoring, Process Analysis, User Behaviour Analysis  |
+| 4. Isolate  |  The isolate tactic creates logical or physical barriers in a system which reduces opportunities for adversaries to create further accesses | Access Mediation, Access Policy Administration, Execution Isolation, Network Isolation  |
+| 5. Deceive  |  The deceive tactic is used to advertise, entice, and allow potential attackers access to an observed or controlled environment | Decoy Environment,  Decoy Object  |
+| 6. Evict  |  The eviction tactic is used to remove an adversary from a computer network |  Credential Eviction, Object Eviction, Process Eviction  |
+| 7. Restore  |  The restore tactic is used to return the system to a better state |  Restore Access, Restore Object  |
 
 --------
 ### IV. The Cyber Attack Kill Chain Model & Defense
