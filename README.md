@@ -46,6 +46,7 @@
 + DFIR reports - [THE DFIR REPORT](https://thedfirreport.com) - Real intrusions by real attackers, the truth behind the intrusion.
 + DFIR news - [This week in4n6](https://thisweekin4n6.com) - Weekly roundup of Digital Forensics and Incident Response news.
 + Cyber Crime news - [Security Affairs](http://securityaffairs.co/wordpress/) - Blog that covers topics like Cyber Crime, Cyber Warfare, Hacktivism...
++ Ransomware watch websites- [Ransomware.Live](https://www.ransomware.live) - [RansomWatch](https://ransomwatch.telemetry.ltd) 
 
 --------
 ### II. TDIR and DFIR TOOLS
@@ -863,3 +864,20 @@ Countries		WCI score
     + Egypt
       + Watchful Sphinx
 
+#### 6. Ransomware Watch
+
++ 'Ransomware.Live'
+  + URL/Link - https://www.ransomware.live/about
+  + Free resource for comprehensive information and updates on the ever-evolving landscape of ransomware.
+  + It serves as a go-to platform for the latest insights, analysis, and news related to ransomware attacks, trends, and defense strategies.
+  + It provides detailed reports on the latest ransomware variants, analysis of high-profile attacks, and practical advice on prevention, detection, and recovery.
+  + The website has indexed 16968 victims from 234 ransomware groups and has 39 active parsers for 116 Ransomware group sites available. The database also contains 1740 cyberattacks published in the press.
+
++ 'RansomWatch'
+  + URLs/Links
+    + https://ransomwatch.telemetry.ltd
+    + https://github.com/joshhighet/ransomwatch
+  + The website trails the extortion sites used by ransomware groups and surfaces an aggregated feed of claims
+  + It is currently crawling 492 sites belonging to 216 unique groups.
+  + It has been running for 3 years, 4 months and 21 days and indexed 14877 posts.
+ 
