@@ -46,7 +46,7 @@
 + DFIR reports - [THE DFIR REPORT](https://thedfirreport.com) - Real intrusions by real attackers, the truth behind the intrusion.
 + DFIR news - [This week in4n6](https://thisweekin4n6.com) - Weekly roundup of Digital Forensics and Incident Response news.
 + Cyber Crime news - [Security Affairs](http://securityaffairs.co/wordpress/) - Blog that covers topics like Cyber Crime, Cyber Warfare, Hacktivism...
-+ Ransomware watch websites- [Ransomware.Live](https://www.ransomware.live) - [RansomWatch](https://ransomwatch.telemetry.ltd) 
++ Ransomware watch websites - [Ransomware.Live](https://www.ransomware.live) - [RansomWatch](https://ransomwatch.telemetry.ltd) 
 
 --------
 ### II. TDIR and DFIR TOOLS
