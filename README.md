@@ -37,6 +37,7 @@
 + GitHub - [Sigma rules](https://github.com/The-DFIR-Report/Sigma-Rules/) - A collection of SIGMA rules from the 'The-DFIR-Report'.
 + GitHub - [Yara rules](https://github.com/The-DFIR-Report/Yara-Rules) - A collection of YARA rules from the 'The-DFIR-Report'.
 + Atomic Threat Coverage - [RE&CT Framework](https://atc-project.github.io/atc-react/) - The RE&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques.
++ Atomic Threat Coverage - [ATC](https://github.com/atc-project/atomic-threat-coverage) - It is tool which allows to automatically generate actionable analytics, designed to combat threats (based on the MITRE ATT&CK adversary model) from Detection, Response, Mitigation and Simulation perspectives.
 + Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
 + AWS - [AWS Incident Response Playbook Samples](https://github.com/aws-samples/aws-incident-response-playbooks)
 + AWS - [AWS Customer Playbook Framework](https://github.com/aws-samples/aws-customer-playbook-framework) - This repository provides sample templates for security playbooks against various scenarios when using Amazon Web Services.
