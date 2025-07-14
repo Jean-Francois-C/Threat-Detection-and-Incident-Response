@@ -36,6 +36,9 @@
 + GitHub - [Sigma rules](https://github.com/SigmaHQ/sigma) - SIGMA rule repository (more than 3000 detection rules).
 + GitHub - [Sigma rules](https://github.com/The-DFIR-Report/Sigma-Rules/) - A collection of SIGMA rules from the 'The-DFIR-Report'.
 + GitHub - [Yara rules](https://github.com/The-DFIR-Report/Yara-Rules) - A collection of YARA rules from the 'The-DFIR-Report'.
++ Website - [Sigma rule convertor (Detection Studio)](https://detection.studio/) - Convert SIGMA rules to other detection rule syntaxes.
++ Website - [Splunk Detection Rules](https://research.splunk.com/detections/) - A collection of detection rules for Splunk.
++ Github - [Elastic Detection Rules](https://github.com/elastic/detection-rules/) - A collection of detection rules for Elastic.
 + Atomic Threat Coverage - [RE&CT Framework](https://atc-project.github.io/atc-react/) - The RE&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques.
 + Atomic Threat Coverage - [ATC](https://github.com/atc-project/atomic-threat-coverage) - Actionable analytics designed to combat threats (based on MITRE's ATT&CK framework) from Detection, Response, Mitigation and Simulation perspectives.
 + Microsoft - [Threat Intelligence community blog](https://aka.ms/threatintelblog)
@@ -47,7 +50,12 @@
 + DFIR reports - [THE DFIR REPORT](https://thedfirreport.com) - Real intrusions by real attackers, the truth behind the intrusion.
 + DFIR news - [This week in4n6](https://thisweekin4n6.com) - Weekly roundup of Digital Forensics and Incident Response news.
 + Cyber Crime news - [Security Affairs](http://securityaffairs.co/wordpress/) - Blog that covers topics like Cyber Crime, Cyber Warfare, Hacktivism...
++ Threat Research & Intelligence - [CrowdStrike Counter Adversary Operations Blog](https://www.crowdstrike.com/en-us/blog/category.counter-adversary-operations/) - Blog that covers Threat Hunting and Intelligence, Cyber Crime, ...
++ Threat Research & Intelligence - [Palo Alto Networks Unit 42 Blog](https://unit42.paloaltonetworks.com/unit-42-all-articles/) - Threat research blog.
++ Threat Research & Intelligence - [Sekoia Threat Research Blog](https://blog.sekoia.io/category/threat-research/) - Threat research blog.
++ Threat Analysis - [Google Threat Analysis Group Blog](https://blog.google/threat-analysis-group/) - The latest on Google efforts to counter government-backed attacks.
 + Ransomware watch websites - [Ransomware.Live](https://www.ransomware.live) - [RansomWatch](https://ransomwatch.telemetry.ltd) 
+
 
 --------
 ### II. TDIR and DFIR TOOLS
